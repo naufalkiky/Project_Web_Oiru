@@ -1,11 +1,11 @@
 <footer class="container mt-auto py-4 pt-md-5">
     <div class="row border-bottom pb-3 top-footer">
-        <div class="col-md-3">
-            <h3 class="fw-bold">BarterBage</h3>
-            <p class="d-block mb-3 text-muted">Tukarkan sampah non-organik mu dengan mudah hanya di Barter Bage</p>
-            <a href="#" class="btn btn-primary">Kontak Kami</a>
+        <div class="col-md-4">
+            <a href="/"><img src="{{ asset('assets/img/logo/barter-bage-horizontal.svg') }}" alt="logo-footer" width="250" class="mb-3"></a>
+            <p class="d-block mb-3 text-muted">Tukarkan sampah non-organik mu dengan mudah hanya di BarterBage.</p>
+            <a href="#" class="btn barter-bage-color text-white">Kontak Kami</a>
         </div>
-        <div class="col-md-3"></div>
+        <div class="col-md-2"></div>
         <div class="col-md-2">
             <h5 class="fw-bold">Tentang Kami</h5>
             <ul class="list-unstyled text-small">
@@ -37,7 +37,7 @@
     </div>
     <div class="row pt-4 opacity-50 bottom-footer">
         <div class="col-md-10">
-            <p>&copy; 2021, Barter Bage Indonesia</p>
+            <p>&copy; 2021, BarterBage Indonesia</p>
         </div>
         <div class="col-md-2">
             <a href="" class="ms-2"><img src="{{ asset('assets/img/icon/instagram.svg') }}" alt="instagram" width="28"></a>

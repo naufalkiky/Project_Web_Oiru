@@ -10,7 +10,7 @@
 <body class="d-flex flex-column min-vh-100">
     @include('includes.header')
 
-    <div class="container">
+    <div class="container mt-3 mx-auto py-3 mb-5">
         @yield('content')
     </div>
 

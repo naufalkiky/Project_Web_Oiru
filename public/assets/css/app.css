@@ -8,12 +8,33 @@
     display: none;
 }
 
-.navbar .btn-regis, .navbar .btn-primary {
+.barter-bage-color {
+    background-color: #36572A;
+}
+
+.barter-bage-color:hover {
+    background-color: #2b501e;
+}
+
+.navbar .btn-regis, .navbar .barter-bage-color {
     transition: .5s;
 }
 
 .btn-regis:hover {
     background-color: rgb(236, 236, 236);
+}
+
+.title-cta {
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.title-cta span {
+    color: #36572A;
+}
+
+.home-img {
+    width: 450px;
 }
 
 @media screen and (max-width: 767px) {
@@ -31,7 +52,16 @@
         margin-top: 8px;
     }
 
-    .top-footer, .bottom-footer {
+    .title-cta {
+        font-size: 32px;
+    }
+
+    .home-img {
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    .bottom-footer {
         text-align: center;
     }
 
