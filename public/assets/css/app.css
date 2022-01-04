@@ -12,6 +12,10 @@
     background-color: #36572A;
 }
 
+.barter-bage-color-text {
+    color: #36572A;
+}
+
 .barter-bage-color:hover {
     background-color: #2b501e;
 }
@@ -37,6 +41,10 @@
     width: 450px;
 }
 
+.middle-home {
+    background-color: #b4dd7e;
+}
+
 @media screen and (max-width: 767px) {
     .navbar-nav {
         margin-left: 0 !important;
@@ -57,8 +65,7 @@
     }
 
     .home-img {
-        width: 100%;
-        margin-top: 16px;
+        display: none;
     }
 
     .bottom-footer {

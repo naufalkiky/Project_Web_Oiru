@@ -6,9 +6,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-4 gap-2">
-                <a class="nav-link active" href="#">Beranda</a>
-                <a class="nav-link" href="#">Penukaran</a>
-                <a class="nav-link" href="#">Sembako</a>
+                <a class="nav-link" href="/">Beranda</a>
+                <a class="nav-link" href="/penukaran">Penukaran</a>
+                <a class="nav-link" href="/sembako">Sembako</a>
                 <a class="nav-link" href="#">Artikel</a>
             </div>
             <hr>
