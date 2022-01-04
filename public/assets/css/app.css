@@ -20,12 +20,17 @@
     background-color: #2b501e;
 }
 
-.navbar .btn-regis, .navbar .barter-bage-color {
+.navbar .btn-hover, .navbar .barter-bage-color {
     transition: .5s;
 }
 
-.btn-regis:hover {
+.btn-hover:hover {
     background-color: rgb(236, 236, 236);
+}
+
+.btn-active {
+    border: 1px solid rgb(214, 214, 214);
+    background-color: rgb(236, 236, 236) !important;
 }
 
 .title-cta {
@@ -41,8 +46,12 @@
     width: 450px;
 }
 
-.middle-home {
-    background-color: #b4dd7e;
+.middle-home:hover {
+    background-color: rgb(236, 236, 236);
+}
+
+.auth-form {
+    width: 32rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -56,8 +65,9 @@
         border: 0.5px solid rgb(116, 116, 116);
     }
 
-    .navbar-nav .btn-primary {
+    .navbar-nav .barter-bage-color {
         margin-top: 8px;
+        margin-bottom: 16px;
     }
 
     .title-cta {
@@ -66,6 +76,10 @@
 
     .home-img {
         display: none;
+    }
+
+    .auth-form {
+        width: 100%;
     }
 
     .bottom-footer {

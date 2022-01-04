@@ -1,12 +1,12 @@
 <footer class="container mt-auto py-4 pt-md-5">
     <div class="row border-bottom pb-3 top-footer">
-        <div class="col-md-4">
+        <div class="col-12 col-md-4">
             <a href="/"><img src="{{ asset('assets/img/logo/barter-bage-horizontal.svg') }}" alt="logo-footer" width="250" class="mb-3"></a>
             <p class="d-block mb-3 text-muted">Tukarkan sampah non-organik mu dengan mudah hanya di BarterBage.</p>
             <a href="#" class="btn barter-bage-color text-white">Kontak Kami</a>
         </div>
-        <div class="col-md-2"></div>
-        <div class="col-md-2">
+        <div class="col-12 col-md-2"></div>
+        <div class="col-6 col-md-2">
             <h5 class="fw-bold">Tentang Kami</h5>
             <ul class="list-unstyled text-small">
                 <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Perusahaan</a></li>
@@ -15,7 +15,7 @@
                 <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Sponsor</a></li>
             </ul>
         </div>
-        <div class="col-md-2">
+        <div class="col-6 col-md-2">
             <h5 class="fw-bold">Layanan</h5>
             <ul class="list-unstyled text-small">
                 <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Tukar Sampah</a></li>
@@ -26,7 +26,7 @@
                 <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Artikel</a></li>
             </ul>
         </div>
-        <div class="col-md-2">
+        <div class="vol-6 col-md-2">
             <h5 class="fw-bold">Bantuan</h5>
             <ul class="list-unstyled text-small">
                 <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Syarat dan Ketentuan</a></li>

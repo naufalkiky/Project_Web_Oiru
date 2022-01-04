@@ -6,15 +6,15 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-4 gap-2">
-                <a class="nav-link" href="/">Beranda</a>
-                <a class="nav-link" href="/penukaran">Penukaran</a>
-                <a class="nav-link" href="/sembako">Sembako</a>
-                <a class="nav-link" href="#">Artikel</a>
+                <a class="nav-link active btn btn-hover" href="/">Beranda</a>
+                <a class="nav-link active btn btn-hover {{ Request::is('tukar-sampah','tukar-sampah/*') ? 'btn-active' : '' }}" href="tukar-sampah">Penukaran</a>
+                <a class="nav-link active btn btn-hover {{ Request::is('sembako','sembako/*') ? 'btn-active' : '' }}" href="tukar-sembako">Sembako</a>
+                <a class="nav-link active btn btn-hover" href="#">Artikel</a>
             </div>
             <hr>
             <div class="navbar-nav ms-auto gap-2 btn-auth">
-                <a class="nav-link active btn btn-regis px-4" href="#">Daftar</a>
-                <a class="nav-link text-white btn barter-bage-color px-4" href="#">Masuk</a>
+                <a class="nav-link active btn btn-hover px-4 {{ Request::is('register','register/*') ? 'btn-active' : '' }}" href="register">Register</a>
+                <a class="nav-link text-white btn barter-bage-color px-4" href="login">Login</a>
             </div>
         </div>
     </div>
