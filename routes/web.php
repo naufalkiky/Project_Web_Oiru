@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AdminDashboardController;
+use App\Http\Controllers\AdminLoginController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
@@ -23,3 +25,6 @@ Route::get('/tukar-sampah', [TukarSampahController::class, 'index']);
 Route::get('/register', [RegisterController::class, 'create']);
 
 Route::get('/login', [LoginController::class, 'create']);
+
+Route::get('/admin-dashboard', [AdminDashboardController::class, 'index']);
+Route::get('/admin-login', [AdminLoginController::class, 'create']);
