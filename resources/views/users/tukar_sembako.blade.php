@@ -5,7 +5,7 @@
 @section('content')
     <div class="row mb-5 mt-3 mx-auto">
         <div class="col-12 col-lg-4 pb-3 left-side">
-            <h4 class="mb-3 fw-bold">Sembako</h4>
+            <h4 class="mb-3 fw-bold">Penukaran Sembako</h4>
             <p>Akumulasi point dari penukaran sampah dapat ditukarkan dengan sembako berkualitas dan tentu saja bermanfaat bagi anda.</p>
         </div>
         <div class="col-12 col-lg-8 right-side">
