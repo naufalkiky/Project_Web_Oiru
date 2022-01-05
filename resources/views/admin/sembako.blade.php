@@ -4,7 +4,7 @@
 
 @section('admin_content')
     <h3 class="fw-bold text-center mb-4">Data Sembako</h3>
-    <a class="btn btn-primary mb-4" href="tambah-sembako">Tambah Data</a>
+    <a class="btn btn-primary mb-4" href="sembako/tambah-sembako">Tambah Data</a>
     <div class="table-responsive">
         <table class="table">
             <thead>

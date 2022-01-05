@@ -1,9 +1,10 @@
 @extends('layouts.admin_app')
 
-@extends('title', 'Tambah Data Sembako')
+@section('title', 'Tambah Data Sembako')
 
 @section('admin_content')
-    <div class="card card-body card-form">
+    <div class="card card-body card-form mx-auto pt-4">
+        <h4 class="fw-bold text-center mb-4">Tambah Data Sembako</h4>
         <form action="" method="post">
             @csrf
             <div class="mb-3">
@@ -15,7 +16,7 @@
             <div class="mb-3">
                 <label for="point" class="form-label fw-bold">Jumlah Point</label>
                 <div class="input-group">
-                    <input type="text" class="form-control" name="point" id="point" required>
+                    <input type="number" class="form-control" name="point" id="point" required>
                 </div>
             </div>
             <div class="mb-3">
@@ -27,7 +28,7 @@
             <div class="mb-4">
                 <label for="description" class="form-label fw-bold">Deskripsi</label>
                 <div class="input-group">
-                    <textarea name="description" id="description" cols="60" rows="3"></textarea>
+                    <textarea name="description" id="description" cols="60" rows="3" class="rounded"></textarea>
                 </div>
             </div>
             <div class="mb-2">

@@ -12,7 +12,7 @@
                     <p class="card-text">Berisi data-data sembako yang tersedia untuk ditukar dengan points pada halaman sembako BarterBage.</p>
                 </div>
                 <div class="card-footer">
-                    <a href="/data-sembako" class="btn btn-primary">Lihat Data</a>
+                    <a href="sembako" class="btn btn-primary">Lihat Data</a>
                 </div>
             </div>
         </div>
