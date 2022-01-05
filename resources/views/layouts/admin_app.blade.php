@@ -9,13 +9,14 @@
 
 </head>
 <body class="d-flex flex-column min-vh-100">
-
+    @include('includes.admin_header')
+    
     <div class="container mt-3 mx-auto py-3 mb-5">
         @yield('admin_content')
     </div>
 
     @include('includes.admin_footer')
-    
+
     <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
 </body>
 </html>

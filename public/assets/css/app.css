@@ -50,7 +50,7 @@
     background-color: rgb(236, 236, 236);
 }
 
-.auth-form {
+.auth-form, .card-form {
     width: 32rem;
 }
 
@@ -88,5 +88,14 @@
 
     .top-footer .col-md-2 {
         margin-top: 16px;
+    }
+
+    .btn-action {
+        text-align: center;
+        width: 100%;
+    }
+
+    .btn-warning.btn-action {
+        margin-bottom: 8px;
     }
 }

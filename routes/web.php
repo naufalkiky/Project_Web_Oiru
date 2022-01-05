@@ -5,6 +5,7 @@ use App\Http\Controllers\AdminLoginController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\SembakoController;
 use App\Http\Controllers\TukarSampahController;
 use Illuminate\Support\Facades\Route;
 
@@ -27,4 +28,6 @@ Route::get('/register', [RegisterController::class, 'create']);
 Route::get('/login', [LoginController::class, 'create']);
 
 Route::get('/admin-dashboard', [AdminDashboardController::class, 'index']);
-Route::get('/admin-login', [AdminLoginController::class, 'create']);
+
+Route::get('/data-sembako', [SembakoController::class, 'index']);
+Route::get('/tambah-sembako', [SembakoController::class, 'create']);

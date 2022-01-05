@@ -1,8 +1,6 @@
 @extends('layouts.admin_app')
 
 @section('title', 'Dashboard')
-    
-@include('includes.admin_header')
 
 @section('admin_content')
     <h2 class="fw-bold text-center mt-4 mb-5">Selamat Datang di Dashboard Admin BarterBage</h2>
@@ -14,7 +12,7 @@
                     <p class="card-text">Berisi data-data sembako yang tersedia untuk ditukar dengan points pada halaman sembako BarterBage.</p>
                 </div>
                 <div class="card-footer">
-                    <a href="#" class="btn btn-primary">Lihat Data</a>
+                    <a href="/data-sembako" class="btn btn-primary">Lihat Data</a>
                 </div>
             </div>
         </div>
