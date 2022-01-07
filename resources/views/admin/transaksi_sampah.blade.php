@@ -6,7 +6,7 @@
     <h3 class="fw-bold">Data Penukaran Sampah</h3>
     <p class="mb-4">Data penukaran sampah saat ini.</p>
     <div class="table-responsive card p-4">
-        <table class="table">
+        <table class="table align-middle">
             <thead>
             <tr>
                 <th scope="col">No</th>

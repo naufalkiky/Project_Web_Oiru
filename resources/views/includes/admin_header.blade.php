@@ -6,8 +6,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
-                <span class="nav-link active me-3" href="/">Halo, Admin</span>
-                <button class="btn btn-danger">Log Out</button>
+                <span class="nav-link active me-3">Halo, {{ Auth::user()->name }}</span>
+                <form action="{{ Route('logout') }}" method="post">
+                    @csrf
+                    <button type="submit" class="btn btn-danger">Log Out</button>
+                </form>
             </div>
         </div>
     </div>

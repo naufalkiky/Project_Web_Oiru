@@ -22,7 +22,9 @@ class User extends Authenticatable
         'email',
         'no_hp',
         'address',
+        'bage_points',
         'password',
+        'isAdmin'
     ];
 
     /**

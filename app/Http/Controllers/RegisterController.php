@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Providers\RouteServiceProvider;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
 class RegisterController extends Controller
@@ -25,7 +27,7 @@ class RegisterController extends Controller
         ]);
 
         // mendaftarkan user ke database
-        User::create([
+        $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
             'no_hp' => $request->no_hp,
@@ -33,6 +35,8 @@ class RegisterController extends Controller
             'password' => Hash::make($request->password),
         ]);
 
-        return redirect('/')->with('success', 'Selamat datang di BarterBage, Anda sudah terdaftar!');
+        Auth::login($user);
+
+        return redirect(RouteServiceProvider::HOME)->with('success', 'Selamat datang di BarterBage, Anda sudah terdaftar!');
     }
 }

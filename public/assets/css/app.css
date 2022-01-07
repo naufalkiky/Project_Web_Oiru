@@ -116,7 +116,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         width: 100%;
     }
 
-    .btn-warning.btn-action {
+    .btn-warning.btn-action, .btn-secondary.btn-action {
         margin-bottom: 8px;
     }
 }

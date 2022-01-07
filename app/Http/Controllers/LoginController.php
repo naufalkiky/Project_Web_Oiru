@@ -27,7 +27,11 @@ class LoginController extends Controller
         // authentikasi user
         if (Auth::attempt($user)) {
             // login berhasil
-            return redirect(RouteServiceProvider::HOME)->with('success', 'Selamat datang kembali '. Auth::user()->name .'!');
+            if (Auth::user()->isAdmin == false) {
+                return redirect(RouteServiceProvider::HOME)->with('success', 'Selamat datang kembali '. Auth::user()->name .'!');
+            } else {
+                return redirect('admin/dashboard');
+            }
         }
         // jika user tidak ditemukan
         throw ValidationValidationException::withMessages([
