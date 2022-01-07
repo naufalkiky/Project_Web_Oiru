@@ -6,15 +6,40 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-4 gap-2">
-                <a class="nav-link active btn btn-hover {{ Request::is('/','/*') ? 'btn-active' : '' }}" href="/">Beranda</a>
-                <a class="nav-link active btn btn-hover {{ Request::is('tukar-sampah','tukar-sampah/*') ? 'btn-active' : '' }}" href="tukar-sampah">Penukaran</a>
-                <a class="nav-link active btn btn-hover {{ Request::is('tukar-sembako','tukar-sembako/*') ? 'btn-active' : '' }}" href="tukar-sembako">Sembako</a>
-                <a class="nav-link active btn btn-hover" href="#">Artikel</a>
+                <a class="nav-link active btn btn-hover my-2 my-md-0 {{ Request::is('/') ? 'btn-active' : '' }}" href="/">Beranda</a>
+                <div class="dropdown mb-2 mb-md-0">
+                    <a class="nav-link active btn btn-hover dropdown-toggle w-100 {{ Request::is('penukaran/*') ? 'btn-active' : '' }}" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        Penukaran
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li>
+                            <a class="dropdown-item" href="{{ Route('penukaran.sampah') }}">Sampah</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="{{ Route('penukaran.sembako') }}">Sembako</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="nav-link active btn btn-hover mb-2 mb-md-0 {{ Request::is('tentang-kami','tentang-kami/*') ? 'btn-active' : '' }}" href="/tentang-kami">Tentang Kami</a>
             </div>
             <hr>
             <div class="navbar-nav ms-auto gap-2 btn-auth">
-                <a class="nav-link active btn btn-hover px-4 {{ Request::is('register','register/*') ? 'btn-active' : '' }}" href="register">Register</a>
-                <a class="nav-link text-white btn barter-bage-color px-4" href="login">Login</a>
+                @guest
+                    <a class="nav-link active btn btn-hover {{ Request::is('register','register/*') ? 'btn-active' : '' }}" href="{{ Route('register') }}">Register</a>
+                    <a class="nav-link text-white btn barter-bage-color px-4" href="{{ Route('login') }}">Login</a>
+                @else
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Halo, {{ Auth::user()->name }} !
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                            <li><a class="dropdown-item" href="#">Edit Profil</a></li>
+                            <hr class="dropdown-divider">
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                @endguest
             </div>
         </div>
     </div>

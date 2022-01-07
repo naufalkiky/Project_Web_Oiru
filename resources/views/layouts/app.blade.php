@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     @include('includes.meta')
-    <title>@yield('title') | Barter Bage</title>
+    <title>@yield('title') | BarterBage</title>
 
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">

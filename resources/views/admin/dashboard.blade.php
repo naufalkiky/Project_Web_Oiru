@@ -12,7 +12,7 @@
                     <p class="card-text">Berisi data-data sembako yang tersedia untuk ditukar dengan points pada halaman sembako BarterBage.</p>
                 </div>
                 <div class="card-footer">
-                    <a href="sembako" class="btn btn-primary">Lihat Data</a>
+                    <a href="{{ Route('admin.data-sembako') }}" class="btn btn-primary">Lihat Data</a>
                 </div>
             </div>
         </div>
@@ -23,7 +23,7 @@
                     <p class="card-text">Berisi data transaksi penukaran sampah dengan bage points yang dilakukan user pada halaman penukaran BarterBage.</p>
                 </div>
                 <div class="card-footer">
-                    <a href="transaksi-sampah" class="btn btn-primary">Lihat Data</a>
+                    <a href="{{ Route('admin.transaksi-sampah') }}" class="btn btn-primary">Lihat Data</a>
                 </div>
             </div>
         </div>
@@ -34,7 +34,7 @@
                     <p class="card-text">Berisi data transaksi penukaran bage points dengan sembako yang dilakukan user pada halaman sembako BarterBage.</p>
                 </div>
                 <div class="card-footer">
-                    <a href="transaksi-sembako" class="btn btn-primary">Lihat Data</a>
+                    <a href="{{ Route('admin.transaksi-sembako') }}" class="btn btn-primary">Lihat Data</a>
                 </div>
             </div>
         </div>
