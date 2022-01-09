@@ -47,9 +47,8 @@ Route::middleware('guest')->group(function() {
 Route::middleware('auth')->group(function() {
     
     // route user
-    Route::get('dashboard', [UserDashboardController::class, 'index'])->name('user');
-    Route::get('profil/user/{id}', [UserDashboardController::class, 'edit'])->name('user.update-profil');
-    Route::post('profil/user/{id}', [UserDashboardController::class, 'update'])->name('user.update-profil');
+    Route::get('user/dashboard/{id}', [UserDashboardController::class, 'index'])->name('user');
+    Route::post('user/dashboard/{id}', [UserDashboardController::class, 'update'])->name('user');
 
     // route admin
     Route::prefix('admin/dashboard')->middleware('admin')->group(function() {

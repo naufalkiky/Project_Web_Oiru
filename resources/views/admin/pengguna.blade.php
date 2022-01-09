@@ -17,20 +17,26 @@
                     <thead>
                     <tr>
                         <th scope="col">ID</th>
-                        <th scope="col">Nama</th>
                         <th scope="col">Email</th>
+                        <th scope="col">No Hp</th>
                         <th scope="col">Alamat</th>
-                        <th scope="col">BagePoints</th>
+                        <th scope="col">Status</th>
                     </tr>
                     </thead>
                     <tbody>
                     @foreach ($users as $user)
                         <tr>
                             <th scope="row">{{ $user->id }}</th>
-                            <td>{{ $user->name }}</td>
                             <td>{{ $user->email }}</td>
+                            <td>{{ $user->no_hp }}</td>
                             <td>{{ $user->address }}</td>
-                            <td>{{ $user->bage_points }}</td>
+                            <td>
+                                @if ($user->isAdmin == 1)
+                                    Admin
+                                @else
+                                    Pengguna
+                                @endif
+                            </td>
                         </tr>
                     @endforeach
                     </tbody>

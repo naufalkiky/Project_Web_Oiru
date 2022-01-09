@@ -22,7 +22,7 @@
     </div>
     <div class="container mt-3 mx-auto py-3 mb-5">
         <div class="row justify-content-between align-items-start">
-            <div class="col-lg-6 pe-0 pe-lg-4">
+            <div class="col-lg-6 pe-auto pe-lg-4">
                 <div class="card mb-4">
                     <div class="card-body">
                         <p class="fw-bold">📊 Kelola Data Transaksi</p>
@@ -47,10 +47,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 ps-0 ps-lg-4">
+            <div class="col-lg-6 ps-auto ps-lg-4">
                 <div class="card mb-4">
                     <div class="card-body">
-                        <p class="fw-bold">👨🏻‍🦱 Lihat Data Pengguna BarterBage</p>
+                        <p class="fw-bold">👨🏻‍🦱 Lihat dan Perbarui Data Pengguna BarterBage</p>
                         <div class="container border-top pt-3 mb-4">
                             <div class="d-md-flex d-block justify-content-between align-items-center ">
                                 <div class="div">

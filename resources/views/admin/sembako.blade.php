@@ -37,30 +37,6 @@
                                 <a class="btn btn-danger btn-action" href="" data-bs-toggle="modal" data-bs-target="#deleteModal">Hapus</a>
                             </td>
                         </tr>
-                        <!-- detail modal -->
-                        <div class="modal fade" id="detailModal" tabindex="-1" aria-labelledby="detailModal" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title fw-bold" id="detailModalLabel">{{ $item->name }}</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p class="fw-bold">ID Sembako :</p>
-                                        <p>{{ $item->id }}</p>
-                                        <p class="fw-bold">Nama Sembako :</p>
-                                        <p>{{ $item->name }}</p>
-                                        <p class="fw-bold">Bage Points :</p>
-                                        <p>{{ $item->bage_points }}</p>
-                                        <p class="fw-bold">Deskripsi :</p>
-                                        <p>{{ $item->description }}</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     @endforeach
                     </tbody>
                 </table>

@@ -6,19 +6,9 @@
     <div class="row align-items-center justify-content-between mb-5 mt-3">
         <div class="col-md-5">
             <h2 class="fw-bold">Masukkan Data Sampah</h2>
-            <p class="mb-4 opacity-75">Masukkan jenis, total berat dan gambar sampah yang ingin anda tukarkan. Klik <a class="fw-bold text-decoration-none" href="#" style="color:#36572A" data-bs-toggle="modal" data-bs-target="#helpModal">disini</a> untuk panduan dan informasi penukaran.</p>
+            <p class="mb-4">Masukkan jenis, total berat dan gambar sampah yang ingin anda tukarkan. Klik <a class="fw-bold text-decoration-none" href="#" style="color:#36572A" data-bs-toggle="modal" data-bs-target="#helpModal">disini</a> untuk panduan dan informasi penukaran.</p>
             <form action="" method="post">
                 @csrf
-                <div class="mb-3">
-                    <label for="garbage_type" class="form-label fw-bold">Jenis Sampah (non-organik)</label>
-                    <select class="form-select" aria-label="Default select example" name="garbage_type" id="garbage_type">
-                        <option selected disabled>-- Pilih Jenis Sampah --</option>
-                        <option value="Kertas">Kertas</option>
-                        <option value="Plastik">Plastik</option>
-                        <option value="Kaleng">Kaleng</option>
-                        <option value="Kain">Kain</option>
-                    </select>
-                </div>
                 <div class="mb-3">
                     <label for="weight" class="form-label fw-bold">Berat</label>
                     <div class="input-group">
@@ -29,7 +19,7 @@
                 <div class="mb-3">
                     <label for="address" class="form-label fw-bold">Alamat</label>
                     <div class="input-group">
-                        <input type="text" class="form-control" name="address" id="address" placeholder="Contoh: Jl. Sesama No. 21, Jakarta Selatan" required>
+                        <input type="text" class="form-control" name="address" id="address" value="{{ Auth::user()->address }}" required>
                     </div>
                 </div>
                 <div class="mb-4">

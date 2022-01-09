@@ -34,7 +34,7 @@
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                             @if (Auth::user()->isAdmin == true)
-                                <li><a class="dropdown-item" href="{{ Route('admin') }}">Dashboard</a></li>
+                                <li><a class="dropdown-item" href="/admin/dashboard">Dashboard</a></li>
                                 <li>
                                     <form action="{{ Route('logout') }}" method="post">
                                         @csrf
@@ -42,8 +42,7 @@
                                     </form>
                                 </li>
                             @else
-                                <li><a class="dropdown-item" href="{{ Route('user') }}">Dashboard</a></li>
-                                <li><a class="dropdown-item" href="profil/user/{{ Auth::user()->id }}">Profil Saya</a></li>
+                                <li><a class="dropdown-item" href="/user/dashboard/{{ Auth::user()->id }}">Dashboard</a></li>
                                 <hr class="dropdown-divider">
                                 <li>
                                     <form action="{{ Route('logout') }}" method="post">

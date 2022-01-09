@@ -10,7 +10,7 @@ class SembakoController extends Controller
 {
     public function index()
     {
-        $groceries = DB::table('groceries')->paginate(5);
+        $groceries = DB::table('groceries')->paginate(10);
         return view('admin.sembako', [
             'groceries' => $groceries
         ]);

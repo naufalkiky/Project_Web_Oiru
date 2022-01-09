@@ -50,10 +50,6 @@
     width: 450px;
 }
 
-.middle-home:hover {
-    background-color: rgb(236, 236, 236);
-}
-
 .auth-form, .card-form {
     width: 32rem;
 }
