@@ -2,20 +2,18 @@
 <html lang="en">
 <head>
     @include('includes.meta')
-    <title>@yield('title') | Admin</title>
+    <title>@yield('title') | BarterBage</title>
 
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
 
 </head>
 <body class="d-flex flex-column min-vh-100">
-    @include('includes.admin_header')
+    @include('includes.header')
     
-    <div class="container mt-3 mx-auto py-3 mb-5">
-        @yield('admin_content')
-    </div>
+        @yield('content')
 
-    @include('includes.admin_footer')
+    @include('includes.dashboard_footer')
 
     <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
 </body>

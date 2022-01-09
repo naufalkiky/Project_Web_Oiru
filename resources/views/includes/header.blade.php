@@ -35,8 +35,15 @@
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                             @if (Auth::user()->isAdmin == true)
                                 <li><a class="dropdown-item" href="{{ Route('admin') }}">Dashboard</a></li>
+                                <li>
+                                    <form action="{{ Route('logout') }}" method="post">
+                                        @csrf
+                                        <button type="submit" class="dropdown-item">Logout</button>
+                                    </form>
+                                </li>
                             @else
-                                <li><a class="dropdown-item" href="#">Edit Profil</a></li>
+                                <li><a class="dropdown-item" href="{{ Route('user') }}">Dashboard</a></li>
+                                <li><a class="dropdown-item" href="profil/user/{{ Auth::user()->id }}">Profil Saya</a></li>
                                 <hr class="dropdown-divider">
                                 <li>
                                     <form action="{{ Route('logout') }}" method="post">

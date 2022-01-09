@@ -12,12 +12,20 @@
     background-color: #36572A;
 }
 
+.barter-bage-color-darker {
+    background-color: #2b501e;
+}
+
 .barter-bage-color-text, .title-cta span {
     color: #36572A;
 }
 
 .barter-bage-color:hover {
     background-color: #2b501e;
+}
+
+.barter-bage-color-darker:hover {
+    background-color: #244218;
 }
 
 .navbar .btn-hover, .navbar .barter-bage-color {
@@ -63,6 +71,24 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     padding-left: 16px;
 }
 
+.dashboard-jumbotron {
+    background-color: #36572A;
+    background-image: url('../../assets/img/icon/dashboard-background.png');
+    background-repeat: no-repeat;
+}
+
+.pagination a {
+    color: black;
+}
+
+.pagination a:hover {
+    color: black;
+}
+
+.pagination .active {
+    background-color: #36572A;
+}
+
 @media screen and (max-width: 992px) {
     .left-side, .right-side {
         width: 100%;
@@ -72,6 +98,15 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
     .card-sembako {
         margin-top: 16px;
+    }
+
+    .btn-action {
+        text-align: center;
+        width: 100%;
+    }
+
+    .btn-warning.btn-action, .btn-secondary.btn-action {
+        margin-bottom: 8px;
     }
 }
 
@@ -109,14 +144,5 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
     .top-footer .col-md-2 {
         margin-top: 16px;
-    }
-
-    .btn-action {
-        text-align: center;
-        width: 100%;
-    }
-
-    .btn-warning.btn-action, .btn-secondary.btn-action {
-        margin-bottom: 8px;
     }
 }
