@@ -13,10 +13,10 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                         <li>
-                            <a class="dropdown-item" href="{{ Route('penukaran-sampah') }}">Sampah</a>
+                            <a class="dropdown-item" href="{{ Route('penukaran-sampah') }}">🗑️ Sampah</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="{{ Route('penukaran-sembako') }}">Sembako</a>
+                            <a class="dropdown-item" href="{{ Route('penukaran-sembako') }}">🛍️ Sembako</a>
                         </li>
                     </ul>
                 </div>

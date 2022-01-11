@@ -15,7 +15,7 @@ class CreateGroceriesTable extends Migration
     {
         Schema::create('groceries', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('package_name');
             $table->integer('bage_points');
             $table->string('image_groceries');
             $table->string('description', 550);

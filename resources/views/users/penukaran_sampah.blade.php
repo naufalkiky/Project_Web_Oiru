@@ -12,7 +12,7 @@
                 <div class="mb-3">
                     <label for="weight" class="form-label fw-bold">Berat</label>
                     <div class="input-group">
-                        <input type="number" class="form-control" name="weight" id="weight" placeholder="Total berat sampah dalam satuan kilogram" required>
+                        <input type="number" class="form-control" name="weight" id="weight" min="1" placeholder="Total berat sampah dalam satuan kilogram" required>
                         <div class="input-group-text">Kg</div>
                     </div>
                 </div>

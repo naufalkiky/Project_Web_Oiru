@@ -10,7 +10,7 @@ class Groceries extends Model
     use HasFactory;
 
     protected $fillable = [
-        'name',
+        'package_name',
         'bage_points',
         'image_groceries',
         'description'

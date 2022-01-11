@@ -30,7 +30,7 @@
                             <div class="d-md-flex d-block justify-content-between align-items-center ">
                                 <div class="div">
                                     <small class="fw-bold">Data Sembako 📦</small>
-                                    <p class="card-text mt-1">Data sembako yang tersedia</p>
+                                    <p class="card-text mt-1">Data paket sembako yang tersedia</p>
                                 </div>
                                 <a href="{{ Route('admin.data-sembako') }}" class="btn barter-bage-color-darker text-white">Lihat Data</a>
                             </div>
@@ -50,7 +50,7 @@
             <div class="col-lg-6 ps-auto ps-lg-4">
                 <div class="card mb-4">
                     <div class="card-body">
-                        <p class="fw-bold">👨🏻‍🦱 Lihat dan Perbarui Data Pengguna BarterBage</p>
+                        <p class="fw-bold">👨🏻‍🦱 Lihat Data Pengguna BarterBage</p>
                         <div class="container border-top pt-3 mb-4">
                             <div class="d-md-flex d-block justify-content-between align-items-center ">
                                 <div class="div">

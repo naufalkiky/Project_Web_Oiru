@@ -12,9 +12,9 @@
                 <form action="" method="post" enctype="multipart/form-data">
                     @csrf
                     <div class="mb-3">
-                        <label for="name" class="form-label fw-bold">Nama Sembako</label>
+                        <label for="package_name" class="form-label fw-bold">Nama Paket</label>
                         <div class="input-group">
-                            <input type="text" class="form-control" name="name" id="name" placeholder="Ex: Minyak Goreng" value="{{ $item->name }}">
+                            <input type="text" class="form-control" name="package_name" id="package_name" placeholder="Ex: Paket X" value="{{ $item->package_name }}">
                         </div>
                         @error('name')
                             <div class="text-danger mt-2">
@@ -25,7 +25,7 @@
                     <div class="mb-3">
                         <label for="bage_points" class="form-label fw-bold">Jumlah Point</label>
                         <div class="input-group">
-                            <input type="number" class="form-control" name="bage_points" id="bage_points" placeholder="Ex: 200" value="{{ $item->bage_points }}">
+                            <input type="number" class="form-control" name="bage_points" id="bage_points" placeholder="Ex: 200" value="{{ $item->bage_points }}" min="1">
                         </div>
                         @error('bage_points')
                             <div class="text-danger mt-2">

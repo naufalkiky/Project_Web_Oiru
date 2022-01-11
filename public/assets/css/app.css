@@ -63,6 +63,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     padding-right: 16px;
 }
 
+.card-img-top {
+    width: 100%;
+}
+
 .right-side {
     padding-left: 16px;
 }

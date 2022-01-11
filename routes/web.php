@@ -32,6 +32,7 @@ Route::get('tentang-kami', [HomeController::class, 'about']);
 
 Route::get('penukaran-sampah', [PenukaranSampahController::class, 'create'])->name('penukaran-sampah')->middleware('auth'); // perlu melakukan authentikasi
 Route::get('penukaran-sembako', [PenukaranSembakoController::class, 'create'])->name('penukaran-sembako');
+Route::get('penukaran-sembako/search', [PenukaranSembakoController::class, 'search']);
 
 // route authentikasi
 // middleware guest -> ketika user sudah login tidak akan bisa masuk ke halaman login/register lagi
