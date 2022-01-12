@@ -22,7 +22,7 @@
             <form action="/penukaran-sembako/search" method="get" class="d-flex">
                 @csrf
                 <div class="input-group mb-2 shadow">
-                    <input type="text" class="form-control" placeholder="Cari nama paket/produk.." name="search" value="{{ old('search') }}">
+                    <input type="text" class="form-control" placeholder="Cari nama paket/produk.." name="search" value="{{ request('search') }}">
                     <button class="btn btn-secondary" type="submit">Cari</button>
                 </div>
             </form>

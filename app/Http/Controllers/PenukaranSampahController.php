@@ -19,14 +19,13 @@ class PenukaranSampahController extends Controller
             'garbage_weight' => ['required', 'min:1'],
             'address' => ['required'],
             'image_garbage' => ['required', 'image', 'mimes:png,jpg,jpeg,gif,svg,PNG,JPG,JPEG', 'max:2048'],
-            'note' => ['required'],
         ]);
 
         $image = time().'.'.$request->image_garbage->extension();
         $request->image_garbage->move(public_path('assets/img/garbages'), $image);
 
         Garbage::create([
-            'user_id' => $request->user_id,
+            'user_id' => Auth()->user()->id,
             'garbage_weight' => $request->garbage_weight,
             'address' => $request->address,
             'image_garbage' => $image,

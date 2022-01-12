@@ -31,18 +31,28 @@
                 <div class="card mb-4">
                     <div class="card-body">
                         <p class="fw-bold">🕰️ Riwayat Transaksi Penukaran Sampah</p>
-                        <div class="container border-top pt-3 mb-2 mt-3">
-                            <div class="d-md-flex d-block justify-content-between align-items-center mb-4">
-                                <div>
-                                    <small class="fw-bold">ID Penukaran Sampah</small>
-                                    <br>
-                                    <small class="fw-bold">Tanggal</small>
+                        @if (!$garbages->isEmpty())
+                            @foreach ($garbages as $garbage)
+                                <div class="container border-top pt-3 mb-2 mt-3">
+                                    <div class="d-md-flex d-block justify-content-between align-items-center mb-2">
+                                        <div>
+                                            <small>ID Penukaran: <span class="fw-bold">{{ $garbage->id }}</span></small>
+                                            <br>
+                                            <small>Waktu Penukaran: <span class="fw-bold">{{ $garbage->created_at }}</span></small>
+                                        </div>
+                                        <small class="text-danger">{{ $garbage->status }}</small>
+                                    </div>
+                                    <a class="btn-link" href="#">Lihat Detail</a>
                                 </div>
-                                <small class="text-danger">Belum diverifikasi</small>
-                            </div>
-                            <a class="btn-link" href="#">Lihat Detail</a>
-                        </div>
+                                @endforeach
+                                
+                        @else
+                            <small class="py-3"><em>Belum ada riwayat penukaran sampah</em></small>
+                        @endif
                     </div>
+                </div>
+                <div class="pagination mt-3 text-center justify-content-start">
+                    {{ $garbages->links() }}
                 </div>
                 
                 {{-- riwayat penukaran sembako --}}
@@ -52,7 +62,7 @@
                         <div class="container border-top pt-3 mb-2 mt-3">
                             <div class="d-md-flex d-block justify-content-between align-items-center mb-4">
                                 <div>
-                                    <small class="fw-bold">ID Penukaran Sembako</small>
+                                    <small class="fw-bold">ID Penukaran</small>
                                     <br>
                                     <small class="fw-bold">Tanggal</small>
                                 </div>

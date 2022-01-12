@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Carbon;
 
 class Garbage extends Model
 {
@@ -14,13 +15,13 @@ class Garbage extends Model
         'user_id',
         'garbage_weight',
         'address',
-        'garbage_image',
+        'image_garbage',
         'note',
         'status'
     ];
 
-    public function users()
+    public function getCreatedAtAttribute()
     {
-        return $this->belongsTo(User::class, 'user_id', 'id');
+        return Carbon::parse($this->attributes['created_at'])->translatedFormat('d F Y');
     }
 }

@@ -55,6 +55,8 @@ Route::middleware('auth')->group(function() {
     Route::get('user/dashboard/{id}', [UserDashboardController::class, 'index'])->name('user');
     Route::post('user/dashboard/{id}', [UserDashboardController::class, 'update'])->name('user');
 
+    Route::get('detail-transaksi/{id}');
+
     // route admin
     Route::prefix('admin/dashboard')->middleware('admin')->group(function() {
         Route::get('/', [AdminDashboardController::class, 'index'])->name('admin');
@@ -69,7 +71,7 @@ Route::middleware('auth')->group(function() {
         
         Route::get('transaksi-sampah', [TransaksiSampahController::class, 'index'])->name('admin.transaksi-sampah');
         Route::get('update-sampah/{id}', [TransaksiSampahController::class, 'edit']);
-        
+
         Route::get('transaksi-sembako', [TransaksiSembakoController::class, 'index'])->name('admin.transaksi-sembako');
     });
 
