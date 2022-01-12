@@ -27,6 +27,11 @@ class User extends Authenticatable
         'isAdmin'
     ];
 
+    public function garbages()
+    {
+        return $this->hasMany(Garbage::class);
+    }
+
     /**
      * The attributes that should be hidden for serialization.
      *
