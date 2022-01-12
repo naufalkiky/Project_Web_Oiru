@@ -10,11 +10,10 @@
             <table class="table align-middle">
                 <thead>
                 <tr>
-                    <th scope="col">No</th>
+                    <th scope="col">ID Sampah</th>
                     <th scope="col">ID Pengguna</th>
-                    <th scope="col">Jenis Sampah</th>
+                    <th scope="col">Berat</th>
                     <th scope="col">Tanggal</th>
-                    <th scope="col">Bage Points</th>
                     <th scope="col">Status</th>
                     <th scope="col">Aksi</th>
                 </tr>
@@ -26,9 +25,8 @@
                     <td>Otto</td>
                     <td>@mdo</td>
                     <td>@mdo</td>
-                    <td>@mdo</td>
                     <td>
-                        <a class="btn btn-warning btn-action" href="">Update</a>
+                        <a class="btn btn-warning btn-action" href="">Detail & Update</a>
                         <a class="btn btn-danger btn-action" href="">Hapus</a>
                     </td>
                 </tr>

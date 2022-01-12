@@ -30,13 +30,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index']);
 Route::get('tentang-kami', [HomeController::class, 'about']);
 
-Route::get('penukaran-sampah', [PenukaranSampahController::class, 'create'])->name('penukaran-sampah')->middleware('auth'); // perlu melakukan authentikasi
 Route::get('penukaran-sembako', [PenukaranSembakoController::class, 'create'])->name('penukaran-sembako');
 Route::get('penukaran-sembako/search', [PenukaranSembakoController::class, 'search']);
 
-// route authentikasi
 // middleware guest -> ketika user sudah login tidak akan bisa masuk ke halaman login/register lagi
 Route::middleware('guest')->group(function() {
+    
+    // authentikasi    
     Route::get('register', [RegisterController::class, 'create'])->name('register');
     Route::post('register', [RegisterController::class, 'store'])->name('register');
     
@@ -47,6 +47,10 @@ Route::middleware('guest')->group(function() {
 // perlu melakukan authentikasi
 Route::middleware('auth')->group(function() {
     
+    // penukaran sampah
+    Route::get('penukaran-sampah', [PenukaranSampahController::class, 'create'])->name('penukaran-sampah');
+    Route::post('penukaran-sampah',  [PenukaranSampahController::class, 'store'])->name('penukaran-sampah');
+
     // route user
     Route::get('user/dashboard/{id}', [UserDashboardController::class, 'index'])->name('user');
     Route::post('user/dashboard/{id}', [UserDashboardController::class, 'update'])->name('user');
@@ -58,12 +62,14 @@ Route::middleware('auth')->group(function() {
         
         Route::get('data-sembako', [SembakoController::class, 'index'])->name('admin.data-sembako');
         Route::get('tambah-sembako', [SembakoController::class, 'create'])->name('admin.tambah-sembako');
-        Route::post('tambah-sembako', [SembakoController::class, 'store'])->name('admin.tambah-sembako');;
-        Route::get('update-sembako/{id}', [SembakoController::class, 'edit'])->name('admin.update-sembako');;
-        Route::post('update-sembako/{id}', [SembakoController::class, 'update'])->name('admin.update-sembako');
-        Route::post('delete-sembako/{id}', [SembakoController::class, 'delete'])->name('admin.delete-sembako');
+        Route::post('tambah-sembako', [SembakoController::class, 'store'])->name('admin.tambah-sembako');
+        Route::get('update-sembako/{id}', [SembakoController::class, 'edit']);
+        Route::post('update-sembako/{id}', [SembakoController::class, 'update']);
+        Route::post('delete-sembako/{id}', [SembakoController::class, 'delete']);
         
         Route::get('transaksi-sampah', [TransaksiSampahController::class, 'index'])->name('admin.transaksi-sampah');
+        Route::get('update-sampah/{id}', [TransaksiSampahController::class, 'edit']);
+        
         Route::get('transaksi-sembako', [TransaksiSembakoController::class, 'index'])->name('admin.transaksi-sembako');
     });
 

@@ -26,20 +26,43 @@
     <div class="container mt-3 mx-auto py-3 mb-5">
         <div class="row justify-content-between align-items-start">
             <div class="col-lg-6 pe-auto pe-lg-4">
+                
+                {{-- riwayat penukaran sampah --}}
                 <div class="card mb-4">
                     <div class="card-body">
-                        <p class="fw-bold">🕰️ Riwayat Transaksi</p>
-                        <div class="container border-top pt-3 mb-2">
-                            <div class="d-md-flex d-block justify-content-between align-items-center ">
-                                <div class="div">
-                                    <small class="fw-bold">Data Sembako 📦</small>
-                                    <p class="card-text mt-1">Data sembako yang tersedia</p>
+                        <p class="fw-bold">🕰️ Riwayat Transaksi Penukaran Sampah</p>
+                        <div class="container border-top pt-3 mb-2 mt-3">
+                            <div class="d-md-flex d-block justify-content-between align-items-center mb-4">
+                                <div>
+                                    <small class="fw-bold">ID Penukaran Sampah</small>
+                                    <br>
+                                    <small class="fw-bold">Tanggal</small>
                                 </div>
-                                <a href="{{ Route('admin.data-sembako') }}" class="btn barter-bage-color-darker text-white">Lihat Data</a>
+                                <small class="text-danger">Belum diverifikasi</small>
                             </div>
+                            <a class="btn-link" href="#">Lihat Detail</a>
                         </div>
                     </div>
                 </div>
+                
+                {{-- riwayat penukaran sembako --}}
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <p class="fw-bold">🕰️ Riwayat Transaksi Penukaran Sembako</p>
+                        <div class="container border-top pt-3 mb-2 mt-3">
+                            <div class="d-md-flex d-block justify-content-between align-items-center mb-4">
+                                <div>
+                                    <small class="fw-bold">ID Penukaran Sembako</small>
+                                    <br>
+                                    <small class="fw-bold">Tanggal</small>
+                                </div>
+                                <small class="text-success">Dalam pengemasan</small>
+                            </div>
+                            <a class="btn-link" href="#">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div class="col-lg-6 ps-auto ps-lg-4">
                 @if (session()->has('success'))

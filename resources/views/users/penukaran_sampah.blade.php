@@ -6,15 +6,20 @@
     <div class="row align-items-center justify-content-between mb-5 mt-3">
         <div class="col-md-5">
             <h2 class="fw-bold">Masukkan Data Sampah</h2>
-            <p class="mb-4">Masukkan jenis, total berat dan gambar sampah yang ingin anda tukarkan. Klik <a class="fw-bold text-decoration-none" href="#" style="color:#36572A" data-bs-toggle="modal" data-bs-target="#helpModal">disini</a> untuk panduan dan informasi penukaran.</p>
-            <form action="" method="post">
+            <p class="mb-4">Masukkan total berat, alamat dan gambar sampah untuk melakukan penukaran sampah. Klik <a class="fw-bold text-decoration-none" href="#" style="color:#36572A" data-bs-toggle="modal" data-bs-target="#helpModal">disini</a> untuk panduan dan informasi penukaran.</p>
+            <form action="{{ Route('penukaran-sampah') }}" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="mb-3">
-                    <label for="weight" class="form-label fw-bold">Berat</label>
+                    <label for="garbage_weight" class="form-label fw-bold">Berat</label>
                     <div class="input-group">
-                        <input type="number" class="form-control" name="weight" id="weight" min="1" placeholder="Total berat sampah dalam satuan kilogram" required>
+                        <input type="number" class="form-control" name="garbage_weight" id="garbage_weight" min="1" placeholder="Total berat sampah dalam satuan kilogram" value="{{ old('weight') }}" required>
                         <div class="input-group-text">Kg</div>
                     </div>
+                    @error('weight')
+                        <div class="text-danger mt-2">
+                            {{ $message }}
+                        </div>
+                    @enderror
                 </div>
                 <div class="mb-3">
                     <label for="address" class="form-label fw-bold">Alamat</label>
@@ -22,9 +27,22 @@
                         <input type="text" class="form-control" name="address" id="address" value="{{ Auth::user()->address }}" required>
                     </div>
                 </div>
+                <div class="mb-3">
+                    <label for="image_garbage" class="form-label fw-bold">Gambar</label>
+                    <div class="input-group">
+                        <input type="file" class="form-control" name="image_garbage" id="image_garbage">
+                    </div>
+                    @error('image_garbage')
+                        <div class="text-danger mt-2">
+                            {{ $message }}
+                        </div>
+                    @enderror
+                </div>
                 <div class="mb-4">
-                    <label for="image" class="form-label fw-bold">Gambar</label>
-                    <input type="file" class="form-control" name="image" id="image">
+                    <label for="note" class="form-label fw-bold">Catatan Tambahan</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="note" id="note" value="{{ old('note') }}" placeholder="Catatan tambahan, boleh diisi atau ngga..">
+                    </div>
                 </div>
                 <div class="mb-4">
                     <button type="submit" class="btn barter-bage-color text-white w-100" style="padding-top: 8px; padding-bottom: 8px;">Input Data Sampah</button>

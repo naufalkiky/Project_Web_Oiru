@@ -55,7 +55,7 @@
                         <div class="modal-footer">
                             <form action="delete-sembako/{{ $package->id }}" method="post">
                                 @csrf
-                                <a href="" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</a>
+                                <a href="" class="btn btn-secondary" data-bs-dismiss="modal">Batal</a>
                                 <button type="submit" class="btn btn-danger">Hapus</button>
                             </form>
                         </div>
