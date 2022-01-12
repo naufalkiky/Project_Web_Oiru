@@ -42,7 +42,7 @@
                                         <div class="">🪙{{ $package->bage_points }}</div>
                                     </div>
                                     <div class="col-12 col-lg-6">
-                                        <a href="#" class="btn barter-bage-color text-white w-100"><small>Tukarkan 👉🏻</small></a>
+                                        <a href="#" class="btn barter-bage-color text-white w-100"><small>Tukarkan</small></a>
                                     </div>
                                 </div>
                             </div>

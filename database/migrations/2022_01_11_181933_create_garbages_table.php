@@ -20,7 +20,7 @@ class CreateGarbagesTable extends Migration
             $table->integer('garbage_weight');
             $table->string('address');
             $table->string('image_garbage');
-            $table->string('note');
+            $table->string('note')->default('');
             $table->string('status')->default('Belum diverifikasi');
             $table->timestamps();
         });

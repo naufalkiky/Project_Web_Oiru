@@ -70,7 +70,7 @@ Route::middleware('auth')->group(function() {
         Route::post('delete-sembako/{id}', [SembakoController::class, 'delete']);
         
         Route::get('transaksi-sampah', [TransaksiSampahController::class, 'index'])->name('admin.transaksi-sampah');
-        Route::get('update-sampah/{id}', [TransaksiSampahController::class, 'edit']);
+        Route::get('detail-sampah/{id}', [TransaksiSampahController::class, 'edit']);
 
         Route::get('transaksi-sembako', [TransaksiSembakoController::class, 'index'])->name('admin.transaksi-sembako');
     });

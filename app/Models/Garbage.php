@@ -20,6 +20,11 @@ class Garbage extends Model
         'status'
     ];
 
+    public function users()
+    {
+        return $this->belongsTo(User::class, 'user_id');
+    }
+
     public function getCreatedAtAttribute()
     {
         return Carbon::parse($this->attributes['created_at'])->translatedFormat('d F Y');
