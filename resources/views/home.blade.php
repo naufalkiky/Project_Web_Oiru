@@ -33,7 +33,7 @@
                 <p>Penukaran sampah diproses dengan cepat oleh admin kami untuk pengalaman terbaik anda.</p>
             </div>
             <div class="col-12 col-sm-4 text-center p-4">
-                <h1>🪙</h1>
+                <img src="/assets/img/icon/coin.png" alt="" width="20">
                 <h5 class="fw-bold barter-bage-color-text">Bage Points</h5>
                 <p>Hasil penukaran berupa point yang dapat digunakan untuk ditukarkan dengan paket sembako yang tersedia.</p>
             </div>
