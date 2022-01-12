@@ -28,7 +28,7 @@
         </div>
         <div class="row justify-content-between">
             <div class="col-12 col-sm-4 text-center p-4">
-                <img class="mb-3" src="/assets/img/icon/sandclock.png" alt="" width="40">
+                <img class="mb-2" src="/assets/img/icon/sandclock.png" alt="" width="35">
                 <h5 class="fw-bold barter-bage-color-text">Tukar Cepat</h5>
                 <p>Penukaran sampah diproses dengan cepat oleh admin kami untuk pengalaman terbaik anda.</p>
             </div>
@@ -38,7 +38,7 @@
                 <p>Hasil penukaran berupa point yang dapat digunakan untuk ditukarkan dengan paket sembako yang tersedia.</p>
             </div>
             <div class="col-12 col-sm-4 text-center p-4">
-                <h1>🚚</h1>
+            <img class="mb-4" src="/assets/img/icon/truck.png" alt="" width="95">
                 <h5 class="fw-bold barter-bage-color-text">Bank Sampah</h5>
                 <p>Terintegrasi dengan bank sampah terdekat untuk pendistribusian dan pengelolaan sampah.</p>
             </div>
