@@ -3,6 +3,12 @@
 @section('title', 'Tukar Sampah')
 
 @section('content')
+    @if (session()->has('success'))
+        <div class="alert alert-success alert-dismissible fade show mb-2" role="alert">
+            {{ session()->get('success') }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    @endif
     <div class="row align-items-center justify-content-between mb-5 mt-3">
         <div class="col-md-5">
             <h2 class="fw-bold">Masukkan Data Sampah</h2>

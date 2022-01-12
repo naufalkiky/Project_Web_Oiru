@@ -32,6 +32,6 @@ class PenukaranSampahController extends Controller
             'note' => $request->note
         ]);
 
-        return redirect('users/dashboard/{id}')->with('Penukaran berhasil!, silahkan pantau status penukaran anda');
+        return redirect('penukaran-sampah')->with('success', 'Penukaran berhasil!, silahkan pantau status penukaran anda di dashboard');
     }
 }
