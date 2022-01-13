@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-light bg-transparant border-bottom py-2">
+<nav class="navbar navbar-expand-lg navbar-light bg-transparant border-bottom py-2">
     <div class="container align-items-center">
         <a class="navbar-brand fw-bold" href="/"><img src="{{ asset('assets/img/logo/barter-bage-horizontal.svg') }}" alt="logo-navbar" width="180"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
