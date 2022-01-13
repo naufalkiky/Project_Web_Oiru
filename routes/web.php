@@ -71,6 +71,7 @@ Route::middleware('auth')->group(function() {
         
         Route::get('transaksi-sampah', [TransaksiSampahController::class, 'index'])->name('admin.transaksi-sampah');
         Route::get('detail-sampah/{id}', [TransaksiSampahController::class, 'edit']);
+        Route::post('detail-sampah/{id}', [TransaksiSampahController::class, 'update']);
 
         Route::get('transaksi-sembako', [TransaksiSembakoController::class, 'index'])->name('admin.transaksi-sembako');
     });

@@ -12,7 +12,7 @@
                     <p class="card-text fw-bold">BagePoints 🪙</p>
                     <div class="container border rounded p-2">
                         <div class="d-md-flex d-block justify-content-between align-items-center ">
-                            <p class="mb-2 mb-md-0">BagePoints kamu saat ini: {{ Auth::user()->bage_points }}</p>
+                            <p class="mb-2 mb-md-0">BagePoints kamu saat ini: <span class="fw-bold">{{ Auth::user()->bage_points }}</span></p>
                             <div>
                                 <a href="{{ Route('penukaran-sampah') }}" class="btn barter-bage-color-darker text-white mb-2 mb-sm-0">Tukar Sampah</a>
                                 <a href="{{ Route('penukaran-sembako') }}" class="btn barter-bage-color-darker text-white">Tukar Sembako</a>
@@ -39,13 +39,20 @@
                                             <small>ID Penukaran: <span class="fw-bold">{{ $garbage->id }}</span></small>
                                             <br>
                                             <small>Waktu Penukaran: <span class="fw-bold">{{ $garbage->created_at }}</span></small>
+                                            <br>
+                                            <small>Berat Sampah: <span class="fw-bold">{{ $garbage->garbage_weight }}</span>Kg</small>
                                         </div>
-                                        <small class="text-danger">{{ $garbage->status }}</small>
+                                        @if ($garbage->status == 'Berhasil')
+                                            <small class="text-success fw-bold">{{ $garbage->status }}</small>        
+                                        @elseif ($garbage->status == 'Dalam penjemputan')
+                                            <small class="text-secondary fw-bold">{{ $garbage->status }}</small>
+                                        @else
+                                            <small class="text-danger fw-bold">{{ $garbage->status }}</small>
+                                        @endif
                                     </div>
                                     <a class="btn-link" href="#">Lihat Detail</a>
                                 </div>
-                                @endforeach
-                                
+                            @endforeach 
                         @else
                             <small class="py-3"><em>Belum ada riwayat penukaran sampah</em></small>
                         @endif
