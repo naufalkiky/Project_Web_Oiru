@@ -3,7 +3,7 @@
         <div class="col-12 col-md-4">
             <a href="/"><img src="{{ asset('assets/img/logo/barter-bage-horizontal.svg') }}" alt="logo-footer" width="250" class="mb-3"></a>
             <p class="d-block mb-3 text-muted">Tukarkan sampah non-organik mu dengan mudah hanya di BarterBage.</p>
-            <a href="#" class="btn barter-bage-color text-white">Kontak Kami</a>
+            <a href="https://linktr.ee/aniko2001" target="_blank" class="btn barter-bage-color text-white">Kontak Kami</a>
         </div>
         <div class="col-12 col-md-2"></div>
         <div class="col-6 col-md-2">
