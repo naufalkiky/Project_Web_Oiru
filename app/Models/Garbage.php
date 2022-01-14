@@ -27,6 +27,6 @@ class Garbage extends Model
 
     public function getCreatedAtAttribute()
     {
-        return Carbon::parse($this->attributes['created_at'])->translatedFormat('d F Y');
+        return Carbon::parse($this->attributes['created_at'])->translatedFormat('d M Y, H:i');
     }
 }

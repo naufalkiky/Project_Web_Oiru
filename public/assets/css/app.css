@@ -20,6 +20,10 @@
     color: #36572A;
 }
 
+.btn-link:hover {
+    color: #0d6efd;
+}
+
 .barter-bage-color:hover {
     background-color: #2b501e;
 }
@@ -97,6 +101,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     background-color: #36572A;
 }
 
+.detail-btn {
+    width: 50%;
+}
+
 @media screen and (max-width: 992px) {
     .left-side, .right-side {
         width: 100%;
@@ -152,5 +160,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
     .top-footer .col-md-2 {
         margin-top: 16px;
+    }
+
+    .detail-btn {
+        width: 100%;
     }
 }
