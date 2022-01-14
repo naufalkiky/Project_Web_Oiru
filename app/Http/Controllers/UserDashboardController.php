@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Garbage;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 
 class UserDashboardController extends Controller
@@ -37,5 +39,20 @@ class UserDashboardController extends Controller
         }
 
         return redirect()->back()->with('success', 'Profil anda berhasil diperbarui');
+    }
+
+    public function detail($id)
+    {
+        $garbages = Garbage::where('id', $id)->get();
+
+        foreach($garbages as $garbage) {
+            if ($garbage->user_id === Auth::user()->id) {
+                return view('users.detail_penukaran_sampah', [
+                    'garbages' => $garbages,
+                ]);
+            } else {
+                return abort(404);
+            }
+        }
     }
 }

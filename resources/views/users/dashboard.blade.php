@@ -6,7 +6,7 @@
     <div class="mb-3 py-3 dashboard-jumbotron">
         <div class="container py-3">
             <h2 class="fw-bold mt-4 text-white">Selamat Datang {{ Auth::user()->name }} !</h2>
-            <p class="mb-4  text-white">Semoga kamu dalam keadaan sehat ya.</p>
+            <p class="mb-4 text-white">Semoga kamu dalam keadaan sehat ya.</p>
             <div class="card rounded-lg p-2">
                 <div class="card-body">
                     <p class="card-text fw-bold">BagePoints 🪙</p>
@@ -33,14 +33,14 @@
                         <p class="fw-bold">🕰️ Riwayat Transaksi Penukaran Sampah</p>
                         @if (!$garbages->isEmpty())
                             @foreach ($garbages as $garbage)
-                                <div class="container border-top pt-3 mb-2 mt-3">
+                                <div class="container overflow-auto border-top pt-3 mb-2 mt-3">
                                     <div class="d-md-flex d-block justify-content-between align-items-center mb-2">
                                         <div>
-                                            <small>ID Penukaran: <span class="fw-bold">{{ $garbage->id }}</span></small>
-                                            <br>
-                                            <small>Waktu Penukaran: <span class="fw-bold">{{ $garbage->created_at }}</span></small>
-                                            <br>
-                                            <small>Berat Sampah: <span class="fw-bold">{{ $garbage->garbage_weight }}</span>Kg</small>
+                                            <small>{{ $garbage->created_at }}</small>
+                                            <div class="mt-2">Berat Sampah: <span class="fw-bold">{{ $garbage->garbage_weight }}</span> Kg</div>
+                                            @if ($garbage->status == 'Berhasil')
+                                                <div>Jumlah BagePoint: <span class="fw-bold">{{ $garbage->garbage_weight*50 }}</span></div>
+                                            @endif
                                         </div>
                                         @if ($garbage->status == 'Berhasil')
                                             <small class="text-success fw-bold">{{ $garbage->status }}</small>        
@@ -50,7 +50,7 @@
                                             <small class="text-danger fw-bold">{{ $garbage->status }}</small>
                                         @endif
                                     </div>
-                                    <a class="btn-link" href="#">Lihat Detail</a>
+                                    <a class="btn-link" href="/detail_penukaran_sampah/{{ $garbage->id }}">Lihat detail</a>
                                 </div>
                             @endforeach 
                         @else
@@ -75,7 +75,7 @@
                                 </div>
                                 <small class="text-success">Dalam pengemasan</small>
                             </div>
-                            <a class="btn-link" href="#">Lihat Detail</a>
+                            <a class="btn-link" href="#">Lihat detail</a>
                         </div>
                     </div>
                 </div>
@@ -157,4 +157,16 @@
             </div>
         </div>
     </div>
+    <!-- show/hide password -->
+    <script>
+        function showPassword() {
+            const password = document.getElementById("password")
+            
+            if (password.type == "password") {
+                password.type = "text";
+            } else {
+                password.type = "password";
+            }
+        }
+    </script>
 @endsection

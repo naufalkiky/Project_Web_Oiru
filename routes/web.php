@@ -50,13 +50,14 @@ Route::middleware('auth')->group(function() {
     // penukaran sampah
     Route::get('penukaran-sampah', [PenukaranSampahController::class, 'create'])->name('penukaran-sampah');
     Route::post('penukaran-sampah',  [PenukaranSampahController::class, 'store'])->name('penukaran-sampah');
+    
+    Route::get('detail_penukaran_sampah/{id}', [UserDashboardController::class, 'detail']);
 
     // route user
-    Route::middleware('user.{id}')->group(function() {
+    Route::middleware('user')->group(function() {
         Route::get('user/dashboard/{id}', [UserDashboardController::class, 'index'])->name('user');
         Route::post('user/dashboard/{id}', [UserDashboardController::class, 'update'])->name('user');
     
-        Route::get('detail-transaksi/{id}');
     });
 
     // route admin
