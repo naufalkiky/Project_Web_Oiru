@@ -33,7 +33,7 @@
                             <td>{{ $package->bage_points }}</td>
                             <td>{{ $package->description }}</td>
                             <td>
-                                <a class="btn btn-warning btn-action" href="update-sembako/{{ $package->id }}">Update</a>
+                                <a class="btn btn-secondary btn-action" href="update-sembako/{{ $package->id }}">Detail</a>
                                 <a class="btn btn-danger btn-action" href="" data-bs-toggle="modal" data-bs-target="#deleteModal">Hapus</a>
                             </td>
                         </tr>

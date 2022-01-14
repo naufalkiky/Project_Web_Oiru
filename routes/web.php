@@ -52,10 +52,12 @@ Route::middleware('auth')->group(function() {
     Route::post('penukaran-sampah',  [PenukaranSampahController::class, 'store'])->name('penukaran-sampah');
 
     // route user
-    Route::get('user/dashboard/{id}', [UserDashboardController::class, 'index'])->name('user');
-    Route::post('user/dashboard/{id}', [UserDashboardController::class, 'update'])->name('user');
-
-    Route::get('detail-transaksi/{id}');
+    Route::middleware('user.{id}')->group(function() {
+        Route::get('user/dashboard/{id}', [UserDashboardController::class, 'index'])->name('user');
+        Route::post('user/dashboard/{id}', [UserDashboardController::class, 'update'])->name('user');
+    
+        Route::get('detail-transaksi/{id}');
+    });
 
     // route admin
     Route::prefix('admin/dashboard')->middleware('admin')->group(function() {

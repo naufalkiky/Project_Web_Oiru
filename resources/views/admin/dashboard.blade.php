@@ -25,10 +25,10 @@
             <div class="col-lg-6 pe-auto pe-lg-4">
                 <div class="card mb-4">
                     <div class="card-body">
-                        <p class="fw-bold">📊 Kelola Data Transaksi</p>
+                        <p class="fw-bold">📊 Kelola Data Transaksi Sembako</p>
                         <div class="container border-top pt-3 mb-4">
                             <div class="d-md-flex d-block justify-content-between align-items-center ">
-                                <div class="div">
+                                <div class="mb-2 mb-md-0">
                                     <small class="fw-bold">Data Sembako 📦</small>
                                     <p class="card-text mt-1">Data paket sembako yang tersedia</p>
                                 </div>
@@ -37,7 +37,7 @@
                         </div>
                         <div class="container border-top pt-3">
                             <div class="d-md-flex d-block justify-content-between align-items-center ">
-                                <div class="div">
+                                <div class="mb-2 mb-md-0">
                                     <small class="fw-bold">Data penukaran Sembako 🛍️</small>
                                     <p class="card-text mt-1">Data transaksi penukaran sembako</p>
                                 </div>
@@ -53,7 +53,7 @@
                         <p class="fw-bold">👨🏻‍🦱 Lihat Data Pengguna BarterBage</p>
                         <div class="container border-top pt-3 mb-2">
                             <div class="d-md-flex d-block justify-content-between align-items-center ">
-                                <div class="div">
+                                <div class="mb-2 mb-md-0">
                                     <small class="fw-bold">Data Pengguna 📦</small>
                                     <p class="card-text mt-1">Pengguna cerdas telah memilih BarterBage</p>
                                 </div>
@@ -67,12 +67,12 @@
                         <p class="fw-bold">📈 Statistik BarterBage</p>
                         <div class="container border-top pt-3 mb-2">
                             <div class="d-md-flex d-block justify-content-between align-items-center ">
-                                <div class="div">
-                                    <small>Total berat sampah :<span class="fw-bold"></span></small>
+                                <div>
+                                    <small>Total berat sampah :<span class="fw-bold"></span> Kg</small>
                                     <br>
-                                    <small>Jumlah paket sembako :<span class="fw-bold"></span></small>
+                                    <small>Jumlah paket sembako :<span class="fw-bold"></span> Paket</small>
                                     <br>
-                                    <small>Jumlah user aktif :<span class="fw-bold"></span></small>
+                                    <small>Jumlah pengguna aktif :<span class="fw-bold"></span> Pengguna</small>
                                 </div>
                             </div>
                         </div>
