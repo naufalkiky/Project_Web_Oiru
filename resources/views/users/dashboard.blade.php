@@ -15,7 +15,7 @@
                             <p class="mb-2 mb-md-0">BagePoints kamu saat ini: <span class="fw-bold">{{ Auth::user()->bage_points }}</span></p>
                             <div>
                                 <a href="{{ Route('penukaran-sampah') }}" class="btn barter-bage-color-darker text-white mb-2 mb-sm-0">Tukar Sampah</a>
-                                <a href="{{ Route('penukaran-sembako') }}" class="btn barter-bage-color-darker text-white">Tukar Sembako</a>
+                                <a href="{{ Route('penukaran-sembako') }}" class="btn barter-bage-color-darker text-white mb-2 mb-sm-0">Tukar Sembako</a>
                             </div>
                         </div>
                     </div>
@@ -35,19 +35,19 @@
                             @foreach ($garbages as $garbage)
                                 <div class="container overflow-auto border-top pt-3 mb-2 mt-3">
                                     <div class="d-md-flex d-block justify-content-between align-items-center mb-2">
-                                        <div>
-                                            <small>{{ $garbage->created_at }}</small>
+                                        <div class="mb-2 mb-md-0">
+                                            <small>{{ $garbage->created_at }} WIB</small>
                                             <div class="mt-2">Berat Sampah: <span class="fw-bold">{{ $garbage->garbage_weight }}</span> Kg</div>
                                             @if ($garbage->status == 'Berhasil')
                                                 <div>Jumlah BagePoint: <span class="fw-bold">{{ $garbage->garbage_weight*50 }}</span></div>
                                             @endif
                                         </div>
                                         @if ($garbage->status == 'Berhasil')
-                                            <small class="text-success fw-bold">{{ $garbage->status }}</small>        
+                                            <small class="text-success fw-bold p-1 rounded" style="background-color: rgb(225, 248, 228)">{{ $garbage->status }}</small>        
                                         @elseif ($garbage->status == 'Dalam penjemputan')
-                                            <small class="text-secondary fw-bold">{{ $garbage->status }}</small>
+                                            <small class="text-secondary fw-bold p-1 rounded" style="background-color: rgb(240, 240, 240)">{{ $garbage->status }}</small>
                                         @else
-                                            <small class="text-danger fw-bold">{{ $garbage->status }}</small>
+                                            <small class="text-danger fw-bold p-1 rounded" style="background-color: rgb(249,242,244)">{{ $garbage->status }}</small>
                                         @endif
                                     </div>
                                     <a class="btn-link" href="/detail_penukaran_sampah/{{ $garbage->id }}">Lihat detail</a>
@@ -79,8 +79,9 @@
                         </div>
                     </div>
                 </div>
-
             </div>
+
+            {{-- edit profil --}}
             <div class="col-lg-6 ps-auto ps-lg-4">
                 @if (session()->has('success'))
                     <div class="alert alert-success alert-dismissible fade show mb-2" role="alert">

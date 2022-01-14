@@ -14,7 +14,7 @@ class UserDashboardController extends Controller
     public function index($id)
     {
         $users = User::where('id', $id)->get();
-        $garbages = Garbage::where('user_id', $id)->paginate(5);
+        $garbages = Garbage::where('user_id', $id)->orderBy('id', 'desc')->paginate(5);
         return view('users.dashboard', [
             'users' => $users,
             'garbages' => $garbages

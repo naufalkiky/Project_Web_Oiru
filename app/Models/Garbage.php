@@ -17,7 +17,8 @@ class Garbage extends Model
         'address',
         'image_garbage',
         'note',
-        'status'
+        'status',
+        'pick_up_number'
     ];
 
     public function users()

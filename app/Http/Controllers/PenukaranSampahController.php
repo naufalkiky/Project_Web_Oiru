@@ -24,13 +24,22 @@ class PenukaranSampahController extends Controller
         $image = time().'.'.$request->image_garbage->extension();
         $request->image_garbage->move(public_path('assets/img/garbages'), $image);
 
-        Garbage::create([
-            'user_id' => Auth()->user()->id,
-            'garbage_weight' => $request->garbage_weight,
-            'address' => $request->address,
-            'image_garbage' => $image,
-            'note' => $request->note
-        ]);
+        if ($request->note != null) {
+            Garbage::create([
+                'user_id' => Auth()->user()->id,
+                'garbage_weight' => $request->garbage_weight,
+                'address' => $request->address,
+                'image_garbage' => $image,
+                'note' => $request->note
+            ]);
+        } else {
+            Garbage::create([
+                'user_id' => Auth()->user()->id,
+                'garbage_weight' => $request->garbage_weight,
+                'address' => $request->address,
+                'image_garbage' => $image,
+            ]);
+        }
 
         return redirect('penukaran-sampah')->with('success', 'Penukaran berhasil!, silahkan pantau status penukaran anda di dashboard');
     }

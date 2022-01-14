@@ -4,15 +4,23 @@
 
 @section('content')
     <div class="container mt-3 mx-auto py-3 mb-5">
-        <div class="card mb-4 pt-4 pb-3 mx-auto" style="background-color: #36572A">
-            <h4 class="fw-bold text-center text-white">Detail Penukaran Sampah</h4>
+        <div class="row justify-content-center align-items-start mb-2">
+            <div class="col-lg-10">
+                <div class="card mb-4 pt-4 pb-3 mx-auto" style="background-color: #36572A">
+                    <h4 class="fw-bold text-center text-white">Detail Penukaran Sampah</h4>
+                </div>
+            </div>
         </div>
         @foreach ($garbages as $garbage)
-            <div class="card mb-4 p-4 mx-auto">
-                <img class="image_garbage mx-auto" src="/assets/img/garbages/{{ $garbage->image_garbage }}" alt="image_garbage">
+            <div class="row justify-content-center align-items-start mb-2">
+                <div class="col-lg-10">
+                    <div class="card mb-4 p-4 mx-auto">
+                        <img class="image_garbage mx-auto" src="/assets/img/garbages/{{ $garbage->image_garbage }}" alt="image_garbage">
+                    </div>
+                </div>
             </div>
-            <div class="row justify-content-between align-items-start mb-4">
-                <div class="col-lg-6 pe-auto pe-lg-3">
+            <div class="row justify-content-center align-items-start mb-4">
+                <div class="col-lg-10 pe-auto pe-lg-3">
                     <div class="card mb-4">
                         <div class="card-body">
                             @if ($garbage->status == 'Berhasil')
@@ -45,7 +53,7 @@
                                             <p class="opacity-75 mb-auto mb-md-0">Nomor Penjemputan</p>
                                         </div>
                                         <div class="text-right">
-                                            <p class="text-right">XXXXXX</p>
+                                            <p class="text-right">{{ $garbage->pick_up_number }}</p>
                                         </div>
                                     </div>
                                 @endif
@@ -53,7 +61,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 ps-auto ps-lg-3">
+                <div class="col-lg-10 ps-auto ps-lg-3">
                     <div class="card mb-4">
                         <div class="card-body">
                             <p class="fw-bold">🔎 Informasi Penukaran</p>

@@ -11,7 +11,7 @@ class TransaksiSampahController extends Controller
 {
     public function index()
     {
-        $garbages = Garbage::all();
+        $garbages = Garbage::orderBy('id', 'desc')->get();
         return view('admin.transaksi_sampah', [
             'garbages' => $garbages
         ]);
@@ -32,7 +32,19 @@ class TransaksiSampahController extends Controller
         foreach($garbages as $garbage) {
             if ($garbage->status == 'Berhasil') {
                 if ($request->status == 'Belum diverifikasi' OR $request->status == 'Dalam penjemputan' OR $request->status == 'Berhasil') {
-                    return back()->with('admin_danger', 'Penukaran sampah sudah diverifikasi!');
+                    return back()->with('admin_danger', 'Penukaran sampah sudah berhasil dilakukan!');
+                }
+            } else if ($garbage->status == 'Dalam penjemputan') {
+                if ($request->status == 'Belum diverifikasi' OR $request->status == 'Dalam penjemputan') {
+                    return back()->with('admin_danger', 'Sampah sudah dalam tahap penjemputan!');
+                } else {
+                    Garbage::where('id', $id)->update([
+                        'status' => $request->status
+                    ]);
+                    User::where('id', $request->user_id)->update([
+                        'bage_points' => $request->garbage_weight * 50
+                    ]);
+                    return back()->with('admin_success', 'Status penukaran sampah berhasil diubah!');
                 }
             } else {
                 if ($request->status == 'Berhasil') {
@@ -43,9 +55,15 @@ class TransaksiSampahController extends Controller
                         'bage_points' => $request->garbage_weight * 50
                     ]);
                     return back()->with('admin_success', 'Status penukaran sampah berhasil diubah!');
+                } else if ($request->status == 'Dalam penjemputan') {
+                    Garbage::where('id', $id)->update([
+                        'status' => $request->status,
+                        'pick_up_number' => rand()
+                    ]);
+                    return back()->with('admin_success', 'Status penukaran sampah berhasil diubah!');
                 } else {
                     Garbage::where('id', $id)->update([
-                        'status' => $request->status
+                        'status' => $request->status,
                     ]);
                     return back()->with('admin_success', 'Status penukaran sampah berhasil diubah!');
                 }

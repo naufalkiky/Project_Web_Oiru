@@ -37,8 +37,9 @@
                 </table>
             </div>
         @else
-            <div class="text-center">
-                <p>Data penukaran sampah kosong</p>
+            <div class="text-center mb-4 mt-0">
+                <img src="{{ asset('assets/img/logo/truck-illustrator.jpg') }}" alt="truck-illustrator" class="admin-image">
+                <p class="mt-3">Data penukaran sampah masih kosong</p>
             </div>
         @endif
     </div>

@@ -54,6 +54,10 @@
     width: 450px;
 }
 
+.admin-image {
+    width: 600px;
+}
+
 .auth-form, .card-form {
     width: 32rem;
 }
@@ -150,7 +154,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         display: none;
     }
 
-    .auth-form, .card-form, .card-detail, .image_garbage {
+    .auth-form, .card-form, .card-detail, .image_garbage, .admin-image {
         width: 100%;
     }
 

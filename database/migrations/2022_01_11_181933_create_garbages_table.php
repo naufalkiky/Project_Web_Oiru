@@ -22,6 +22,7 @@ class CreateGarbagesTable extends Migration
             $table->string('image_garbage');
             $table->string('note')->default('');
             $table->string('status')->default('Belum diverifikasi');
+            $table->integer('pick_up_number')->default(0);
             $table->timestamps();
         });
     }
