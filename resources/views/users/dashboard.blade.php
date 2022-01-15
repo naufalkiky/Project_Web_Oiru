@@ -15,7 +15,7 @@
                             <p class="mb-2 mb-md-0">BagePoints kamu saat ini: <span class="fw-bold">{{ Auth::user()->bage_points }}</span></p>
                             <div>
                                 <a href="{{ Route('penukaran-sampah') }}" class="btn barter-bage-color-darker text-white mb-2 mb-sm-0">Tukar Sampah</a>
-                                <a href="{{ Route('penukaran-sembako') }}" class="btn barter-bage-color-darker text-white mb-2 mb-sm-0">Tukar Sembako</a>
+                                <a href="{{ Route('sembako') }}" class="btn barter-bage-color-darker text-white mb-2 mb-sm-0">Tukar Sembako</a>
                             </div>
                         </div>
                     </div>
@@ -97,7 +97,7 @@
                                 <form action="" method="post">
                                     @csrf
                                     <div class="mb-3">
-                                        <label for="email" class="form-label">Email<span class="text-danger fw-bold"> *</span></label>
+                                        <label for="email" class="form-label">Email</label>
                                         <input type="email" class="form-control" name="email" id="email" value="{{ $user->email }}" disabled>
                                         @error('email')
                                             <div class="text-danger mt-2">
@@ -106,7 +106,7 @@
                                         @enderror
                                     </div>
                                     <div class="mb-3">
-                                        <label for="name" class="form-label">Nama Lengkap<span class="text-danger fw-bold"> *</span></label>
+                                        <label for="name" class="form-label">Nama Lengkap</label>
                                         <input type="text" class="form-control" name="name" id="name" value="{{ $user->name }}">
                                         @error('name')
                                             <div class="text-danger mt-2">
@@ -115,7 +115,7 @@
                                         @enderror
                                     </div>
                                     <div class="mb-3">
-                                        <label for="no_hp" class="form-label">Nomor HP<span class="text-danger fw-bold"> *</span></label>
+                                        <label for="no_hp" class="form-label">Nomor HP</label>
                                         <input type="text" class="form-control" name="no_hp" id="no_hp" value="{{ $user->no_hp }}">
                                         @error('no_hp')
                                             <div class="text-danger mt-2">
@@ -124,8 +124,8 @@
                                         @enderror
                                     </div>
                                     <div class="mb-3">
-                                        <label for="address" class="form-label">Alamat<span class="text-danger fw-bold"> *</span></label>
-                                        <input type="text" class="form-control" name="address" id="address" placeholder="Contoh: Jl. Sesama No. 21, Jakarta Selatan" value="{{ $user->address }}">
+                                        <label for="address" class="form-label">Alamat</label>
+                                        <textarea class="form-control" name="address" id="address" cols="30" rows="4" placeholder="Ex: Jl. Puma Raya No.21, RT 01/RW 09, Kel. Jayamukti, Kec. Cikarang Pusat, Kabupaten Bekasi, Jawa Barat">{{ $user->address }}</textarea>
                                         @error('address')
                                             <div class="text-danger mt-2">
                                                 {{ $message }}
@@ -133,7 +133,7 @@
                                         @enderror
                                     </div>
                                     <div class="mb-1">
-                                        <label for="password" class="form-label">Password<span class="text-danger fw-bold"> *</span></label>
+                                        <label for="password" class="form-label">Password</label>
                                         <input type="password" class="form-control" name="password" id="password">
                                         @error('password')
                                             <div class="text-danger mt-2">

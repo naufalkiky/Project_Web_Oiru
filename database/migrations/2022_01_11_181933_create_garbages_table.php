@@ -18,7 +18,6 @@ class CreateGarbagesTable extends Migration
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
             $table->integer('garbage_weight');
-            $table->string('address');
             $table->string('image_garbage');
             $table->string('note')->default('');
             $table->string('status')->default('Belum diverifikasi');

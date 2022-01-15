@@ -22,6 +22,7 @@ class User extends Authenticatable
         'email',
         'no_hp',
         'address',
+        'postal_code',
         'bage_points',
         'password',
         'isAdmin'

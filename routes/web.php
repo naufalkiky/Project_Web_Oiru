@@ -30,8 +30,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index']);
 Route::get('tentang-kami', [HomeController::class, 'about']);
 
-Route::get('penukaran-sembako', [PenukaranSembakoController::class, 'create'])->name('penukaran-sembako');
-Route::get('penukaran-sembako/search', [PenukaranSembakoController::class, 'search']);
+Route::get('sembako', [PenukaranSembakoController::class, 'index'])->name('sembako');
+Route::get('sembako/search', [PenukaranSembakoController::class, 'search']);
 
 // middleware guest -> ketika user sudah login tidak akan bisa masuk ke halaman login/register lagi
 Route::middleware('guest')->group(function() {
@@ -50,8 +50,10 @@ Route::middleware('auth')->group(function() {
     // penukaran sampah
     Route::get('penukaran-sampah', [PenukaranSampahController::class, 'create'])->name('penukaran-sampah');
     Route::post('penukaran-sampah',  [PenukaranSampahController::class, 'store'])->name('penukaran-sampah');
-    
     Route::get('detail_penukaran_sampah/{id}', [UserDashboardController::class, 'detail']);
+
+    // penukaran sembako
+    Route::get('sembako/{id}', [PenukaranSembakoController::class, 'create']);
 
     // route user
     Route::middleware('user')->group(function() {
@@ -75,6 +77,7 @@ Route::middleware('auth')->group(function() {
         Route::get('transaksi-sampah', [TransaksiSampahController::class, 'index'])->name('admin.transaksi-sampah');
         Route::get('detail-sampah/{id}', [TransaksiSampahController::class, 'edit']);
         Route::post('detail-sampah/{id}', [TransaksiSampahController::class, 'update']);
+        Route::post('delete-transaksi-sampah/{id}', [TransaksiSampahController::class, 'delete']);
 
         Route::get('transaksi-sembako', [TransaksiSembakoController::class, 'index'])->name('admin.transaksi-sembako');
     });

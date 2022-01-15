@@ -12,7 +12,7 @@ class AdminDashboardController extends Controller
 {
     public function index()
     {
-        $total_users = User::count();
+        $total_users = User::where('isAdmin', 0)->count();
         $total_groceries = Groceries::count();
         $total_weight = DB::table('garbages')->where('status', 'Berhasil')->sum('garbage_weight');
 

@@ -17,7 +17,6 @@ class PenukaranSampahController extends Controller
         // validasi form tambah penukaran sampah
         $request->validate([
             'garbage_weight' => ['required', 'min:1'],
-            'address' => ['required'],
             'image_garbage' => ['required', 'image', 'mimes:png,jpg,jpeg,gif,svg,PNG,JPG,JPEG', 'max:2048'],
         ]);
 
@@ -28,7 +27,6 @@ class PenukaranSampahController extends Controller
             Garbage::create([
                 'user_id' => Auth()->user()->id,
                 'garbage_weight' => $request->garbage_weight,
-                'address' => $request->address,
                 'image_garbage' => $image,
                 'note' => $request->note
             ]);
@@ -36,7 +34,6 @@ class PenukaranSampahController extends Controller
             Garbage::create([
                 'user_id' => Auth()->user()->id,
                 'garbage_weight' => $request->garbage_weight,
-                'address' => $request->address,
                 'image_garbage' => $image,
             ]);
         }

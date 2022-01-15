@@ -4,7 +4,7 @@
 
 @section('content')
     @if (session()->has('success'))
-        <div class="alert alert-success alert-dismissible fade show mb-2" role="alert">
+        <div class="alert alert-success alert-dismissible fade show mb-3" role="alert">
             {{ session()->get('success') }}
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
@@ -18,10 +18,10 @@
                 <div class="mb-3">
                     <label for="garbage_weight" class="form-label fw-bold">Berat</label>
                     <div class="input-group">
-                        <input type="number" class="form-control" name="garbage_weight" id="garbage_weight" min="1" placeholder="Total berat sampah dalam satuan kilogram" value="{{ old('weight') }}" required>
+                        <input type="number" class="form-control" name="garbage_weight" id="garbage_weight" min="1" placeholder="Total berat sampah dalam satuan kilogram" value="{{ old('weight') }}">
                         <div class="input-group-text">Kg</div>
                     </div>
-                    @error('weight')
+                    @error('garbage_weight')
                         <div class="text-danger mt-2">
                             {{ $message }}
                         </div>
@@ -29,9 +29,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="address" class="form-label fw-bold">Alamat</label>
-                    <div class="input-group">
-                        <input type="text" class="form-control" name="address" id="address" value="{{ Auth::user()->address }}" required>
-                    </div>
+                    <textarea class="form-control" name="address" id="address" cols="30" rows="4" placeholder="Ex: Jl. Puma Raya No.21, RT 01/RW 09, Kel. Jayamukti, Kec. Cikarang Pusat, Kabupaten Bekasi, Jawa Barat">{{ Auth::user()->address }}</textarea>
                 </div>
                 <div class="mb-3">
                     <label for="image_garbage" class="form-label fw-bold">Gambar</label>
@@ -47,11 +45,11 @@
                 <div class="mb-4">
                     <label for="note" class="form-label fw-bold">Catatan Tambahan</label>
                     <div class="input-group">
-                        <input type="text" class="form-control" name="note" id="note" value="{{ old('note') }}" placeholder="Catatan tambahan, boleh diisi atau ngga..">
+                        <input type="text" class="form-control" name="note" id="note" value="{{ old('note') }}" autocomplete="off" placeholder="Catatan tambahan, boleh diisi atau ngga..">
                     </div>
                 </div>
                 <div class="mb-4">
-                    <button type="submit" class="btn barter-bage-color text-white w-100" style="padding-top: 8px; padding-bottom: 8px;">Input Data Sampah</button>
+                    <button type="submit" class="btn barter-bage-color text-white fw-bold" style="padding-top: 8px; padding-bottom: 8px;">Input Data Sampah</button>
                 </div>
             </form>
             

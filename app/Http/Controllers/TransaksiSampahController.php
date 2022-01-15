@@ -70,4 +70,10 @@ class TransaksiSampahController extends Controller
             }
         }
     }
+
+    public function delete($id)
+    {
+        Garbage::where('id', $id)->delete();
+        return redirect('admin/dashboard/transaksi-sampah')->with('admin_success', 'Data penukaran sampah berhasil dihapus!');
+    }
 }

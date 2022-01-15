@@ -59,10 +59,8 @@
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="name" class="form-label fw-bold">Alamat</label>
-                        <div class="input-group">
-                            <input type="text" class="form-control" name="name" id="name" value="{{ $garbage->users->address }}" readonly>
-                        </div>
+                        <label for="address" class="form-label fw-bold">Alamat</label>
+                        <textarea class="form-control" name="address" id="address" cols="30" rows="4" readonly>{{ $garbage->users->address }}</textarea>
                     </div>
                     <div class="mb-5">
                         <label for="status" class="form-label fw-bold">Status</label>

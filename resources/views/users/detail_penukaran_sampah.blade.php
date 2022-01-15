@@ -79,7 +79,7 @@
                                         <p class="opacity-75 mb-auto mb-md-0">Alamat</p>
                                     </div>
                                     <div class="text-right">
-                                        <p class="text-right">{{ $garbage->address }}</p>
+                                        <p class="text-right">{{ $garbage->users->address }}</p>
                                     </div>
                                 </div>
                                 @if ($garbage->status == 'Berhasil')

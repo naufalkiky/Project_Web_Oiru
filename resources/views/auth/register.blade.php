@@ -41,7 +41,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="address" class="form-label">Alamat<span class="text-danger fw-bold"> *</span></label>
-                    <input type="text" class="form-control" name="address" id="address" placeholder="Contoh: Jl. Sesama No. 21, Jakarta Selatan" value="{{ old('address') }}">
+                    <textarea class="form-control" name="address" id="address" cols="30" rows="4" placeholder="Ex: Jl. Puma Raya No.21, Kel. Jayamukti, Kec. Cikarang Pusat, Kabupaten Bekasi, Jawa Barat">{{ old('address') }}</textarea>
                     @error('address')
                         <div class="text-danger mt-2">
                             {{ $message }}
