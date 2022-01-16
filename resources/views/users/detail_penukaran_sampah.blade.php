@@ -26,7 +26,7 @@
                             @if ($garbage->status == 'Berhasil')
                                 <p class="fw-bold">✅ Penukaran {{ $garbage->status }}</p>
                             @elseif ($garbage->status == 'Dalam penjemputan')
-                                <p class="fw-bold">🚚 Penukaran {{ $garbage->status }}</p>
+                                <p class="fw-bold">🚚 Penukaran sedang {{ $garbage->status }}</p>
                             @else
                                 <p class="fw-bold">❌ Penukaran {{ $garbage->status }}</p>
                             @endif

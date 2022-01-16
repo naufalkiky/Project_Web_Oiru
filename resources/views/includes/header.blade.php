@@ -8,7 +8,7 @@
             <div class="navbar-nav ms-4 gap-2">
                 <a class="nav-link active btn btn-hover my-2 my-md-0 {{ Request::is('/') ? 'btn-active' : '' }}" href="/">Beranda</a>
                 <div class="dropdown mb-2 mb-md-0">
-                    <a class="nav-link active btn btn-hover dropdown-toggle w-100 {{ Request::is('penukaran-sampah','penukaran-sampah/*','penukaran-sembako','penukaran-sembako/*') ? 'btn-active' : '' }}" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link active btn btn-hover dropdown-toggle w-100 {{ Request::is('penukaran-sampah','penukaran-sampah/*','sembako','sembako/*') ? 'btn-active' : '' }}" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                         Penukaran
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">

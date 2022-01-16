@@ -19,7 +19,7 @@
                         <th scope="col">ID</th>
                         <th scope="col">Email</th>
                         <th scope="col">No Hp</th>
-                        <th scope="col">Alamat</th>
+                        <th scope="col" class="w-50">Alamat</th>
                         <th scope="col">Status</th>
                     </tr>
                     </thead>

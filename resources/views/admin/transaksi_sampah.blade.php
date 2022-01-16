@@ -11,10 +11,10 @@
                 <table class="table align-middle">
                     <thead>
                     <tr>
-                        <th scope="col">ID Sampah</th>
-                        <th scope="col">ID User</th>
-                        <th scope="col">Berat</th>
-                        <th scope="col">Tanggal</th>
+                        <th scope="col">ID</th>
+                        <th scope="col">ID Pengguna</th>
+                        <th scope="col">Berat Sampah</th>
+                        <th scope="col">Waktu Penukaran</th>
                         <th scope="col">Status</th>
                         <th scope="col">Aksi</th>
                     </tr>

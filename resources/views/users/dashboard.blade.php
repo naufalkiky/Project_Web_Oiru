@@ -15,7 +15,7 @@
                             <p class="mb-2 mb-md-0">BagePoints kamu saat ini: <span class="fw-bold">{{ Auth::user()->bage_points }}</span></p>
                             <div>
                                 <a href="{{ Route('penukaran-sampah') }}" class="btn barter-bage-color-darker text-white mb-2 mb-sm-0">Tukar Sampah</a>
-                                <a href="{{ Route('sembako') }}" class="btn barter-bage-color-darker text-white mb-2 mb-sm-0">Tukar Sembako</a>
+                                <a href="/status_penukaran_sembako/{{ Auth::user()->id }}" class="btn barter-bage-color-darker text-white mb-2 mb-sm-0">Status Penukaran Sembako</a>
                             </div>
                         </div>
                     </div>
@@ -60,24 +60,6 @@
                 </div>
                 <div class="pagination mt-3 text-center justify-content-start">
                     {{ $garbages->links() }}
-                </div>
-                
-                {{-- riwayat penukaran sembako --}}
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <p class="fw-bold">🕰️ Riwayat Transaksi Penukaran Sembako</p>
-                        <div class="container border-top pt-3 mb-2 mt-3">
-                            <div class="d-md-flex d-block justify-content-between align-items-center mb-4">
-                                <div>
-                                    <small class="fw-bold">ID Penukaran</small>
-                                    <br>
-                                    <small class="fw-bold">Tanggal</small>
-                                </div>
-                                <small class="text-success">Dalam pengemasan</small>
-                            </div>
-                            <a class="btn-link" href="#">Lihat detail</a>
-                        </div>
-                    </div>
                 </div>
             </div>
 

@@ -28,7 +28,7 @@ class PenukaranSampahController extends Controller
                 'user_id' => Auth()->user()->id,
                 'garbage_weight' => $request->garbage_weight,
                 'image_garbage' => $image,
-                'note' => $request->note
+                'note' => $request->note,
             ]);
         } else {
             Garbage::create([

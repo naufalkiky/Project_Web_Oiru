@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Garbage;
+use App\Models\GroceriesTransaction;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -21,7 +22,7 @@ class UserDashboardController extends Controller
         ]);
     }
 
-    public function update(Request $request, $id)
+    public function profil(Request $request, $id)
     {
         if (!$request->password == null) {
             User::where('id', $id)->update([
@@ -45,10 +46,27 @@ class UserDashboardController extends Controller
     {
         $garbages = Garbage::where('id', $id)->get();
 
-        foreach($garbages as $garbage) {
+        foreach ($garbages as $garbage) {
             if ($garbage->user_id === Auth::user()->id) {
                 return view('users.detail_penukaran_sampah', [
                     'garbages' => $garbages,
+                ]);
+            } else {
+                return abort(404);
+            }
+        }
+    }
+
+    public function status($id)
+    {
+        $number = 1;
+        $groceries_transactions = GroceriesTransaction::where('user_id', $id)->orderBy('id', 'desc')->paginate(10);
+        
+        foreach ($groceries_transactions as $transaction) {
+            if ($transaction->user_id === Auth::user()->id) {
+                return view('users.status_penukaran_sembako', [
+                    'groceries_transactions' => $groceries_transactions,
+                    'number' => $number
                 ]);
             } else {
                 return abort(404);

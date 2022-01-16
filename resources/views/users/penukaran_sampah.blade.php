@@ -29,7 +29,8 @@
                 </div>
                 <div class="mb-3">
                     <label for="address" class="form-label fw-bold">Alamat</label>
-                    <textarea class="form-control" name="address" id="address" cols="30" rows="4" placeholder="Ex: Jl. Puma Raya No.21, RT 01/RW 09, Kel. Jayamukti, Kec. Cikarang Pusat, Kabupaten Bekasi, Jawa Barat">{{ Auth::user()->address }}</textarea>
+                    <textarea class="form-control mb-2" name="address" id="address" cols="30" rows="4" placeholder="Ex: Jl. Puma Raya No.21, RT 01/RW 09, Kel. Jayamukti, Kec. Cikarang Pusat, Kabupaten Bekasi, Jawa Barat" readonly>{{ Auth::user()->address }}</textarea>
+                    <em><small>Ubah alamat pada halaman dashboard jika belum sesuai.</small></em>
                 </div>
                 <div class="mb-3">
                     <label for="image_garbage" class="form-label fw-bold">Gambar</label>

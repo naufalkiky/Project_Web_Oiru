@@ -70,7 +70,7 @@
                                 <div>
                                     <p class="mb-1">Total berat sampah =<span class="fw-bold"> {{ $total_weight }}</span> Kg</p>
                                     <p class="mb-1">Jumlah paket sembako =<span class="fw-bold"> {{ $total_groceries }}</span> Paket</p>
-                                    <p class="mb-1">Jumlah pengguna aktif =<span class="fw-bold"> {{ $total_users }}</span></p>
+                                    <p class="mb-1">Jumlah pengguna aktif =<span class="fw-bold"> {{ $total_users }}</span> User</p>
                                 </div>
                             </div>
                         </div>

@@ -54,11 +54,13 @@ Route::middleware('auth')->group(function() {
 
     // penukaran sembako
     Route::get('sembako/{id}', [PenukaranSembakoController::class, 'create']);
+    Route::post('sembako/{id}', [PenukaranSembakoController::class, 'store']);
+    Route::get('status_penukaran_sembako/{id}', [UserDashboardController::class, 'status']);
 
     // route user
     Route::middleware('user')->group(function() {
         Route::get('user/dashboard/{id}', [UserDashboardController::class, 'index'])->name('user');
-        Route::post('user/dashboard/{id}', [UserDashboardController::class, 'update'])->name('user');
+        Route::post('user/dashboard/{id}', [UserDashboardController::class, 'profil'])->name('user');
     
     });
 
