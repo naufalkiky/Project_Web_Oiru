@@ -15,4 +15,12 @@ class HomeController extends Controller
     {
         return view('about');
     }
+    public function visimisi()
+    {
+        return view('visimisi');
+    }
+    public function ourteam()
+    {
+        return view('ourteam');
+    }
 }

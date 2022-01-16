@@ -29,6 +29,8 @@ use Illuminate\Support\Facades\Route;
 // route terbuka
 Route::get('/', [HomeController::class, 'index']);
 Route::get('tentang-kami', [HomeController::class, 'about']);
+Route::get('visi-misi', [HomeController::class, 'visimisi']);
+Route::get('our-team', [HomeController::class, 'ourteam']);
 
 Route::get('sembako', [PenukaranSembakoController::class, 'index'])->name('sembako');
 Route::get('sembako/search', [PenukaranSembakoController::class, 'search']);
