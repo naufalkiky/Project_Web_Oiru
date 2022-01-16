@@ -16,10 +16,9 @@
         <div class="col-6 col-md-2">
             <h6 class="fw-bold">Layanan</h6>
             <ul class="list-unstyled text-small">
-                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Tukar Sampah</a></li>
-                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Tukar Sembako</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="/penukaran-sampah">Tukar Sampah</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="/sembako">Tukar Sembako</a></li>
                 <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Bage Points</a></li>
-                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Daftar Sembako</a></li>
             </ul>
         </div>
         <div class="vol-6 col-md-2">

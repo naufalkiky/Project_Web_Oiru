@@ -20,7 +20,7 @@
                         </li>
                     </ul>
                 </div>
-                <a class="nav-link active btn btn-hover mb-2 mb-md-0 {{ Request::is('tentang-kami','tentang-kami/*') ? 'btn-active' : '' }}" href="/tentang-kami">Tentang Kami</a>
+                <a class="nav-link active btn btn-hover mb-2 mb-md-0 {{ Request::is('tentang-kami','overview', 'visi-misi', 'our-team') ? 'btn-active' : '' }}" href="/tentang-kami">Tentang Kami</a>
             </div>
             <hr>
             <div class="navbar-nav ms-auto gap-2 btn-auth">

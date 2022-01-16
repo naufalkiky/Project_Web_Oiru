@@ -10,8 +10,6 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\SembakoController;
 use App\Http\Controllers\TransaksiSampahController;
 use App\Http\Controllers\TransaksiSembakoController;
-use App\Http\Controllers\TukarSampahController;
-use App\Http\Controllers\TukarSembakoController;
 use App\Http\Controllers\UserDashboardController;
 use Illuminate\Support\Facades\Route;
 
