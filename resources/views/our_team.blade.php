@@ -46,7 +46,7 @@
               </div>
               <div class="col mt-5">
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <img class="card-img-top" src="https://drive.google.com/thumbnail?id=1MYCGU5smusd2LUYHxDpkD45uFa1TtGac" alt="Card image cap">
                     <div class="card-body" style="text-align: left">
                       <h5 class="card-title"><b>Vina Fadillah</b></h5>
                       <p class="card-text">1202194208</p>
