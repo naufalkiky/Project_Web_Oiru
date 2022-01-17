@@ -12,27 +12,28 @@ use Illuminate\Support\Facades\Hash;
 
 class UserDashboardController extends Controller
 {
-    public function index($id)
+    public function index()
     {
-        $users = User::where('id', $id)->get();
-        $garbages = Garbage::where('user_id', $id)->orderBy('id', 'desc')->paginate(5);
+        $users = User::where('id', Auth::user()->id)->get();
+        $garbages = Garbage::where('user_id', Auth::user()->id)->orderBy('id', 'desc')->paginate(5);
+        
         return view('users.dashboard', [
             'users' => $users,
             'garbages' => $garbages
         ]);
     }
 
-    public function profil(Request $request, $id)
+    public function profil(Request $request)
     {
         if (!$request->password == null) {
-            User::where('id', $id)->update([
+            User::where('id', Auth::user()->id)->update([
                 'name' => $request->name,
                 'no_hp' => $request->no_hp,
                 'address' => $request->address,
                 'password' => Hash::make($request->password),
             ]);
         } else {
-            User::where('id', $id)->update([
+            User::where('id', Auth::user()->id)->update([
                 'name' => $request->name,
                 'no_hp' => $request->no_hp,
                 'address' => $request->address,
@@ -57,20 +58,12 @@ class UserDashboardController extends Controller
         }
     }
 
-    public function status($id)
+    public function status()
     {
-        $number = 1;
-        $groceries_transactions = GroceriesTransaction::where('user_id', $id)->orderBy('id', 'desc')->paginate(10);
-        
-        foreach ($groceries_transactions as $transaction) {
-            if ($transaction->user_id === Auth::user()->id) {
-                return view('users.status_penukaran_sembako', [
-                    'groceries_transactions' => $groceries_transactions,
-                    'number' => $number
-                ]);
-            } else {
-                return abort(404);
-            }
-        }
+        $groceries_transactions = GroceriesTransaction::where('user_id', Auth::user()->id)->orderBy('id', 'desc')->paginate(10);
+
+            return view('users.status_penukaran_sembako', [
+                'groceries_transactions' => $groceries_transactions
+            ]);
     }
 }

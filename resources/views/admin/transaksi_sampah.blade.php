@@ -11,8 +11,8 @@
                 <table class="table align-middle">
                     <thead>
                     <tr>
-                        <th scope="col">ID</th>
-                        <th scope="col">ID Pengguna</th>
+                        <th scope="col">No</th>
+                        <th scope="col">Nama Pengguna</th>
                         <th scope="col">Berat Sampah</th>
                         <th scope="col">Waktu Penukaran</th>
                         <th scope="col">Status</th>
@@ -22,11 +22,19 @@
                     <tbody>
                     @foreach ($garbages as $garbage)
                         <tr>
-                            <th scope="row">{{ $garbage->id }}</th>
-                            <td>{{ $garbage->user_id }}</td>
+                            <th scope="row">{{ $number++ }}</th>
+                            <td>{{ $garbage->users->name }}</td>
                             <td>{{ $garbage->garbage_weight }} Kg</td>
                             <td>{{ $garbage->created_at }}</td>
-                            <td>{{ $garbage->status }}</td>
+                            <td>
+                                @if ($garbage->status == 'Berhasil')
+                                    <small class="text-success fw-bold p-1 rounded" style="background-color: rgb(225, 248, 228)">{{ $garbage->status }}</small>        
+                                @elseif ($garbage->status == 'Dalam penjemputan')
+                                    <small class="text-secondary fw-bold p-1 rounded" style="background-color: rgb(240, 240, 240)">{{ $garbage->status }}</small>
+                                @else
+                                    <small class="text-danger fw-bold p-1 rounded" style="background-color: rgb(249,242,244)">{{ $garbage->status }}</small>
+                                @endif
+                            </td>
                             <td>
                                 <a class="btn btn-secondary btn-action" href="detail-sampah/{{ $garbage->id }}">Detail</a>
                                 <a class="btn btn-danger btn-action" href="" data-bs-toggle="modal" data-bs-target="#deleteModal">Hapus</a>

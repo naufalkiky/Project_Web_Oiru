@@ -31,7 +31,7 @@ Route::get('visi-misi', [HomeController::class, 'visimisi']);
 Route::get('our-team', [HomeController::class, 'ourteam']);
 
 Route::get('sembako', [PenukaranSembakoController::class, 'index'])->name('sembako');
-Route::get('sembako/search', [PenukaranSembakoController::class, 'search']);
+Route::get('sembako/search', [PenukaranSembakoController::class, 'search'])->name('sembako.search');
 
 // middleware guest -> ketika user sudah login tidak akan bisa masuk ke halaman login/register lagi
 Route::middleware('guest')->group(function() {
@@ -50,18 +50,17 @@ Route::middleware('auth')->group(function() {
     // penukaran sampah
     Route::get('penukaran-sampah', [PenukaranSampahController::class, 'create'])->name('penukaran-sampah');
     Route::post('penukaran-sampah',  [PenukaranSampahController::class, 'store'])->name('penukaran-sampah');
-    Route::get('detail_penukaran_sampah/{id}', [UserDashboardController::class, 'detail']);
-
+    
     // penukaran sembako
     Route::get('sembako/{id}', [PenukaranSembakoController::class, 'create']);
     Route::post('sembako/{id}', [PenukaranSembakoController::class, 'store']);
-    Route::get('status_penukaran_sembako/{id}', [UserDashboardController::class, 'status']);
-
-    // route user
-    Route::middleware('user')->group(function() {
-        Route::get('user/dashboard/{id}', [UserDashboardController::class, 'index'])->name('user');
-        Route::post('user/dashboard/{id}', [UserDashboardController::class, 'profil'])->name('user');
     
+    // route user
+    Route::prefix('user/dashboard')->middleware('user')->group(function() {
+        Route::get('/', [UserDashboardController::class, 'index'])->name('user');
+        Route::post('/', [UserDashboardController::class, 'profil'])->name('user');
+        Route::get('detail_penukaran_sampah/{id}', [UserDashboardController::class, 'detail']);
+        Route::get('status_penukaran_sembako', [UserDashboardController::class, 'status'])->name('status');
     });
 
     // route admin
@@ -82,6 +81,9 @@ Route::middleware('auth')->group(function() {
         Route::post('delete-transaksi-sampah/{id}', [TransaksiSampahController::class, 'delete']);
 
         Route::get('transaksi-sembako', [TransaksiSembakoController::class, 'index'])->name('admin.transaksi-sembako');
+        Route::get('detail-sembako/{id}', [TransaksiSembakoController::class, 'edit']);
+        Route::post('detail-sembako/{id}', [TransaksiSembakoController::class, 'update']);
+        Route::post('delete-transaksi-sembako/{id}', [TransaksiSembakoController::class, 'delete']);
     });
 
     // route logout

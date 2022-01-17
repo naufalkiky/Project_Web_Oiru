@@ -17,7 +17,7 @@ class IsUser
      */
     public function handle(Request $request, Closure $next)
     {
-        if (Auth::user() && Auth::user()->isAdmin == false && Auth::user()->id == $request->id) {
+        if (Auth::user() && Auth::user()->isAdmin == false) {
             return $next($request);
         }
 

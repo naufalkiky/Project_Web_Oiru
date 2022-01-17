@@ -59,7 +59,7 @@
                         @enderror
                     </div>
                     <div class="mb-2">
-                        <button type="submit" class="btn btn-primary w-100" style="padding-top: 8px; padding-bottom: 8px;">Update</button>
+                        <button type="submit" class="btn barter-bage-color text-white w-100" style="padding-top: 8px; padding-bottom: 8px;">Update</button>
                     </div>
                 </form>
             @endforeach

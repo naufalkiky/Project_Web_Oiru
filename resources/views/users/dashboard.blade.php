@@ -15,7 +15,7 @@
                             <p class="mb-2 mb-md-0">BagePoints kamu saat ini: <span class="fw-bold">{{ Auth::user()->bage_points }}</span></p>
                             <div>
                                 <a href="{{ Route('penukaran-sampah') }}" class="btn barter-bage-color-darker text-white mb-2 mb-sm-0">Tukar Sampah</a>
-                                <a href="/status_penukaran_sembako/{{ Auth::user()->id }}" class="btn barter-bage-color-darker text-white mb-2 mb-sm-0">Status Penukaran Sembako</a>
+                                <a href="{{ Route('status') }}" class="btn barter-bage-color-darker text-white mb-2 mb-sm-0">Status Penukaran Sembako</a>
                             </div>
                         </div>
                     </div>
@@ -50,7 +50,7 @@
                                             <small class="text-danger fw-bold p-1 rounded" style="background-color: rgb(249,242,244)">{{ $garbage->status }}</small>
                                         @endif
                                     </div>
-                                    <a class="btn-link" href="/detail_penukaran_sampah/{{ $garbage->id }}">Lihat detail</a>
+                                    <a class="btn-link" href="dashboard/detail_penukaran_sampah/{{ $garbage->id }}">Lihat detail</a>
                                 </div>
                             @endforeach 
                         @else

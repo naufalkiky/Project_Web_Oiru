@@ -67,13 +67,10 @@ class PenukaranSembakoController extends Controller
 
     public function search(Request $request)
     {
-        $search = $request->search;
+        $search = $request->keyword;
         $groceries = Groceries::where('package_name', 'like', '%' . $search . '%')
-        ->orWhere('description', 'like', '%' . request('search') . '%')
-        ->get();
-        
-        return view('sembako', [
-            'groceries' => $groceries
-        ]);
+        ->orWhere('description', 'like', '%' . $search . '%')
+        ->paginate(5);
+        return view('sembako', compact('groceries'))->with('i', (request()->input('page', 1) - 1) * 5);
     }
 }

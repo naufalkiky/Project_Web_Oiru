@@ -19,11 +19,11 @@
             </div>
         </div>
         <div class="col-12 col-lg-8 right-side">
-            <form action="/penukaran-sembako/search" method="get" class="d-flex">
+            <form action="{{ Route('sembako.search') }}" method="get" class="d-flex">
                 @csrf
                 <div class="input-group mb-2 shadow">
-                    <input type="text" class="form-control" placeholder="Cari nama paket/produk.." name="search" value="{{ request('search') }}">
-                    <button class="btn btn-secondary" type="submit">Cari</button>
+                    <input type="search" class="form-control" placeholder="Cari nama paket/produk.." name="keyword" value="{{ request('keyword') }}">
+                    <button class="btn barter-bage-color text-white" type="submit">Cari</button>
                 </div>
             </form>
             <hr class="mb-2 mb-lg-4">

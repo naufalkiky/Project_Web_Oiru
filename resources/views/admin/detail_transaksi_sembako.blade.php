@@ -1,6 +1,6 @@
 @extends('layouts.dashboard')
 
-@section('title', 'Update Status Penukaran Sampah')
+@section('title', 'Update Status Penukaran Sembako')
 
 @section('content')
     <div class="container mt-3 mx-auto py-3 mb-5">
@@ -16,47 +16,48 @@
         </div>
     @endif
         <div class="card card-detail mb-4 pt-4 pb-3 mx-auto">
-            <h4 class="fw-bold text-center">Detail Penukaran Sampah</h4>
+            <h4 class="fw-bold text-center">Detail Penukaran Sembako</h4>
         </div>
         <div class="card card-body card-detail mx-auto pt-4">
-            @foreach ($garbages as $garbage)
+            @foreach ($groceries_transactions as $transaction)
                 <form action="" method="post">
                     @csrf
                     <div class="mb-3">
-                        <div class="my-2 border rounded text-center">
-                            <img src="/assets/img/garbages/{{ $garbage->image_garbage }}" alt="image_garbage" class="image_garbage">
-                        </div>
-                    </div>
-                    <div class="mb-3">
                         <label for="name" class="form-label fw-bold">Nama Penukar</label>
                         <div class="input-group">
-                            <input type="text" class="form-control" name="name" id="name" value="{{ $garbage->users->name }}" readonly>
+                            <input type="text" class="form-control" name="name" id="name" value="{{ $transaction->users->name }}" readonly>
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="garbage_weight" class="form-label fw-bold">Berat Sampah</label>
+                        <label for="package_name" class="form-label fw-bold">Nama Paket</label>
                         <div class="input-group">
-                            <input type="number" class="form-control" name="garbage_weight" id="garbage_weight" value="{{ $garbage->garbage_weight }}" readonly>
-                            <div class="input-group-text">Kg</div>
+                            <input type="text" class="form-control" name="package_name" id="package_name" value="{{ $transaction->groceries->package_name }}" readonly>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="quantity" class="form-label fw-bold">Jumlah</label>
+                        <div class="input-group">
+                            <input type="number" class="form-control" name="quantity" id="quantity" value="{{ $transaction->quantity }}" readonly>
+                            <div class="input-group-text">Paket</div>
                         </div>
                     </div>
                     <div class="mb-3">
                         <label for="garbage_weight" class="form-label fw-bold">Catatan</label>
                         <div class="input-group">
-                            <input type="text" class="form-control" name="name" id="name" value="{{ $garbage->note }}" readonly>
+                            <input type="text" class="form-control" name="name" id="name" value="{{ $transaction->note }}" readonly>
                         </div>
                     </div>
                     <div class="mb-3">
                         <label for="address" class="form-label fw-bold">Alamat</label>
-                        <textarea class="form-control" name="address" id="address" cols="30" rows="4" readonly>{{ $garbage->users->address }}</textarea>
+                        <textarea class="form-control" name="address" id="address" cols="30" rows="4" readonly>{{ $transaction->users->address }}</textarea>
                     </div>
                     <div class="mb-5">
                         <label for="status" class="form-label fw-bold">Status</label>
                         <div class="input-group">
                             <select class="form-select" aria-label="Default select example" name="status" id="status">
-                                <option @if ($garbage->status == "Belum diverifikasi") {{ "selected" }} value="Belum diverifikasi" @endif value="Belum diverifikasi">Belum diverifikasi</option> 
-                                <option @if ($garbage->status == "Dalam penjemputan") {{ "selected" }}  value="Dalam penjemputan" @endif >Dalam penjemputan</option>
-                                <option @if ($garbage->status == "Berhasil") {{ "selected" }} value="Berhasil" @endif >Berhasil</option> 
+                                <option @if ($transaction->status == "Belum diverifikasi") {{ "selected" }} value="Belum diverifikasi" @endif value="Belum diverifikasi">Belum diverifikasi</option> 
+                                <option @if ($transaction->status == "Dalam penjemputan") {{ "selected" }}  value="Dalam penjemputan" @endif >Dalam penjemputan</option>
+                                <option @if ($transaction->status == "Berhasil") {{ "selected" }} value="Berhasil" @endif >Berhasil</option> 
                             </select>
                         </div>
                     </div>

@@ -12,9 +12,11 @@ class TransaksiSampahController extends Controller
 {
     public function index()
     {
+        $number = 1;
         $garbages = Garbage::orderBy('id', 'desc')->get();
         return view('admin.transaksi_sampah', [
-            'garbages' => $garbages
+            'garbages' => $garbages,
+            'number' => $number
         ]);
     }
 

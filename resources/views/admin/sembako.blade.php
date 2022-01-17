@@ -13,7 +13,7 @@
         @if (!$groceries->isEmpty())
             <h3 class="fw-bold">Data Sembako</h3>
             <p class="mb-4">Data paket sembako saat ini.</p>
-            <a class="btn btn-primary mb-4" href="{{ Route('admin.tambah-sembako') }}">Tambah Data</a>
+            <a class="btn barter-bage-color text-white mb-4" href="{{ Route('admin.tambah-sembako') }}">Tambah Data</a>
             <div class="table-responsive card p-4">
                 <table class="table align-middle">
                     <thead>
