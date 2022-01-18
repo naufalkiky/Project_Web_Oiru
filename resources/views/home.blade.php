@@ -52,7 +52,7 @@
     <div class="card mb-5" style="max-width: 1500px;">
         <div class="row g-20">
             <div class="col-md-6">
-                <img src="/assets/img/groceries/tambahan home.jpg" class="img-fluid rounded-start" alt="groceries-image">
+                <img src="/assets/img/images/tambahan home.jpg" class="img-fluid rounded-start" alt="groceries-image">
             </div>
             <div class="col-md-5">
                 <div class="card-body">
@@ -72,7 +72,7 @@
     <br><br>
     <div class="py-5 mb-10 border-top">
         <div class="card mb-5">
-            <img src="/assets/img/groceries/tambahan home 2.jpg" class="card-img-top" alt="groceries-image">
+            <img src="/assets/img/images/tambahan home 2.jpg" class="card-img-top" alt="groceries-image">
             <div class="card-body">
                 <h2 class="fw-bold barter-bage-color-text">Perjalanan Untuk Dekade Selanjutnya...</h2>
                 <br>
