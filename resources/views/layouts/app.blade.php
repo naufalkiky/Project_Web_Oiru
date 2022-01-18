@@ -70,8 +70,6 @@
                     <span class="visually-hidden">Next</span>
                     </button>
             </div>
-        {{-- </div> --}}
-        {{-- </center> --}}
     <div class="container mt-3 mx-auto py-3 mb-5">
         @yield('content')
     </div>
