@@ -16,26 +16,14 @@
                 <tbody>
                     <tr>
                         <td>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Maecenas luctus magna porta, venenatis nibh at, fringilla felis. 
-                            Donec porta nunc eget purus suscipit, eu aliquet ipsum tempus. 
-                            Integer venenatis ante magna, id interdum eros sollicitudin in. 
-                            Pellentesque accumsan urna a enim hendrerit malesuada. Maecenas odio neque, 
-                            tincidunt quis aliquam a, condimentum et mi. Maecenas vestibulum ultrices 
-                            nunc sit amet placerat. Proin at lorem vel lacus pellentesque egestas. 
-                            Aenean dictum turpis arcu, ut tincidunt ligula dignissim ut. Aliquam nisi justo, 
-                            egestas ut odio a, dapibus accumsan quam. In hac habitasse platea dictumst.
+                        1. Menunjang pengelolaan Sampah sesuai amanat Undang-Undang Nomor 18 Tahun 2008 tentang Pengelolaan Sampah.<br>
+                        2. Terwujudnya Bank Sampah yang mandiri untuk membangun ekonomi kerakyatan serta lingkungan yang bersih dan hijau sehingga tercipta masyarakat yang sehat<br>
+                       
                         </td>
                         <td>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Maecenas luctus magna porta, venenatis nibh at, fringilla felis. 
-                            Donec porta nunc eget purus suscipit, eu aliquet ipsum tempus. 
-                            Integer venenatis ante magna, id interdum eros sollicitudin in. 
-                            Pellentesque accumsan urna a enim hendrerit malesuada. Maecenas odio neque, 
-                            tincidunt quis aliquam a, condimentum et mi. Maecenas vestibulum ultrices 
-                            nunc sit amet placerat. Proin at lorem vel lacus pellentesque egestas. 
-                            Aenean dictum turpis arcu, ut tincidunt ligula dignissim ut. Aliquam nisi justo, 
-                            egestas ut odio a, dapibus accumsan quam. In hac habitasse platea dictumst.
+                         1. Mengurangi jumlah timbulan sampah. <br>
+                         2. Mendayagunakan sampah menjadi barang bermanfaat sehingga mempunyai nilai ekonomi dan potensi yang produktif dan bermanfaat bagi masyarakat.<br>
+                         3. Merubah perilaku masyarakat dalam pengelolaan samapah secara benar dan ramah lingkungan.<br>
                         </td>
                     </tr>
                 </tbody>
