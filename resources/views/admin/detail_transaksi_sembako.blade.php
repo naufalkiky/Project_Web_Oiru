@@ -56,8 +56,8 @@
                         <div class="input-group">
                             <select class="form-select" aria-label="Default select example" name="status" id="status">
                                 <option @if ($transaction->status == "Belum diverifikasi") {{ "selected" }} value="Belum diverifikasi" @endif value="Belum diverifikasi">Belum diverifikasi</option> 
-                                <option @if ($transaction->status == "Dalam pengiriman") {{ "selected" }}  value="Dalam pengiriman" @endif >Dalam pengiriman</option>
-                                <option @if ($transaction->status == "Berhasil") {{ "selected" }} value="Berhasil" @endif disabled>Berhasil</option> 
+                                <option @if ($transaction->status == "Dalam pengiriman") {{ "selected" }}  value="Dalam pengiriman" @endif value="Dalam pengiriman">Dalam pengiriman</option>
+                                <option @if ($transaction->status == "Berhasil") {{ "selected" }} value="Berhasil" @endif value="Berhasil">Berhasil</option> 
                             </select>
                         </div>
                     </div>

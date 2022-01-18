@@ -61,6 +61,7 @@ Route::middleware('auth')->group(function() {
         Route::post('/', [UserDashboardController::class, 'profil'])->name('user');
         Route::get('detail_penukaran_sampah/{id}', [UserDashboardController::class, 'detail']);
         Route::get('status_penukaran_sembako', [UserDashboardController::class, 'status'])->name('status');
+        Route::post('status_penukaran_sembako/{id}', [UserDashboardController::class, 'update']);
     });
 
     // route admin

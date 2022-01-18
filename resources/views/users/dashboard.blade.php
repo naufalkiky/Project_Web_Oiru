@@ -50,7 +50,7 @@
                                             <small class="text-danger fw-bold p-1 rounded" style="background-color: rgb(249,242,244)">{{ $garbage->status }}</small>
                                         @endif
                                     </div>
-                                    <a class="btn-link" href="dashboard/detail_penukaran_sampah/{{ $garbage->id }}">Lihat detail</a>
+                                    <a class="btn-link" href="dashboard/detail_penukaran_sampah/{{ $garbage->id }}"><small>Lihat detail</small></a>
                                 </div>
                             @endforeach 
                         @else

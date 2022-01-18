@@ -66,4 +66,13 @@ class UserDashboardController extends Controller
                 'groceries_transactions' => $groceries_transactions
             ]);
     }
+
+    public function update($id)
+    {
+        GroceriesTransaction::where('id', $id)->update([
+            'status' => 'Berhasil'
+        ]);
+
+        return back()->with('success', 'Pesanan sudah diterima, terima kasih!');
+    }
 }
