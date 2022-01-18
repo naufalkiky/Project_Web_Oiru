@@ -42,7 +42,10 @@
                                 @if ($transaction->status == 'Berhasil')
                                     <small class="text-success fw-bold p-1 rounded" style="background-color: rgb(225, 248, 228)">{{ $transaction->status }}</small>        
                                 @elseif ($transaction->status == 'Dalam pengiriman')
-                                    <a class="btn barter-bage-color text-white btn-action" href="" data-bs-toggle="modal" data-bs-target="#updateModal">Diterima</a>
+                                    <form action="status_penukaran_sembako/{{ $transaction->id }}" method="post">
+                                        @csrf
+                                        <button type="submit" class="btn barter-bage-color text-white">Diterima</button>
+                                    </form>
                                 @else
                                     <small class="text-danger fw-bold p-1 rounded" style="background-color: rgb(249,242,244)">{{ $transaction->status }}</small>
                                 @endif
@@ -54,27 +57,6 @@
         </div>
         <div class="pagination mt-3 text-center justify-content-end">
             {{ $groceries_transactions->links() }}
-        </div>
-        <!-- update modal -->
-        <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="updateModal" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title fw-bold" id="updateModalLabel">Konfirmasi Hapus Data</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        Pastikan paket sembako yang anda terima sudah sesuai dengan penukaran (pemesanan) yang dilakukan.
-                    </div>
-                    <div class="modal-footer">
-                        <form action="status_penukaran_sembako/{{ $transaction->id }}" method="post">
-                            @csrf
-                            <a href="" class="btn btn-secondary" data-bs-dismiss="modal">Batal</a>
-                            <button type="submit" class="btn barter-bage-color text-white">Sembako Diterima</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
         </div>
     @else
         <div class="text-center mb-4 mt-0">

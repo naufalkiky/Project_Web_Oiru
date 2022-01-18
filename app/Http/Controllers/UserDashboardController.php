@@ -15,7 +15,7 @@ class UserDashboardController extends Controller
     public function index()
     {
         $users = User::where('id', Auth::user()->id)->get();
-        $garbages = Garbage::where('user_id', Auth::user()->id)->orderBy('id', 'desc')->paginate(5);
+        $garbages = Garbage::where('user_id', Auth::user()->id)->orderBy('id', 'desc')->paginate(4);
         
         return view('users.dashboard', [
             'users' => $users,
@@ -69,8 +69,9 @@ class UserDashboardController extends Controller
 
     public function update($id)
     {
+        $success = 'Berhasil';
         GroceriesTransaction::where('id', $id)->update([
-            'status' => 'Berhasil'
+            'status' => $success
         ]);
 
         return back()->with('success', 'Pesanan sudah diterima, terima kasih!');

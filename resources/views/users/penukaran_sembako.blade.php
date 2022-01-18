@@ -79,7 +79,7 @@
                                 <div class="mb-3">
                                     <label for="postal_code" class="form-label fw-bold">Kode Pos</label>
                                     <div class="input-group mb-1">
-                                        <input type="text" class="form-control" name="postal_code" id="postal_code" placeholder="Masukkan kode pos sesuai alamat anda" value="{{ old('postal_code') }}">
+                                        <input type="text" class="form-control" name="postal_code" id="postal_code" placeholder="Masukkan kode pos sesuai alamat anda" @if (!Auth::user()->postal_code == '') value="{{ Auth::user()->postal_code }}" @endif value="{{ old('postal_code') }}">
                                     </div>
                                     <div class="mb-3">
                                         <em><small>Referensi <a class="btn-link text-black" href="https://kodeposku.com/" target="_blank">kode pos</a></small></em>

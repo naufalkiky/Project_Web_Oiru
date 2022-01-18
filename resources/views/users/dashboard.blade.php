@@ -58,7 +58,7 @@
                         @endif
                     </div>
                 </div>
-                <div class="pagination mt-3 text-center justify-content-start">
+                <div class="pagination mt-3 text-center justify-content-end">
                     {{ $garbages->links() }}
                 </div>
             </div>
