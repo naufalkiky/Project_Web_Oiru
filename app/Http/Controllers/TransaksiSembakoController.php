@@ -24,4 +24,32 @@ class TransaksiSembakoController extends Controller
             'groceries_transactions' => $groceries_transactions
         ]);
     }
+
+    public function update(Request $request, $id)
+    {
+        $transaction = GroceriesTransaction::where('id', $id)->first();
+        
+        if ($transaction->status == 'Berhasil') {
+            if ($request->status == 'Belum diverifikasi' OR $request->status == 'Dalam pengantaran') {
+                return back()->with('admin_danger', 'Penukaran sembako sudah berhasil dilakukan!');
+            }
+        } else if ($transaction->status == 'Dalam pengantaran') {
+            if ($request->status == 'Belum diverifikasi' OR $request->status == 'Dalam pengantaran') {
+                return back()->with('admin_danger', 'Paket sembako sudah dalam pengantaran kepada pengguna!');
+            }
+        } else {
+            if ($request->status == 'Dalam pengantaran') {
+                GroceriesTransaction::where('id', $id)->update([
+                    'status' => $request->status,
+                    'invoice_number' => rand()
+                ]);
+                return back()->with('admin_success', 'Status penukaran sembako berhasil diubah!');
+            } else {
+                GroceriesTransaction::where('id', $id)->update([
+                    'status' => $request->status,
+                ]);
+                return back()->with('admin_success', 'Status penukaran sembako berhasil diubah!');
+            }
+        }
+    }
 }

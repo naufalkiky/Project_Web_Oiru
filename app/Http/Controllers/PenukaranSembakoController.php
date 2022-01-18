@@ -34,6 +34,7 @@ class PenukaranSembakoController extends Controller
         if (Auth::user()->bage_points >= $package->bage_points) {
             $request->validate([
                 'quantity' => ['required', 'min:1'],
+                'postal_code' => ['required'],
             ]);
             if ($request->note != null) {
                 GroceriesTransaction::create([
@@ -46,6 +47,7 @@ class PenukaranSembakoController extends Controller
 
                 $user = User::where('id', Auth::user()->id)->first();
                 $user->bage_points -= $request->quantity * $package->bage_points;
+                $user->postal_code = $request->postal_code;
                 $user->update();
             } else {
                 GroceriesTransaction::create([
@@ -57,6 +59,7 @@ class PenukaranSembakoController extends Controller
 
                 $user = User::where('id', Auth::user()->id)->first();
                 $user->bage_points -= $request->quantity * $package->bage_points;
+                $user->postal_code = $request->postal_code;
                 $user->update();
             }
             return back()->with('success', 'Penukaran berhasil!, silahkan pantau status penukaran anda di status penukaran sembako');

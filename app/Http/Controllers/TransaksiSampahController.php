@@ -5,8 +5,6 @@ namespace App\Http\Controllers;
 use App\Models\Garbage;
 use App\Models\User;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\DB;
 
 class TransaksiSampahController extends Controller
 {
@@ -30,7 +28,7 @@ class TransaksiSampahController extends Controller
 
     public function update(Request $request, $id)
     {
-        $garbage = DB::table('garbages')->where('id', $id)->first();
+        $garbage = Garbage::where('id', $id)->first();
 
         if ($garbage->status == 'Berhasil') {
             if ($request->status == 'Belum diverifikasi' OR $request->status == 'Dalam penjemputan' OR $request->status == 'Berhasil') {

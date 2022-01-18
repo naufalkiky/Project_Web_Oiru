@@ -35,7 +35,6 @@
                         Jika barang tidak tersedia, pesanan dapat dibatalkan dan BagePoints akan dikembalikan seluruhnya.
                     </p>
                 </div>
-                
             </div>
         </div>
         <div class="mb-4">
@@ -75,12 +74,15 @@
                                     @endif
                                 </div>
                                 <div class="mb-3">
-                                    <em><small>Ubah data pada halaman dashboard jika belum sesuai.</small></em>
+                                    <em><small>Ubah data pada halaman <a class="btn-link text-black" href="{{ Route('user') }}">dashboard</a> jika belum sesuai.</small></em>
                                 </div>
                                 <div class="mb-3">
                                     <label for="postal_code" class="form-label fw-bold">Kode Pos</label>
-                                    <div class="input-group">
+                                    <div class="input-group mb-1">
                                         <input type="text" class="form-control" name="postal_code" id="postal_code" placeholder="Masukkan kode pos sesuai alamat anda" value="{{ old('postal_code') }}">
+                                    </div>
+                                    <div class="mb-3">
+                                        <em><small>Referensi <a class="btn-link text-black" href="https://kodeposku.com/" target="_blank">kode pos</a></small></em>
                                     </div>
                                     @error('postal_code')
                                         <div class="text-danger mt-2">

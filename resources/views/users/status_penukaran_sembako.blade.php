@@ -32,8 +32,11 @@
                             <td>
                                 @if ($transaction->status == 'Berhasil')
                                     <small class="text-success fw-bold p-1 rounded" style="background-color: rgb(225, 248, 228)">{{ $transaction->status }}</small>        
-                                @elseif ($transaction->status == 'Dalam penjemputan')
-                                    <small class="text-secondary fw-bold p-1 rounded" style="background-color: rgb(240, 240, 240)">{{ $transaction->status }}</small>
+                                @elseif ($transaction->status == 'Dalam pengantaran')
+                                    <form action="" method="post">
+                                        @csrf
+                                        <button class="btn barter-bage-color text-white">Diterima</button>
+                                    </form>
                                 @else
                                     <small class="text-danger fw-bold p-1 rounded" style="background-color: rgb(249,242,244)">{{ $transaction->status }}</small>
                                 @endif
