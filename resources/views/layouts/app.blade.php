@@ -40,24 +40,24 @@
                     <div class="carousel-item active">
                         <div class="gambarBg" style="background-image: url(https://images.pexels.com/photos/10892252/pexels-photo-10892252.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)"></div>
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
+                            <h5>Kami Ada Untuk Anda</h5>
+                            <p>Solusi bagi menumpuknya sampah di lingkungan kita</p>
                         </div>
                     </div>
 
                     <div class="carousel-item" data-bs-interval="5000">
                         <div class="gambarBg" style="background-image: url(https://www.osteourgence.fr/templates/yootheme/cache/can-3489894_1920-5c44e6d5.jpeg)"></div>
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Dua slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
+                            <h5>Mari Kita Bersatu</h5>
+                            <p>Wujudkan Indonesia Bersih, Indonesia Sejahtera</p>
                         </div>
                     </div>
 
                     <div class="carousel-item" data-bs-interval="5000">
                         <div class="gambarBg" style="background-image: url(https://disk.mediaindonesia.com/thumbs/1800x1200/news/2019/07/d8651ef32d625b3401f21b0db91598ad.jpg)"></div>
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Tiga slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
+                            <h5>Jangan Nyampah !</h5>
+                            <p>Demi masa depan yang cerah</p>
                         </div>
                     </div>
                 </div>
