@@ -22,7 +22,7 @@
                 </div>
                 <a class="nav-link active btn btn-hover mb-2 mb-md-0 {{ Request::is('prosedur') ? 'btn-active' : '' }}" href="/prosedur">Prosedur</a>
                 <div class="dropdown mb-2 mb-md-0">
-                    <a class="nav-link active btn btn-hover dropdown-toggle w-100 {{ Request::is('about','overview', 'visi-misi', 'our-team') ? 'btn-active' : '' }}" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link active btn btn-hover dropdown-toggle w-100 {{ Request::is('about', 'visi-misi', 'our-team') ? 'btn-active' : '' }}" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                         Tentang Kami
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
