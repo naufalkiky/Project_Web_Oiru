@@ -27,7 +27,7 @@
                     <tbody>
                     @foreach ($groceries_transactions as $transaction)
                         <tr>
-                            <td><a class="text-decoration-none btn-link" href="/sembako/{{ $transaction->id }}">{{ $transaction->groceries->package_name }}</a></td>
+                            <td><a class="text-decoration-none btn-link" href="/sembako/{{ $transaction->groceries->id }}">{{ $transaction->groceries->package_name }}</a></td>
                             <td>{{ $transaction->quantity }}</td>
                             <td>{{ $transaction->created_at }}</td>
                             <td>

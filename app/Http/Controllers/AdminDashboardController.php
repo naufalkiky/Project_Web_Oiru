@@ -14,7 +14,7 @@ class AdminDashboardController extends Controller
     {
         $total_users = User::where('isAdmin', 0)->count();
         $total_groceries = Groceries::count();
-        $total_weight = DB::table('garbages')->where('status', 'Berhasil')->sum('garbage_weight');
+        $total_weight = Garbage::where('status', 'Berhasil')->sum('garbage_weight');
 
         return view('admin.dashboard', [
             'total_users' => $total_users,
