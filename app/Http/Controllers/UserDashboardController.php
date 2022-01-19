@@ -7,8 +7,8 @@ use App\Models\GroceriesTransaction;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Validation\Rule;
 
 class UserDashboardController extends Controller
 {
@@ -25,8 +25,16 @@ class UserDashboardController extends Controller
 
     public function profil(Request $request)
     {
+        $request->validate([
+            'name' => ['min:3'],
+            'email' => ['email', Rule::unique('users')->ignore(Auth::user()->id)],
+            'address' => ['min:8'],
+            'password' => [Rule::when($request->password != null, ['min:3'], [''])],
+        ]);
+
         if (!$request->password == null) {
             User::where('id', Auth::user()->id)->update([
+                'email' => $request->email,
                 'name' => $request->name,
                 'no_hp' => $request->no_hp,
                 'address' => $request->address,
@@ -34,6 +42,7 @@ class UserDashboardController extends Controller
             ]);
         } else {
             User::where('id', Auth::user()->id)->update([
+                'email' => $request->email,
                 'name' => $request->name,
                 'no_hp' => $request->no_hp,
                 'address' => $request->address,

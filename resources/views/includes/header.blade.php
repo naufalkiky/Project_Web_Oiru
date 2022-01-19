@@ -1,14 +1,14 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-transparant border-bottom py-2">
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom py-2">
     <div class="container align-items-center">
         <a class="navbar-brand fw-bold" href="/"><img src="{{ asset('assets/img/logo/barter-bage-horizontal.svg') }}" alt="logo-navbar" width="180"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ms-4 gap-2">
-                <a class="nav-link active btn btn-hover my-2 my-md-0 {{ Request::is('/') ? 'btn-active' : '' }}" href="/">Beranda</a>
+            <div class="navbar-nav pt-3 pt-md-0 ms-4 gap-2">
+                <a class="nav-link active btn-hover rounded my-2 my-md-0 {{ Request::is('/') ? 'btn-active' : '' }}" href="/">Beranda</a>
                 <div class="dropdown mb-2 mb-md-0">
-                    <a class="nav-link active btn btn-hover dropdown-toggle w-100 {{ Request::is('penukaran-sampah','penukaran-sampah/*','sembako','sembako/*') ? 'btn-active' : '' }}" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link active btn-hover rounded dropdown-toggle w-100 {{ Request::is('penukaran-sampah','penukaran-sampah/*','sembako','sembako/*') ? 'btn-active' : '' }}" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                         Penukaran
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -20,9 +20,9 @@
                         </li>
                     </ul>
                 </div>
-                <a class="nav-link active btn btn-hover mb-2 mb-md-0 {{ Request::is('prosedur') ? 'btn-active' : '' }}" href="/prosedur">Prosedur</a>
+                <a class="nav-link active btn-hover rounded mb-2 mb-md-0 {{ Request::is('prosedur') ? 'btn-active' : '' }}" href="/prosedur">Prosedur</a>
                 <div class="dropdown mb-2 mb-md-0">
-                    <a class="nav-link active btn btn-hover dropdown-toggle w-100 {{ Request::is('about', 'visi-misi', 'our-team') ? 'btn-active' : '' }}" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link active btn-hover rounded dropdown-toggle w-100 {{ Request::is('about', 'visi-misi', 'our-team') ? 'btn-active' : '' }}" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                         Tentang Kami
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -44,8 +44,8 @@
                     <a class="nav-link active btn btn-hover {{ Request::is('register','register/*') ? 'btn-active' : '' }}" href="{{ Route('register') }}">Register</a>
                     <a class="nav-link text-white btn barter-bage-color px-4" href="{{ Route('login') }}">Login</a>
                 @else
-                    <li class="nav-item dropdown text-center text-md-left">
-                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active btn-hover rounded dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Halo, {{ Auth::user()->name }} !
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">

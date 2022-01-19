@@ -12,7 +12,7 @@
     {{-- top home --}}
     <div class="row align-items-center justify-content-between mb-5">
         <div class="col-md-7">
-            <h1 class="title-cta mb-3">Tukar Sampah, Dapat <span>Sembako</span></h1>
+            <h1 class="title-cta mb-3 mt-3 mt-md-0">Tukar Sampah, Dapat <span>Sembako</span></h1>
             <p class="lh-lg mb-4">Kami hadir sebagai platform penukaran sampah online pertama di Indonesia dilengkapi dengan daftar sembako yang dapat ditukarkan dengan BagePoints hasil penukaran sampah.</p>
             <a class="btn barter-bage-color text-white py-3 px-4 rounded-lg fw-bold" href="{{ Route('penukaran-sampah') }}">Tukar Sampah Sekarang</a>
         </div>

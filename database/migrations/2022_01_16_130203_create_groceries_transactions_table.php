@@ -15,9 +15,9 @@ class CreateGroceriesTransactionsTable extends Migration
     {
         Schema::create('groceries_transactions', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('user_id');
+            $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
-            $table->bigInteger('groceries_id');
+            $table->unsignedBigInteger('groceries_id');
             $table->foreign('groceries_id')->references('id')->on('groceries')->onDelete('cascade')->onUpdate('cascade');
             $table->integer('quantity');
             $table->integer('total_bage_points');

@@ -3,6 +3,14 @@
 @section('title', 'Data Transaksi Sampah')
 
 @section('content')
+    <nav class="mb-2 bg-light pt-3" aria-label="breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="btn-link text-decoration-none" href="{{ Route('admin') }}"><small>Dashboard</small></a></li>
+            <li class="breadcrumb-item active" aria-current="page"><small>Data Penukaran Sampah</small></li>
+            </ol>
+        </div>
+    </nav>
     <div class="container mt-3 mx-auto py-3 mb-5">
         @if (!$garbages->isEmpty())
             <h3 class="fw-bold">Data Penukaran Sampah</h3>
@@ -43,6 +51,9 @@
                     @endforeach
                     </tbody>
                 </table>
+            </div>
+            <div class="pagination mt-3 text-center justify-content-end">
+                {{ $garbages->links() }}
             </div>
         @else
             <div class="text-center mb-4 mt-0">

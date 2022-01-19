@@ -11,7 +11,7 @@ class TransaksiSampahController extends Controller
     public function index()
     {
         $number = 1;
-        $garbages = Garbage::orderBy('id', 'desc')->get();
+        $garbages = Garbage::orderBy('id', 'desc')->paginate(10);
         return view('admin.transaksi_sampah', [
             'garbages' => $garbages,
             'number' => $number

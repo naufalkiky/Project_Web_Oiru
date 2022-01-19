@@ -6,7 +6,6 @@ use App\Models\Garbage;
 use App\Models\Groceries;
 use App\Models\User;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
 class AdminDashboardController extends Controller
 {

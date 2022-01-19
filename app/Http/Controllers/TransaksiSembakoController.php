@@ -10,7 +10,7 @@ class TransaksiSembakoController extends Controller
     public function index()
     {
         $number = 1;
-        $groceries_transactions = GroceriesTransaction::orderBy('id', 'desc')->get();
+        $groceries_transactions = GroceriesTransaction::orderBy('id', 'desc')->paginate(10);
         return view('admin.transaksi_sembako', [
             'groceries_transactions' => $groceries_transactions,
             'number' => $number

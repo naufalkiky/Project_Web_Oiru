@@ -22,7 +22,7 @@ class RegisterController extends Controller
             'name' => ['required', 'min:3'],
             'email' => ['required', 'unique:users', 'email'],
             'no_hp' => ['required'],
-            'address' => ['required'],
+            'address' => ['required', 'min:8'],
             'password' => ['required', 'min:5'],
         ]);
 

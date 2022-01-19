@@ -3,6 +3,14 @@
 @section('title', 'Data Sembako')
 
 @section('content')
+    <nav class="mb-2 bg-light pt-3" aria-label="breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="btn-link text-decoration-none" href="{{ Route('admin') }}"><small>Dashboard</small></a></li>
+            <li class="breadcrumb-item active" aria-current="page"><small>Data Pengguna</small></li>
+            </ol>
+        </div>
+    </nav>
     <div class="container mt-3 mx-auto py-3 mb-5">
         @if (session()->has('admin_success'))
             <div class="alert alert-success alert-dismissible fade show mb-4" role="alert">
