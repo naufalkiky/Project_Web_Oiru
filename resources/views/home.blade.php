@@ -21,7 +21,7 @@
         </div>
     </div>
 
-    {{-- crousel --}}
+    {{-- carousel --}}
     <div class="pt-5 mb-2 border-top">
         <div id="carouselBarterBage" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-indicators">
