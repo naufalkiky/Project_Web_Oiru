@@ -150,10 +150,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .carousel-item{
-    height: 400px;
+    height: 300px;
     position: relative;
     background: rgb(0, 0, 0);
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .gambarBg{

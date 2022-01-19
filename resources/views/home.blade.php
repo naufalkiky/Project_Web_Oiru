@@ -33,8 +33,8 @@
                 <div class="carousel-item active">
                     <div class="gambarBg" style="background-image: url({{ asset('assets/img/logo/barter-bage.png') }})"></div>
                     <div class="carousel-caption d-none d-md-block">
-                        <h5 class="text-black fw-bold">Kami Ada Untuk Anda</h5>
-                        <p class="text-black fw-bold">Solusi bagi menumpuknya sampah di lingkungan kita</p>
+                        <h5 class="fw-bold">Kami Ada Untuk Anda</h5>
+                        <p class="fw-bold">Solusi bagi menumpuknya sampah di lingkungan kita</p>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="5000">
