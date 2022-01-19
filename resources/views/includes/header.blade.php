@@ -20,7 +20,23 @@
                         </li>
                     </ul>
                 </div>
-                <a class="nav-link active btn btn-hover mb-2 mb-md-0 {{ Request::is('tentang-kami','overview', 'visi-misi', 'our-team') ? 'btn-active' : '' }}" href="/tentang-kami">Tentang Kami</a>
+                <a class="nav-link active btn btn-hover mb-2 mb-md-0 {{ Request::is('prosedur') ? 'btn-active' : '' }}" href="/prosedur">Prosedur</a>
+                <div class="dropdown mb-2 mb-md-0">
+                    <a class="nav-link active btn btn-hover dropdown-toggle w-100 {{ Request::is('about','overview', 'visi-misi', 'our-team') ? 'btn-active' : '' }}" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        Tentang Kami
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li>
+                            <a class="dropdown-item" href="/about">Overview</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/visi-misi">Visi & Misi</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/our-team">Our Team</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <hr>
             <div class="navbar-nav ms-auto gap-2 btn-auth">

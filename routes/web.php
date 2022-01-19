@@ -26,7 +26,8 @@ use Illuminate\Support\Facades\Route;
 
 // route terbuka
 Route::get('/', [HomeController::class, 'index']);
-Route::get('tentang-kami', [HomeController::class, 'about']);
+Route::get('prosedur', [HomeController::class, 'procedure']);
+Route::get('about', [HomeController::class, 'about']);
 Route::get('visi-misi', [HomeController::class, 'visimisi']);
 Route::get('our-team', [HomeController::class, 'ourteam']);
 

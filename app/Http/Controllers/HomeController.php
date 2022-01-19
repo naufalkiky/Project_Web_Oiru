@@ -21,6 +21,11 @@ class HomeController extends Controller
         ]);
     }
 
+    public function procedure()
+    {
+        return view('prosedur');
+    }
+
     public function about()
     {
         return view('about');
