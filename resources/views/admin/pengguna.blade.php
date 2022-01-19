@@ -16,7 +16,7 @@
                 <table class="table align-middle">
                     <thead>
                     <tr>
-                        <th scope="col">ID</th>
+                        <th scope="col">No</th>
                         <th scope="col">Email</th>
                         <th scope="col">No Hp</th>
                         <th scope="col" class="w-50">Alamat</th>
@@ -26,7 +26,7 @@
                     <tbody>
                     @foreach ($users as $user)
                         <tr>
-                            <th scope="row">{{ $user->id }}</th>
+                            <th scope="row">{{ $number++ }}</th>
                             <td>{{ $user->email }}</td>
                             <td>{{ $user->no_hp }}</td>
                             <td>{{ $user->address }}</td>

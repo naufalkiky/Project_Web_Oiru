@@ -26,7 +26,8 @@ use Illuminate\Support\Facades\Route;
 
 // route terbuka
 Route::get('/', [HomeController::class, 'index']);
-Route::get('tentang-kami', [HomeController::class, 'about']);
+Route::get('prosedur', [HomeController::class, 'procedure']);
+Route::get('about', [HomeController::class, 'about']);
 Route::get('visi-misi', [HomeController::class, 'visimisi']);
 Route::get('our-team', [HomeController::class, 'ourteam']);
 
@@ -61,6 +62,7 @@ Route::middleware('auth')->group(function() {
         Route::post('/', [UserDashboardController::class, 'profil'])->name('user');
         Route::get('detail_penukaran_sampah/{id}', [UserDashboardController::class, 'detail']);
         Route::get('status_penukaran_sembako', [UserDashboardController::class, 'status'])->name('status');
+        Route::post('status_penukaran_sembako/{id}', [UserDashboardController::class, 'update']);
     });
 
     // route admin

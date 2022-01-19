@@ -56,13 +56,13 @@
                         <div class="input-group">
                             <select class="form-select" aria-label="Default select example" name="status" id="status">
                                 <option @if ($transaction->status == "Belum diverifikasi") {{ "selected" }} value="Belum diverifikasi" @endif value="Belum diverifikasi">Belum diverifikasi</option> 
-                                <option @if ($transaction->status == "Dalam penjemputan") {{ "selected" }}  value="Dalam penjemputan" @endif >Dalam penjemputan</option>
-                                <option @if ($transaction->status == "Berhasil") {{ "selected" }} value="Berhasil" @endif >Berhasil</option> 
+                                <option @if ($transaction->status == "Dalam pengiriman") {{ "selected" }}  value="Dalam pengiriman" @endif value="Dalam pengiriman">Dalam pengiriman</option>
+                                <option @if ($transaction->status == "Berhasil") {{ "selected" }} value="Berhasil" @endif value="Berhasil">Berhasil</option> 
                             </select>
                         </div>
                     </div>
                     <div class="mb-2 d-sm-flex d-block">
-                        <a class="btn btn-secondary w-25" href="/admin/dashboard/transaksi-sampah" style="padding-top: 8px; padding-bottom: 8px;">Kembali</a>
+                        <a class="btn btn-secondary w-25" href="/admin/dashboard/transaksi-sembako" style="padding-top: 8px; padding-bottom: 8px;">Kembali</a>
                         <button type="submit" class="btn barter-bage-color text-white w-100 mb-2 mb-sm-0 ms-0 ms-sm-2" style="padding-top: 8px; padding-bottom: 8px;">Update Status</button>
                     </div>
                 </form>

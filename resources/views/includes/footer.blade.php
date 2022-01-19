@@ -8,7 +8,7 @@
         <div class="col-6 col-md-2">
             <h6 class="fw-bold">Tentang Kami</h5>
             <ul class="list-unstyled text-small">
-                <li class="mb-1"><a class="link-secondary text-decoration-none" href="/tentang-kami">Overview</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="/about">Overview</a></li>
                 <li class="mb-1"><a class="link-secondary text-decoration-none" href="/visi-misi">Visi & Misi</a></li>
                 <li class="mb-1"><a class="link-secondary text-decoration-none" href="/our-team">Our Team</a></li>
             </ul>

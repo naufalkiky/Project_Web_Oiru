@@ -25,8 +25,10 @@ class AdminDashboardController extends Controller
 
     public function users()
     {
-        $users = DB::table('users')->paginate(10);
+        $number = 1;
+        $users = User::where('isAdmin', 0)->paginate(10);
         return view('admin.pengguna', [
+            'number' => $number,     
             'users' => $users
         ]);
     }

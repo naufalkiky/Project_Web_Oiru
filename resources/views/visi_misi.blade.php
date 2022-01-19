@@ -18,7 +18,6 @@
                         <td>
                         1. Menunjang pengelolaan Sampah sesuai amanat Undang-Undang Nomor 18 Tahun 2008 tentang Pengelolaan Sampah.<br>
                         2. Terwujudnya Bank Sampah yang mandiri untuk membangun ekonomi kerakyatan serta lingkungan yang bersih dan hijau sehingga tercipta masyarakat yang sehat<br>
-                       
                         </td>
                         <td>
                          1. Mengurangi jumlah timbulan sampah. <br>

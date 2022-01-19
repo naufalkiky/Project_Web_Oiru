@@ -20,8 +20,12 @@
     color: #36572A;
 }
 
+.btn-link {
+    color: #36572A;
+}
+
 .btn-link:hover {
-    color: #0d6efd;
+    color: #36572A;
 }
 
 .barter-bage-color:hover {
@@ -47,7 +51,12 @@
 
 .title-cta {
     font-weight: bold;
-    font-size: 48px;
+    font-size: 52px;
+}
+
+.text-statistic {
+    font-size: 24px;
+    line-height: 1.8;
 }
 
 .home-img {
@@ -74,12 +83,29 @@
     width: 300px;
 }
 
+.steps-image {
+    width: 550px;
+}
+
 .tab-link {
     color: black;
 }
 
 .tab-link:hover {
     color: black;
+}
+
+button.nav-link {
+    color: #36572A;
+}
+
+button.nav-link:hover {
+    color: #2b501e;
+}
+
+button.btn-active-tabs.active {
+    background-color: #36572A !important;
+    color: white;
 }
 
 input[type="search"]::-webkit-search-decoration,
@@ -113,12 +139,32 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     color: black;
 }
 
-.pagination .active {
-    background-color: #36572A;
+.page-item.active .page-link {
+    color: #fff !important;
+    background: #36572A !important;
+    border: 1px solid #36572A;
 }
 
 .detail-btn {
     width: 50%;
+}
+
+.carousel-item{
+    height: 300px;
+    position: relative;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.gambarBg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top:0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
 }
 
 @media screen and (max-width: 992px) {
@@ -162,11 +208,15 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         font-size: 32px;
     }
 
+    .text-statistic {
+        font-size: 18px;
+    }
+
     .home-img {
         display: none;
     }
 
-    .auth-form, .card-form, .card-detail, .image_garbage, .admin-image, .image_groceries {
+    .auth-form, .card-form, .card-detail, .image_garbage, .admin-image, .image_groceries, .steps-image {
         width: 100%;
     }
 

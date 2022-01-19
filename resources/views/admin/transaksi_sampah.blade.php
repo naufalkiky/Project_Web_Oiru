@@ -37,33 +37,12 @@
                             </td>
                             <td>
                                 <a class="btn btn-secondary btn-action" href="detail-sampah/{{ $garbage->id }}">Detail</a>
-                                <a class="btn btn-danger btn-action" href="" data-bs-toggle="modal" data-bs-target="#deleteModal">Hapus</a>
+                                <a class="btn btn-danger btn-action" href="delete-transaksi-sampah/{{ $garbage->id }}">Hapus</a>
                             </td>
                         </tr>
                     @endforeach
                     </tbody>
                 </table>
-            </div>
-            <!-- delete modal -->
-            <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModal" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title fw-bold" id="deleteModalLabel">Konfirmasi Hapus Data</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            Data penukaran sampah akan terhapus secara permanen.
-                        </div>
-                        <div class="modal-footer">
-                            <form action="delete-transaksi-sampah/{{ $garbage->id }}" method="post">
-                                @csrf
-                                <a href="" class="btn btn-secondary" data-bs-dismiss="modal">Batal</a>
-                                <button type="submit" class="btn btn-danger">Hapus</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
             </div>
         @else
             <div class="text-center mb-4 mt-0">

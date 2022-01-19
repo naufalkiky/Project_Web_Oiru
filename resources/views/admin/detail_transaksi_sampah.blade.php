@@ -55,8 +55,8 @@
                         <div class="input-group">
                             <select class="form-select" aria-label="Default select example" name="status" id="status">
                                 <option @if ($garbage->status == "Belum diverifikasi") {{ "selected" }} value="Belum diverifikasi" @endif value="Belum diverifikasi">Belum diverifikasi</option> 
-                                <option @if ($garbage->status == "Dalam penjemputan") {{ "selected" }}  value="Dalam penjemputan" @endif >Dalam penjemputan</option>
-                                <option @if ($garbage->status == "Berhasil") {{ "selected" }} value="Berhasil" @endif >Berhasil</option> 
+                                <option @if ($garbage->status == "Dalam penjemputan") {{ "selected" }}  value="Dalam penjemputan" @endif value="Dalam penjemputan">Dalam penjemputan</option>
+                                <option @if ($garbage->status == "Berhasil") {{ "selected" }} value="Berhasil" @endif value="Berhasil">Berhasil</option> 
                             </select>
                         </div>
                     </div>

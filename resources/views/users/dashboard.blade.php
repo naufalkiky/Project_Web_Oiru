@@ -9,7 +9,7 @@
             <p class="mb-4 text-white">Semoga kamu dalam keadaan sehat ya.</p>
             <div class="card rounded-lg p-2">
                 <div class="card-body">
-                    <p class="card-text fw-bold">BagePoints 🪙</p>
+                    <p class="card-text fw-bold">BagePoints <img class="ms-1" src="/assets/img/icon/coin.png" alt="coin" width="20"></p>
                     <div class="container border rounded p-2">
                         <div class="d-md-flex d-block justify-content-between align-items-center ">
                             <p class="mb-2 mb-md-0">BagePoints kamu saat ini: <span class="fw-bold">{{ Auth::user()->bage_points }}</span></p>
@@ -50,7 +50,7 @@
                                             <small class="text-danger fw-bold p-1 rounded" style="background-color: rgb(249,242,244)">{{ $garbage->status }}</small>
                                         @endif
                                     </div>
-                                    <a class="btn-link" href="dashboard/detail_penukaran_sampah/{{ $garbage->id }}">Lihat detail</a>
+                                    <a class="btn-link" href="dashboard/detail_penukaran_sampah/{{ $garbage->id }}"><small>Lihat detail</small></a>
                                 </div>
                             @endforeach 
                         @else
@@ -58,7 +58,7 @@
                         @endif
                     </div>
                 </div>
-                <div class="pagination mt-3 text-center justify-content-start">
+                <div class="pagination mt-3 text-center justify-content-end">
                     {{ $garbages->links() }}
                 </div>
             </div>
