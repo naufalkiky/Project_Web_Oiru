@@ -68,9 +68,9 @@
                         <div class="container border-top pt-3 mb-2">
                             <div class="d-md-flex d-block justify-content-between align-items-center ">
                                 <div>
-                                    <p class="mb-1">Total berat sampah =<span class="fw-bold"> {{ $total_weight }}</span> Kg</p>
-                                    <p class="mb-1">Jumlah paket sembako =<span class="fw-bold"> {{ $total_groceries }}</span> Paket</p>
-                                    <p class="mb-1">Jumlah pengguna aktif =<span class="fw-bold"> {{ $total_users }}</span> User</p>
+                                    <p class="mb-1">Total berat sampah      =<span class="fw-bold"> {{ $total_weight }}</span> Kg</p>
+                                    <p class="mb-1">Jumlah paket sembako    =<span class="fw-bold"> {{ $total_groceries }}</span> Paket</p>
+                                    <p class="mb-1">Jumlah pengguna aktif   =<span class="fw-bold"> {{ $total_users }}</span> User</p>
                                 </div>
                             </div>
                         </div>
