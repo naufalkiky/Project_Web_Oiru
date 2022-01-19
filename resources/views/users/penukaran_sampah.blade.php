@@ -67,8 +67,8 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                        1. Sampah dengan jenis yang sama akan didahulukan untuk diproses <br>
-                        2. Sampah Anorganik(kaleng, kaca, plastik,dll) lebih diutamakan <br>
+                            1. Sampah dengan jenis yang sama akan didahulukan untuk diproses <br>
+                            2. Sampah Anorganik(kaleng, kaca, plastik,dll) lebih diutamakan <br>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Oke, Paham</button>
