@@ -143,6 +143,24 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     width: 50%;
 }
 
+.carousel-item{
+    height: 400px;
+    position: relative;
+    background: rgb(0, 0, 0);
+    color: white;
+}
+
+.gambarBg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top:0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+}
+
 @media screen and (max-width: 992px) {
     .left-side, .right-side {
         width: 100%;
