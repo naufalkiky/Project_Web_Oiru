@@ -71,19 +71,19 @@
         </div>
         <div class="row align-items-center align-content-center mb-5">
             <div class="col-12 col-md-3 text-center p-0">
-                <h1 class="fw-bold barter-bage-color-text">100%</h1>
+                <h1 class="fw-bold barter-bage-color-text"> <img class="mb-2" src="/assets/img/icon/indo.png" alt="" width="100"> 100%</h1>
                 <p>Daerah Indonesia terjangkau</p>
             </div>
             <div class="col-12 col-md-3 text-center">
-                <h1 class="fw-bold barter-bage-color-text">{{ $total_users }}+</h1>
+                <h1 class="fw-bold barter-bage-color-text"> <img class="mb-2" src="/assets/img/icon/user.png" alt="" width="40"> {{ $total_users }}+</h1>
                 <p>Pengguna aktif</p>
             </div>
             <div class="col-12 col-md-3 text-center">
-                <h1 class="fw-bold barter-bage-color-text">{{ $total_weight }}+</h1>
+                <h1 class="fw-bold barter-bage-color-text"> <img class="mb-2" src="/assets/img/icon/trash.png" alt="" width="30"> {{ $total_weight }}+</h1>
                 <p>Kilogram sampah ditukarkan</p>
             </div>
             <div class="col-12 col-md-3 text-center">
-                <h1 class="fw-bold barter-bage-color-text">{{ $total_groceries }}+</h1>
+                <h1 class="fw-bold barter-bage-color-text"> <img class="mb-2" src="/assets/img/icon/pac.png" alt="" width="40"> {{ $total_groceries }}+</h1>
                 <p>Paket sembako tersedia</p>
             </div>
         </div>
