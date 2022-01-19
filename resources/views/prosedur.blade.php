@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="row mt-3">
-        <div class="col-12 mb-4">
+        <div class="col-12 mb-5 mb-md-4">
             <h2 class="text-center fw-bold mb-3">Langkah mudah menggunakan <span class="barter-bage-color-text">BarterBage</span></h2>
             <div class="text-center">Untuk pengalaman terbaik anda, kami memberikan cara mudah</div> 
             <div class="text-center">untuk menggunakan fitur andalan dari BarterBage.</div>
@@ -17,7 +17,7 @@
                 <button class="nav-link btn-active-tabs" id="pills-tukar-sembako-tab" data-bs-toggle="pill" data-bs-target="#pills-tukar-sembako" type="button" role="tab" aria-controls="pills-tukar-sembako" aria-selected="false">Penukaran Sembako</button>
             </li>
         </ul>
-        <div class="container border rounded p-4">
+        <div class="card mx-auto p-4">
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-tukar-sampah" role="tabpanel" aria-labelledby="pills-tukar-sampah-tab">
                     <div class="container px-0 pt-3 px-md-5 text-center">
