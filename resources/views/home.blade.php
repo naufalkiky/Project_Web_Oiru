@@ -29,26 +29,26 @@
             <button type="button" data-bs-target="#carouselBarterBage" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselBarterBage" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-inner rounded" data-bs-interval="5000">
+            <div class="carousel-inner" data-bs-interval="5000">
                 <div class="carousel-item active">
                     <div class="gambarBg" style="background-image: url({{ asset('assets/img/logo/barter-bage.png') }})"></div>
                     <div class="carousel-caption d-none d-md-block">
                         <h5 class="fw-bold">Kami Ada Untuk Anda</h5>
-                        <p class="fw-bold">Solusi bagi menumpuknya sampah di lingkungan kita</p>
+                        <p class="">Solusi bagi menumpuknya sampah di lingkungan kita</p>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="5000">
                     <div class="gambarBg" style="background-image: url(https://www.osteourgence.fr/templates/yootheme/cache/can-3489894_1920-5c44e6d5.jpeg)"></div>
                     <div class="carousel-caption d-none d-md-block">
                         <h5 class="fw-bold">Mari Kita Bersatu</h5>
-                        <p class="fw-bold">Wujudkan Indonesia Bersih, Indonesia Sejahtera</p>
+                        <p class="">Wujudkan Indonesia Bersih, Indonesia Sejahtera</p>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="5000">
                     <div class="gambarBg" style="background-image: url(https://disk.mediaindonesia.com/thumbs/1800x1200/news/2019/07/d8651ef32d625b3401f21b0db91598ad.jpg)"></div>
                     <div class="carousel-caption d-none d-md-block">
                         <h5 class="fw-bold">Jangan Nyampah !</h5>
-                        <p class="fw-bold">Demi masa depan yang cerah</p>
+                        <p class="">Demi masa depan yang cerah</p>
                     </div>
                 </div>
             </div>
