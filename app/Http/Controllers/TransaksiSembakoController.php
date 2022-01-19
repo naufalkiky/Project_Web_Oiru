@@ -30,7 +30,7 @@ class TransaksiSembakoController extends Controller
         $transaction = GroceriesTransaction::where('id', $id)->first();
         
         if ($transaction->status == 'Berhasil') {
-            if ($request->status == 'Belum diverifikasi' OR $request->status == 'Dalam pengiriman') {
+            if ($request->status == 'Belum diverifikasi' OR $request->status == 'Dalam pengiriman' OR $request->status == 'Berhasil') {
                 return back()->with('admin_danger', 'Penukaran paket sembako sudah berhasil dilakukan!');
             }
         } else if ($transaction->status == 'Dalam pengiriman') {
@@ -40,6 +40,7 @@ class TransaksiSembakoController extends Controller
                 GroceriesTransaction::where('id', $id)->update([
                     'status' => $request->status
                 ]);
+                return back()->with('admin_success', 'Status penukaran paket sembako berhasil diubah!');
             }
         } else {
             if ($request->status == 'Berhasil') {
