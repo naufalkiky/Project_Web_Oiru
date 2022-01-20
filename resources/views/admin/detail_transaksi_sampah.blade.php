@@ -34,6 +34,12 @@
                         </div>
                     </div>
                     <div class="mb-3">
+                        <label for="name" class="form-label fw-bold">Nomor Hp</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="no_hp" id="no_hp" value="{{ $garbage->users->no_hp }}" readonly>
+                        </div>
+                    </div>
+                    <div class="mb-3">
                         <label for="garbage_weight" class="form-label fw-bold">Berat Sampah</label>
                         <div class="input-group">
                             <input type="number" class="form-control" name="garbage_weight" id="garbage_weight" value="{{ $garbage->garbage_weight }}" readonly>
@@ -41,14 +47,14 @@
                         </div>
                     </div>
                     <div class="mb-3">
+                        <label for="address" class="form-label fw-bold">Alamat</label>
+                        <textarea class="form-control" name="address" id="address" cols="30" rows="4" readonly>{{ $garbage->users->address }}</textarea>
+                    </div>
+                    <div class="mb-3">
                         <label for="garbage_weight" class="form-label fw-bold">Catatan</label>
                         <div class="input-group">
                             <input type="text" class="form-control" name="name" id="name" value="{{ $garbage->note }}" readonly>
                         </div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="address" class="form-label fw-bold">Alamat</label>
-                        <textarea class="form-control" name="address" id="address" cols="30" rows="4" readonly>{{ $garbage->users->address }}</textarea>
                     </div>
                     <div class="mb-5">
                         <label for="status" class="form-label fw-bold">Status</label>

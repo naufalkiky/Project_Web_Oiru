@@ -29,6 +29,12 @@
                         </div>
                     </div>
                     <div class="mb-3">
+                        <label for="no_hp" class="form-label fw-bold">Nomor Hp</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="no_hp" id="no_hp" value="{{ $transaction->users->no_hp }}" readonly>
+                        </div>
+                    </div>
+                    <div class="mb-3">
                         <label for="package_name" class="form-label fw-bold">Nama Paket</label>
                         <div class="input-group">
                             <input type="text" class="form-control" name="package_name" id="package_name" value="{{ $transaction->groceries->package_name }}" readonly>
@@ -42,14 +48,14 @@
                         </div>
                     </div>
                     <div class="mb-3">
+                        <label for="address" class="form-label fw-bold">Alamat</label>
+                        <textarea class="form-control" name="address" id="address" cols="30" rows="4" readonly>{{ $transaction->users->address }}</textarea>
+                    </div>
+                    <div class="mb-3">
                         <label for="garbage_weight" class="form-label fw-bold">Catatan</label>
                         <div class="input-group">
                             <input type="text" class="form-control" name="name" id="name" value="{{ $transaction->note }}" readonly>
                         </div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="address" class="form-label fw-bold">Alamat</label>
-                        <textarea class="form-control" name="address" id="address" cols="30" rows="4" readonly>{{ $transaction->users->address }}</textarea>
                     </div>
                     <div class="mb-5">
                         <label for="status" class="form-label fw-bold">Status</label>

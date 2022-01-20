@@ -31,8 +31,8 @@
                 <div class="mb-4">
                     <p class="fw-bold">{{ $package->description }}</p>
                     <p>
-                        Pengiriman barang akan dilakukan paling lambat dalam waktu 7 X 24 Jam hari kerja.
-                        Jika barang tidak tersedia, pesanan dapat dibatalkan dan BagePoints akan dikembalikan seluruhnya.
+                        Pengiriman paket sembako akan dilakukan paling lambat dalam waktu 7 X 24 Jam hari kerja.
+                        Jika paket tidak tersedia, pesanan dapat dibatalkan dan BagePoints akan dikembalikan seluruhnya.
                     </p>
                 </div>
             </div>

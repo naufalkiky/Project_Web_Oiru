@@ -33,7 +33,7 @@
                             <th scope="row">{{ $number++ }}</th>
                             <td>{{ $garbage->users->name }}</td>
                             <td>{{ $garbage->garbage_weight }} Kg</td>
-                            <td>{{ $garbage->created_at }}</td>
+                            <td>{{ $garbage->created_at }} WIB</td>
                             <td>
                                 @if ($garbage->status == 'Berhasil')
                                     <small class="text-success fw-bold p-1 rounded" style="background-color: rgb(225, 248, 228)">{{ $garbage->status }}</small>        
