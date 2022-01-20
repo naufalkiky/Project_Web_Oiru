@@ -4,15 +4,16 @@ namespace App\Http\Controllers;
 
 use App\Models\Groceries;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
 class SembakoController extends Controller
 {
     public function index()
     {
-        $groceries = DB::table('groceries')->paginate(10);
+        $number = 1;
+        $groceries = Groceries::orderBy('id', 'asc')->paginate(10);
         return view('admin.sembako', [
-            'groceries' => $groceries
+            'groceries' => $groceries,
+            'number' => $number
         ]);
     }
 

@@ -20,7 +20,6 @@
         </div>
         <div class="col-12 col-lg-8 right-side">
             <form action="{{ Route('sembako.search') }}" method="get" class="d-flex">
-                @csrf
                 <div class="input-group mb-2 shadow">
                     <input type="search" class="form-control" placeholder="Cari nama paket/produk.." name="keyword" value="{{ request('keyword') }}">
                     <button class="btn barter-bage-color text-white" type="submit">Cari</button>

@@ -26,7 +26,7 @@
                 <table class="table align-middle">
                     <thead>
                     <tr>
-                        <th scope="col">ID</th>
+                        <th scope="col">No</th>
                         <th scope="col">Nama Paket</th>
                         <th scope="col">Bage Points</th>
                         <th scope="col" class="w-50">Deskripsi</th>
@@ -36,7 +36,7 @@
                     <tbody>
                     @foreach ($groceries as $package)
                         <tr>
-                            <th scope="row">{{ $package->id }}</th>
+                            <th scope="row">{{ $number++ }}</th>
                             <td>{{ $package->package_name }}</td>
                             <td>{{ $package->bage_points }}</td>
                             <td>{{ $package->description }}</td>
