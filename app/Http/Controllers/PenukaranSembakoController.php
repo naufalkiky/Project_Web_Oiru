@@ -7,7 +7,6 @@ use App\Models\GroceriesTransaction;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\DB;
 
 class PenukaranSembakoController extends Controller
 {
@@ -31,7 +30,7 @@ class PenukaranSembakoController extends Controller
     {
         $package = Groceries::where('id', $id)->first();
 
-        if (Auth::user()->bage_points >= $package->bage_points) {
+        if (Auth::user()->bage_points >= $request->quantity * $package->bage_points) {
             $request->validate([
                 'quantity' => ['required', 'min:1'],
                 'postal_code' => ['required'],
@@ -56,7 +55,7 @@ class PenukaranSembakoController extends Controller
                     'quantity' => $request->quantity,
                     'total_bage_points' => $request->quantity * $package->bage_points,
                 ]);
-
+                
                 $user = User::where('id', Auth::user()->id)->first();
                 $user->bage_points -= $request->quantity * $package->bage_points;
                 $user->postal_code = $request->postal_code;
