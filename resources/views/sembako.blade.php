@@ -10,7 +10,7 @@
             <div class="d-flex flex-lg-column flex-row align-content-center mb-2"> 
             @auth
                 <div class="col-6 col-lg-12 card rounded-lg shadow p-2 mb-0 mb-lg-4 me-3 me-lg-0 w-50">
-                    <a class="text-decoration-none text-black" href="/user/dashboard/{{ Auth::user()->id }}"> <img src="/assets/img/icon/coin.png" alt="" width="20"> : <span class="fw-bold barter-bage-color-text">{{ Auth::user()->bage_points }}</span></a>
+                    <a class="text-decoration-none text-black" href="{{ Route('user') }}"> <img src="/assets/img/icon/coin.png" alt="" width="20"> : <span class="fw-bold barter-bage-color-text">{{ Auth::user()->bage_points }}</span></a>
                 </div>
             @endauth
                 <div class="col-6 col-lg-12">
