@@ -15,9 +15,6 @@
                         <li>
                             <a class="dropdown-item" href="{{ Route('penukaran-sampah') }}">🧴 Jelantah</a>
                         </li>
-                        <li>
-                            <a class="dropdown-item" href="{{ Route('sembako') }}">🛍️ Sembako</a>
-                        </li>
                     </ul>
                 </div>
                 <a class="nav-link active btn-hover rounded mb-2 mb-md-0 {{ Request::is('prosedur') ? 'btn-active' : '' }}" href="/prosedur">Prosedur</a>
@@ -33,7 +30,7 @@
                             <a class="dropdown-item" href="/visi-misi">Visi & Misi</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="/our-team">Our Team</a>
+                            <a class="dropdown-item" href="/our_team">Our Team</a>
                         </li>
                     </ul>
                 </div>

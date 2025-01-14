@@ -16,13 +16,11 @@
                 <tbody>
                     <tr>
                         <td>
-                        1. Menunjang pengelolaan Sampah sesuai amanat Undang-Undang Nomor 18 Tahun 2008 tentang Pengelolaan Sampah.<br>
-                        2. Terwujudnya Bank Sampah yang mandiri untuk membangun ekonomi kerakyatan serta lingkungan yang bersih dan hijau sehingga tercipta masyarakat yang sehat<br>
+                        1. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, officiis.<br>
+                        2. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus alias odit illum!<br>
                         </td>
                         <td>
-                         1. Mengurangi jumlah timbulan sampah. <br>
-                         2. Mendayagunakan sampah menjadi barang bermanfaat sehingga mempunyai nilai ekonomi dan potensi yang produktif dan bermanfaat bagi masyarakat.<br>
-                         3. Merubah perilaku masyarakat dalam pengelolaan samapah secara benar dan ramah lingkungan.<br>
+                         1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, eligendi?<br>
                         </td>
                     </tr>
                 </tbody>
