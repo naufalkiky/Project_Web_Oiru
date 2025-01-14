@@ -4,7 +4,7 @@
 
 @section('content')
     <h1 class="fw-bold text-center mb-4">Overview</h1>
-    <div class="ms-0 ms-md-5 me-0 me-md-5">
+    {{-- <div class="ms-0 ms-md-5 me-0 me-md-5">
         <div class="col-sm-20 mb-2">
             <div class="card shadow rounded-lg card-sembako">
                 <img src="{{ asset('assets/img/images/tumpukan sampah.jpg') }}" class="card-img-top" alt="illustration-image">
@@ -62,5 +62,5 @@
                             Hal inilah yang kami inginkan untuk seluruh desa di Indonesia supaya dapat meningkatkan rasa peduli terhadap permasalahan sampah di kehidupan sehari-hari kita dan pentingnya menjaga kebersihan lingkungan sekitar.
                         </p>
                         <br>
-                    </div>
+                    </div> --}}
 @endsection

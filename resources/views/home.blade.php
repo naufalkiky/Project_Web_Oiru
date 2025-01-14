@@ -139,7 +139,7 @@
         <div class="container p-5">
             <h4 class="text-white fw-bold">Apa yang perlu kami bantu?</h4>
             <p class="mb-4 text-white">Tanyakan seputar layanan, informasi, saran dan hal lainnya supaya anda bisa jadi lebih paham.</p>
-            <a class="btn barter-bage-color-text" style="background-color: #A0C570" href="https://linktr.ee/aniko2001" target="_blank">Tanya sesuatu</a>
+            <a class="btn barter-bage-color-text" style="background-color: #A0C570" href="" target="_blank">Tanya sesuatu</a>
         </div>
     </div>
 @endsection
