@@ -66,8 +66,8 @@
     {{-- middle home --}}
     <div class="pt-5 mb-5">
         <div class="row align-items-center align-content-center">
-            <div class="text-center fw-bold text-statistic">BarterBage adalah jalan terbaik bagi anda untuk menjaga lingkungan dengan</div>
-            <div class="text-center fw-bold text-statistic barter-bage-color-text mb-3 mb-md-5">berperan dalam menanggulangi penumpukan sampah.</div>
+            <div class="text-center fw-bold text-statistic">Oiru adalah jalan terbaik bagi anda untuk menjaga lingkungan dengan</div>
+            <div class="text-center fw-bold text-statistic barter-bage-color-text mb-3 mb-md-5">berperan dalam menanggulangi limbah minyak jelantah.</div>
         </div>
         <div class="row align-items-center align-content-center mb-5">
             <div class="col-12 col-md-3 text-center p-0">
@@ -80,7 +80,7 @@
             </div>
             <div class="col-12 col-md-3 text-center">
                 <h1 class="fw-bold barter-bage-color-text"> <img class="mb-2" src="/assets/img/icon/trash.png" alt="" width="30"> {{ $total_weight }}+</h1>
-                <p>Kilogram sampah ditukarkan</p>
+                <p>Liter Minyak ditukarkan</p>
             </div>
             <div class="col-12 col-md-3 text-center">
                 <h1 class="fw-bold barter-bage-color-text"> <img class="mb-2" src="/assets/img/icon/pac.png" alt="" width="40"> {{ $total_groceries }}+</h1>
@@ -102,17 +102,17 @@
             <div class="col-12 col-sm-4 text-center p-4">
                 <img class="mb-2" src="/assets/img/icon/sandclock.png" alt="" width="35">
                 <h5 class="fw-bold barter-bage-color-text">Tukar Cepat</h5>
-                <p>Penukaran sampah diproses dengan cepat oleh admin kami untuk pengalaman terbaik anda.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
             </div>
             <div class="col-12 col-sm-4 text-center p-4">
                 <img class="mb-3" src="/assets/img/icon/coin.png" alt="" width="40">
-                <h5 class="fw-bold barter-bage-color-text">Bage Points</h5>
-                <p>Hasil penukaran berupa point yang dapat digunakan untuk ditukarkan dengan paket sembako yang tersedia.</p>
+                <h5 class="fw-bold barter-bage-color-text">Points</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque ab tempora.</p>
             </div>
             <div class="col-12 col-sm-4 text-center p-4">
                 <img class="mb-4" src="/assets/img/icon/truck.png" alt="" width="95">
-                <h5 class="fw-bold barter-bage-color-text">Bank Sampah</h5>
-                <p>Terintegrasi dengan bank sampah terdekat untuk pendistribusian maupun pengelolaan sampah.</p>
+                <h5 class="fw-bold barter-bage-color-text">Pick Up</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio aspernatur dignissimos.</p>
             </div>
         </div>
     </div>
