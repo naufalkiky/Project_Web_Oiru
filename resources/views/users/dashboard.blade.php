@@ -9,13 +9,13 @@
             <p class="mb-4 text-white">Semoga kamu dalam keadaan sehat ya.</p>
             <div class="card rounded-lg p-2">
                 <div class="card-body">
-                    <p class="card-text fw-bold">BagePoints <img class="ms-1" src="/assets/img/icon/coin.png" alt="coin" width="20"></p>
+                    <p class="card-text fw-bold">OiruPoints <img class="ms-1" src="/assets/img/icon/coin.png" alt="coin" width="20"></p>
                     <div class="container border rounded p-2">
                         <div class="d-md-flex d-block justify-content-between align-items-center ">
-                            <p class="mb-2 mb-md-0">BagePoints kamu saat ini: <span class="fw-bold">{{ Auth::user()->bage_points }}</span></p>
+                            <p class="mb-2 mb-md-0">OiruPoints kamu saat ini: <span class="fw-bold">{{ Auth::user()->bage_points }}</span></p>
                             <div>
-                                <a href="{{ Route('penukaran-sampah') }}" class="btn barter-bage-color-darker text-white mb-2 mb-sm-0">Tukar Sampah</a>
-                                <a href="{{ Route('status') }}" class="btn barter-bage-color-darker text-white mb-2 mb-sm-0">Status Penukaran Sembako</a>
+                                <a href="{{ Route('penukaran-sampah') }}" class="btn barter-bage-color-darker text-white mb-2 mb-sm-0">Tukar Jelantah</a>
+                                <a href="{{ Route('status') }}" class="btn barter-bage-color-darker text-white mb-2 mb-sm-0">Status Penukaran</a>
                             </div>
                         </div>
                     </div>
@@ -30,7 +30,7 @@
                 {{-- riwayat penukaran sampah --}}
                 <div class="card mb-4">
                     <div class="card-body">
-                        <p class="fw-bold">🕰️ Riwayat Transaksi Penukaran Sampah</p>
+                        <p class="fw-bold">🕰️ Riwayat Transaksi Penukaran</p>
                         @if (!$garbages->isEmpty())
                             @foreach ($garbages as $garbage)
                                 <div class="container overflow-auto border-top pt-3 mb-2 mt-3">

@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom py-2">
     <div class="container align-items-center">
-        <a class="navbar-brand fw-bold" href="/"><img src="{{ asset('assets/img/logo/barter-bage-horizontal.svg') }}" alt="logo-navbar" width="180"></a>
+        <a class="navbar-brand fw-bold" href="/"><img src="{{ asset('assets/img/logo/LogoOiru.png') }}" alt="logo-navbar" width="120"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -13,7 +13,7 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                         <li>
-                            <a class="dropdown-item" href="{{ Route('penukaran-sampah') }}">🗑️ Sampah</a>
+                            <a class="dropdown-item" href="{{ Route('penukaran-sampah') }}">🧴 Jelantah</a>
                         </li>
                         <li>
                             <a class="dropdown-item" href="{{ Route('sembako') }}">🛍️ Sembako</a>

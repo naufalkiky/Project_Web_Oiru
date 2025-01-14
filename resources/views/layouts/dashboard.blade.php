@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     @include('includes.meta')
-    <title>@yield('title') | BarterBage</title>
+    <title>@yield('title') | Oiru</title>
 
     <link rel="shortcut icon" type="image/png" href="{{ asset('assets/img/logo/title-icon.png') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">

@@ -22,10 +22,10 @@ class HomeController extends Controller
         ]);
     }
 
-    public function welcome()
-    {
-        return view('welcome');
-    }
+    // public function welcome()
+    // {
+    //     return view('welcome');
+    // }
 
     public function procedure()
     {

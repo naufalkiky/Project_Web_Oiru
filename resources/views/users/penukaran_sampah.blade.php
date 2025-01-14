@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Tukar Sampah')
+@section('title', 'Tukar Jelantah')
 
 @section('content')
     @if (session()->has('success'))

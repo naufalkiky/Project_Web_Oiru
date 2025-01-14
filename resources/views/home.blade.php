@@ -12,9 +12,9 @@
     {{-- top home --}}
     <div class="row align-items-center justify-content-between mb-5">
         <div class="col-md-7">
-            <h1 class="title-cta mb-3 mt-3 mt-md-0">Tukar Sampah, Dapat <span>Sembako</span></h1>
-            <p class="lh-lg mb-4">Kami hadir sebagai platform penukaran sampah online pertama di Indonesia dilengkapi dengan daftar sembako yang dapat ditukarkan dengan BagePoints hasil penukaran sampah.</p>
-            <a class="btn barter-bage-color text-white py-3 px-4 rounded-lg fw-bold" href="{{ Route('penukaran-sampah') }}">Tukar Sampah Sekarang</a>
+            <h1 class="title-cta mb-3 mt-3 mt-md-0">Tukar Jelantah, Dapat <span>Cuan</span></h1>
+            <p class="lh-lg mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aperiam nulla recusandae placeat doloribus magnam earum, dolorem quasi! Voluptas, nobis officia itaque nulla soluta assumenda id eaque? Soluta, nemo corrupti..</p>
+            <a class="btn barter-bage-color text-white py-3 px-4 rounded-lg fw-bold" href="{{ Route('penukaran-sampah') }}">Tukar Jelantah Sekarang</a>
         </div>
         <div class="col-md-5">
             <img src="{{ asset('assets/img/logo/home-illustrator.svg') }}" alt="home-illustration" class="home-img">
@@ -31,7 +31,7 @@
             </div>
             <div class="carousel-inner" data-bs-interval="5000">
                 <div class="carousel-item active">
-                    <div class="gambarBg" style="background-image: url({{ asset('assets/img/logo/barter-bage.png') }})"></div>
+                    <div class="gambarBg" style="background-image: url({{ asset('assets/img/logo/LogoOiru.png') }})"></div>
                     <div class="carousel-caption d-none d-md-block">
                         <h5 class="fw-bold">Kami Ada Untuk Anda</h5>
                         <p class="">Solusi bagi menumpuknya sampah di lingkungan kita</p>
@@ -93,9 +93,9 @@
     <div class="pt-5 mb-4 border-top">
         <div class="row">
             <div class="col-12 mb-5">
-                <h3 class="text-center fw-bold mb-3">Mengapa <span class="barter-bage-color-text">BarterBage</span>?</h3>
-                <div class="text-center">Tidak hanya menyediakan layanan online untuk penukaran sampah,</div> 
-                <div class="text-center">BarterBage juga memiliki perbedaan unik dari platform lainnya khusus untuk anda.</div>
+                <h3 class="text-center fw-bold mb-3">Mengapa <span class="barter-bage-color-text">Oiru?</span>?</h3>
+                <div class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, explicabo.</div> 
+                <div class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, amet.</div>
             </div>
         </div>
         <div class="row justify-content-between">
@@ -118,7 +118,7 @@
     </div>
 
     {{-- middle home 3 --}}
-    <div class="py-5 border-top">
+    {{-- <div class="py-5 border-top">
         <div class="col-12 mb-4">
             <h3 class="text-center fw-bold">Perjalanan Kami</h3>
         </div>
@@ -132,7 +132,7 @@
                     Dengan misi ini, BarterBage dapat menyatukan kekuatan akan pentingnya kesadaran lingkungan dan manfaat yang diberikan bagi perekonomian masyarakat sekitar.</p>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     {{-- middle home 4 --}}
     <div class="dashboard-jumbotron py-3 rounded">

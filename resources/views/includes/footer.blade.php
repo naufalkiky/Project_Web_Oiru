@@ -32,7 +32,7 @@
     </div>
     <div class="row pt-4 opacity-50 bottom-footer">
         <div class="col-md-10">
-            <p>&copy; 2021, BarterBage Indonesia</p>
+            <p>&copy; 2024, Oiru</p>
         </div>
         <div class="col-md-2">
             <a href="" class="ms-2"><img src="{{ asset('assets/img/icon/instagram.svg') }}" alt="instagram" width="28"></a>
