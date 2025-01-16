@@ -7,21 +7,21 @@
         <div class="container">
             <ol class="breadcrumb">
             <li class="breadcrumb-item"><a class="btn-link text-decoration-none" href="{{ Route('admin') }}"><small>Dashboard</small></a></li>
-            <li class="breadcrumb-item active" aria-current="page"><small>Data Penukaran Sampah</small></li>
+            <li class="breadcrumb-item active" aria-current="page"><small>Data Penukaran Minyak Jelantah</small></li>
             </ol>
         </div>
     </nav>
     <div class="container mt-3 mx-auto py-3 mb-5">
         @if (!$Total_Jelantah->isEmpty())
-            <h3 class="fw-bold">Data Penukaran Sampah</h3>
-            <p class="mb-4">Data penukaran sampah saat ini.</p>
+            <h3 class="fw-bold">Data Penukaran Minyak Jelantah</h3>
+            <p class="mb-4">Data penukaran jelantah saat ini.</p>
             <div class="table-responsive card p-4">
                 <table class="table align-middle">
                     <thead>
                     <tr>
                         <th scope="col">No</th>
                         <th scope="col">Nama Pengguna</th>
-                        <th scope="col">Berat Sampah</th>
+                        <th scope="col">Jumlah Jelantah</th>
                         <th scope="col">Waktu Penukaran</th>
                         <th scope="col">Status</th>
                         <th scope="col">Aksi</th>
@@ -58,7 +58,7 @@
         @else
             <div class="text-center mb-4 mt-0">
                 <img src="{{ asset('assets/img/logo/truck-illustrator.jpg') }}" alt="truck-illustrator" class="admin-image">
-                <p class="mt-3">Data penukaran sampah masih kosong</p>
+                <p class="mt-3">Data penukaran minyak jelantah masih kosong</p>
             </div>
         @endif
     </div>

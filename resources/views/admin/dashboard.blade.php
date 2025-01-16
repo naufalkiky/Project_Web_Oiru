@@ -12,7 +12,7 @@
                     <p class="card-text fw-bold">Data Penukaran Sampah Pengguna ♻️</p>
                     <div class="container border rounded p-2">
                         <div class="d-md-flex d-block justify-content-between align-items-center ">
-                            <p class="mb-2 mb-md-0">👉 Penukaran sampah pengguna dengan BagePoints</p>
+                            <p class="mb-2 mb-md-0">👉 Penukaran sampah pengguna dengan OiruPoints</p>
                             <a href="{{ Route('admin.transaksi-sampah') }}" class="btn barter-bage-color-darker text-white">Lihat Data</a>
                         </div>
                     </div>
@@ -55,7 +55,7 @@
                             <div class="d-md-flex d-block justify-content-between align-items-center ">
                                 <div class="mb-2 mb-md-0">
                                     <small class="fw-bold">Data Pengguna 📦</small>
-                                    <p class="card-text mt-1">Pengguna cerdas telah memilih BarterBage</p>
+                                    <p class="card-text mt-1">Pengguna cerdas telah memilih Oiru</p>
                                 </div>
                                 <a href="{{ Route('admin.data-users') }}" class="btn barter-bage-color-darker text-white">Lihat Data</a>
                             </div>
@@ -64,7 +64,7 @@
                 </div>
                 <div class="card mb-4">
                     <div class="card-body">
-                        <p class="fw-bold">📈 Statistik BarterBage</p>
+                        <p class="fw-bold">📈 Statistik Oiru</p>
                         <div class="container border-top pt-3 mb-2">
                             <div class="d-md-flex d-block justify-content-between align-items-center ">
                                 <div>
