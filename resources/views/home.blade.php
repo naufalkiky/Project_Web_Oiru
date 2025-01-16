@@ -13,6 +13,7 @@
     <div class="row align-items-center justify-content-between mb-5">
         <div class="col-md-7">
             <h1 class="title-cta mb-3 mt-3 mt-md-0">Tukar Jelantah, Dapat <span>Cuan</span></h1>
+
             <p class="lh-lg mb-4">Dengan Oiru, minyak jelantahmu nggak lagi jadi limbah. Tukarkan sekarang dan dapatkan keuntungan sambil ikut menjaga lingkungan! Yuk, mulai langkah kecil untuk masa depan yang lebih bersih dan ramah lingkungan.</p>
             <a class="btn barter-bage-color text-white py-3 px-4 rounded-lg fw-bold" href="{{ Route('penukaran-sampah') }}">Tukar Jelantah Sekarang</a>
         </div>
@@ -94,6 +95,7 @@
         <div class="row">
             <div class="col-12 mb-5">
                 <h3 class="text-center fw-bold mb-3">Mengapa <span class="barter-bage-color-text">Oiru?</span>?</h3>
+
                 <div class="text-center">
                 Oiru menawarkan solusi digital yang mengubah limbah minyak jelantah menjadi keuntungan ekonomi. 
                 Masyarakat dapat menukarkan minyak jelantahnya menjadi poin, yang kemudian bisa ditukar dengan sembako untuk kebutuhan sehari-hari.</div> 
@@ -109,6 +111,7 @@
             <div class="col-12 col-sm-4 text-center p-4">
                 <img class="mb-3" src="/assets/img/icon/coin.png" alt="" width="40">
                 <h5 class="fw-bold barter-bage-color-text">Points</h5>
+
                 <p>Dapatkan poin dari setiap transaksi dan tukarkan dengan paket sembako</p>
             </div>
             <div class="col-12 col-sm-4 text-center p-4">

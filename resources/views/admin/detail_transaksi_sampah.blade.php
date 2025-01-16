@@ -43,7 +43,7 @@
                         <label for="berat_jelantah" class="form-label fw-bold">Berat Sampah</label>
                         <div class="input-group">
                             <input type="number" class="form-control" name="berat_jelantah" id="garbage_weight" value="{{ $jelantah->berat_jelantah }}" readonly>
-                            <div class="input-group-text">Kg</div>
+                            <div class="input-group-text">Liter</div>
                         </div>
                     </div>
                     <div class="mb-3">

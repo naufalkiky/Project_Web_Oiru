@@ -11,15 +11,15 @@
     @endif
     <div class="row align-items-center justify-content-between mb-5 mt-3">
         <div class="col-md-5">
-            <h2 class="fw-bold">Masukkan Data Sampah</h2>
-            <p class="mb-4">Masukkan total berat, alamat dan gambar sampah untuk melakukan penukaran sampah. Klik <a class="fw-bold text-decoration-none" href="#" style="color:#36572A" data-bs-toggle="modal" data-bs-target="#helpModal">disini</a> untuk panduan dan informasi penukaran.</p>
+            <h2 class="fw-bold">Masukkan Data Jelantah</h2>
+            <p class="mb-4">Masukkan total liter, alamat dan gambar jelantah untuk melakukan penukaran. Klik <a class="fw-bold text-decoration-none" href="#" style="color:#36572A" data-bs-toggle="modal" data-bs-target="#helpModal">disini</a> untuk panduan dan informasi penukaran.</p>
             <form action="{{ Route('penukaran-sampah') }}" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="mb-3">
                     <label for="berat_jelantah" class="form-label fw-bold">Berat</label>
                     <div class="input-group">
-                        <input type="number" class="form-control" name="berat_jelantah" id="garbage_weight" min="1" placeholder="Total berat sampah dalam satuan kilogram" value="{{ old('weight') }}">
-                        <div class="input-group-text">Kg</div>
+                        <input type="number" class="form-control" name="berat_jelantah" id="garbage_weight" min="1" placeholder="Total berat jelantah dalam satuan liter" value="{{ old('weight') }}">
+                        <div class="input-group-text">Liter</div>
                     </div>
                     @error('berat_jelantah')
                         <div class="text-danger mt-2">
@@ -54,7 +54,7 @@
                     </div>
                 </div>
                 <div class="mb-4">
-                    <button type="submit" class="btn barter-bage-color text-white fw-bold" style="padding-top: 8px; padding-bottom: 8px;">Input Data Sampah</button>
+                    <button type="submit" class="btn barter-bage-color text-white fw-bold" style="padding-top: 8px; padding-bottom: 8px;">Input Data Jelantah</button>
                 </div>
             </form>
             

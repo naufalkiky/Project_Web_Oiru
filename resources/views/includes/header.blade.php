@@ -14,6 +14,7 @@
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                         <li>
                             <a class="dropdown-item" href="{{ Route('penukaran-sampah') }}">🧴 Jelantah</a>
+                            <a class="dropdown-item" href="{{ Route('sembako') }}">💰 Point</a>
                         </li>
                     </ul>
                 </div>

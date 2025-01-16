@@ -5,7 +5,7 @@
 @section('content')
     <div class="row mb-5 mt-3 mx-auto">
         <div class="col-12 col-lg-4 pb-3 left-side">
-            <h4 class="mb-3 fw-bold">Penukaran Sembako</h4>
+            <h4 class="mb-3 fw-bold">Penukaran Oiru Points</h4>
             <p>Akumulasi point dari penukaran sampah dapat ditukarkan dengan paket sembako berkualitas dan tentu saja bermanfaat bagi anda.</p>
             <div class="d-flex flex-lg-column flex-row align-content-center mb-2"> 
             @auth
@@ -14,7 +14,7 @@
                 </div>
             @endauth
                 <div class="col-6 col-lg-12">
-                    <a class="btn barter-bage-color text-white p-2" href="{{ Route('penukaran-sampah') }}">Tukar Sampah</a>
+                    <a class="btn barter-bage-color text-white p-2" href="{{ Route('penukaran-sampah') }}">Tukar Jelantah</a>
                 </div>
             </div>
         </div>
