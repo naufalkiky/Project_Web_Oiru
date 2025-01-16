@@ -16,12 +16,12 @@
             <form action="{{ Route('penukaran-sampah') }}" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="mb-3">
-                    <label for="garbage_weight" class="form-label fw-bold">Berat</label>
+                    <label for="berat_jelantah" class="form-label fw-bold">Berat</label>
                     <div class="input-group">
-                        <input type="number" class="form-control" name="garbage_weight" id="garbage_weight" min="1" placeholder="Total berat sampah dalam satuan kilogram" value="{{ old('weight') }}">
+                        <input type="number" class="form-control" name="berat_jelantah" id="garbage_weight" min="1" placeholder="Total berat sampah dalam satuan kilogram" value="{{ old('weight') }}">
                         <div class="input-group-text">Kg</div>
                     </div>
-                    @error('garbage_weight')
+                    @error('berat_jelantah')
                         <div class="text-danger mt-2">
                             {{ $message }}
                         </div>
@@ -37,11 +37,11 @@
                     @endif 
                 </div>
                 <div class="mb-3">
-                    <label for="image_garbage" class="form-label fw-bold">Gambar</label>
+                    <label for="gambar_jelantah" class="form-label fw-bold">Gambar</label>
                     <div class="input-group">
-                        <input type="file" class="form-control" name="image_garbage" id="image_garbage">
+                        <input type="file" class="form-control" name="gambar_jelantah" id="image_garbage">
                     </div>
-                    @error('image_garbage')
+                    @error('gambar_jelantah')
                         <div class="text-danger mt-2">
                             {{ $message }}
                         </div>

@@ -15,7 +15,7 @@ class GroceriesTransaction extends Model
         'user_id',
         'groceries_id',
         'quantity',
-        'total_bage_points',
+        'total_oiru_points',
         'note',
         'status',
         'invoice_number',

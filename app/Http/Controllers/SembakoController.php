@@ -27,7 +27,7 @@ class SembakoController extends Controller
         // validasi form tambah data sembako
         $request->validate([
             'package_name' => ['required'],
-            'bage_points' => ['required', 'min:1'],
+            'oiru_points' => ['required', 'min:1'],
             'image_groceries' => ['required', 'image', 'mimes:png,jpg,jpeg,gif,svg,PNG,JPG,JPEG', 'max:2048'],
             'description' => ['required'],
         ]);
@@ -37,7 +37,7 @@ class SembakoController extends Controller
 
         Groceries::create([
             'package_name' => $request->package_name,
-            'bage_points' => $request->bage_points,
+            'oiru_points' => $request->oiru_points,
             'image_groceries' => $image,
             'description' => $request->description
         ]);
@@ -61,14 +61,14 @@ class SembakoController extends Controller
 
             Groceries::where('id', $id)->update([
                 'package_name' => $request->package_name,
-                'bage_points' => $request->bage_points,
+                'oiru_points' => $request->oiru_points,
                 'image_groceries' => $image,
                 'description' => $request->description
             ]);
         } else {
             Groceries::where('id', $id)->update([
                 'package_name' => $request->package_name,
-                'bage_points' => $request->bage_points,
+                'oiru_points' => $request->oiru_points,
                 'description' => $request->description
             ]);
         }

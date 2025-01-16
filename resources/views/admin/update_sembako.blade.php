@@ -23,11 +23,11 @@
                         @enderror
                     </div>
                     <div class="mb-3">
-                        <label for="bage_points" class="form-label fw-bold">Jumlah Point</label>
+                        <label for="oiru_points" class="form-label fw-bold">Jumlah Point</label>
                         <div class="input-group">
-                            <input type="number" class="form-control" name="bage_points" id="bage_points" placeholder="Ex: 200" value="{{ $item->bage_points }}" min="1">
+                            <input type="number" class="form-control" name="oiru_points" id="oiru_points" placeholder="Ex: 200" value="{{ $item->oiru_points }}" min="1">
                         </div>
-                        @error('bage_points')
+                        @error('oiru_points')
                             <div class="text-danger mt-2">
                                 {{ $message }}
                             </div>

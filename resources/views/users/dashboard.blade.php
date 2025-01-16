@@ -12,7 +12,7 @@
                     <p class="card-text fw-bold">OiruPoints <img class="ms-1" src="/assets/img/icon/coin.png" alt="coin" width="20"></p>
                     <div class="container border rounded p-2">
                         <div class="d-md-flex d-block justify-content-between align-items-center ">
-                            <p class="mb-2 mb-md-0">OiruPoints kamu saat ini: <span class="fw-bold">{{ Auth::user()->bage_points }}</span></p>
+                            <p class="mb-2 mb-md-0">OiruPoints kamu saat ini: <span class="fw-bold">{{ Auth::user()->oiru_points }}</span></p>
                             <div>
                                 <a href="{{ Route('penukaran-sampah') }}" class="btn barter-bage-color-darker text-white mb-2 mb-sm-0">Tukar Jelantah</a>
                                 <a href="{{ Route('status') }}" class="btn barter-bage-color-darker text-white mb-2 mb-sm-0">Status Penukaran</a>
@@ -31,26 +31,26 @@
                 <div class="card mb-4">
                     <div class="card-body">
                         <p class="fw-bold">🕰️ Riwayat Transaksi Penukaran</p>
-                        @if (!$garbages->isEmpty())
-                            @foreach ($garbages as $garbage)
+                        @if (!$Total_Jelantah->isEmpty())
+                            @foreach ($Total_Jelantah as $jelantah)
                                 <div class="container overflow-auto border-top pt-3 mb-2 mt-3">
                                     <div class="d-md-flex d-block justify-content-between align-items-center mb-2">
                                         <div class="mb-2 mb-md-0">
-                                            <small>{{ $garbage->created_at }} WIB</small>
-                                            <div class="mt-2">Berat Sampah: <span class="fw-bold">{{ $garbage->garbage_weight }}</span> Kg</div>
-                                            @if ($garbage->status == 'Berhasil')
-                                                <div>Jumlah BagePoint: <span class="fw-bold">{{ $garbage->garbage_weight*50 }}</span></div>
+                                            <small>{{ $jelantah->created_at }} WIB</small>
+                                            <div class="mt-2">Berat Sampah: <span class="fw-bold">{{ $jelantah->berat_jelantah }}</span> Kg</div>
+                                            @if ($jelantah->status == 'Berhasil')
+                                                <div>Jumlah BagePoint: <span class="fw-bold">{{ $jelantah->berat_jelantah*50 }}</span></div>
                                             @endif
                                         </div>
-                                        @if ($garbage->status == 'Berhasil')
-                                            <small class="text-success fw-bold p-1 rounded" style="background-color: rgb(225, 248, 228)">{{ $garbage->status }}</small>        
-                                        @elseif ($garbage->status == 'Dalam penjemputan')
-                                            <small class="text-secondary fw-bold p-1 rounded" style="background-color: rgb(240, 240, 240)">{{ $garbage->status }}</small>
+                                        @if ($jelantah->status == 'Berhasil')
+                                            <small class="text-success fw-bold p-1 rounded" style="background-color: rgb(225, 248, 228)">{{ $jelantah->status }}</small>        
+                                        @elseif ($jelantah->status == 'Dalam penjemputan')
+                                            <small class="text-secondary fw-bold p-1 rounded" style="background-color: rgb(240, 240, 240)">{{ $jelantah->status }}</small>
                                         @else
-                                            <small class="text-danger fw-bold p-1 rounded" style="background-color: rgb(249,242,244)">{{ $garbage->status }}</small>
+                                            <small class="text-danger fw-bold p-1 rounded" style="background-color: rgb(249,242,244)">{{ $jelantah->status }}</small>
                                         @endif
                                     </div>
-                                    <a class="btn-link" href="dashboard/detail_penukaran_sampah/{{ $garbage->id }}"><small>Lihat detail</small></a>
+                                    <a class="btn-link" href="dashboard/detail_penukaran_sampah/{{ $jelantah->id }}"><small>Lihat detail</small></a>
                                 </div>
                             @endforeach 
                         @else
@@ -59,7 +59,7 @@
                     </div>
                 </div>
                 <div class="pagination mt-3 text-center justify-content-end">
-                    {{ $garbages->links() }}
+                    {{ $Total_Jelantah->links() }}
                 </div>
             </div>
 

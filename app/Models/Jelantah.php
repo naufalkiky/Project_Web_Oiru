@@ -6,16 +6,18 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
 
-class Garbage extends Model
+class Jelantah extends Model
 {
     use HasFactory;
+
+    protected $table = 'Total_Jelantah';
 
     protected $fillable = [
         'id',
         'user_id',
-        'garbage_weight',
+        'berat_jelantah',
         'address',
-        'image_garbage',
+        'gambar_jelantah',
         'note',
         'status',
         'pick_up_number'

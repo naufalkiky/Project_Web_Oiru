@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Garbage;
+use App\Models\Jelantah;
 use App\Models\Groceries;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -13,7 +13,7 @@ class AdminDashboardController extends Controller
     {
         $total_users = User::where('isAdmin', 0)->count();
         $total_groceries = Groceries::count();
-        $total_weight = Garbage::where('status', 'Berhasil')->sum('garbage_weight');
+        $total_weight = Jelantah::where('status', 'Berhasil')->sum('berat_jelantah');
 
         return view('admin.dashboard', [
             'total_users' => $total_users,

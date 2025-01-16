@@ -37,7 +37,7 @@
                                     -
                                 @endif
                             </td>
-                            <td>{{ $transaction->total_bage_points }}</td>
+                            <td>{{ $transaction->total_oiru_points }}</td>
                             <td>
                                 @if ($transaction->status == 'Berhasil')
                                     <small class="text-success fw-bold p-1 rounded" style="background-color: rgb(225, 248, 228)">{{ $transaction->status }}</small>        

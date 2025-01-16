@@ -12,7 +12,7 @@
         </div>
     </nav>
     <div class="container mt-3 mx-auto py-3 mb-5">
-        @if (!$garbages->isEmpty())
+        @if (!$Total_Jelantah->isEmpty())
             <h3 class="fw-bold">Data Penukaran Sampah</h3>
             <p class="mb-4">Data penukaran sampah saat ini.</p>
             <div class="table-responsive card p-4">
@@ -28,24 +28,24 @@
                     </tr>
                     </thead>
                     <tbody>
-                    @foreach ($garbages as $garbage)
+                    @foreach ($Total_Jelantah as $jelantah)
                         <tr>
                             <th scope="row">{{ $number++ }}</th>
-                            <td>{{ $garbage->users->name }}</td>
-                            <td>{{ $garbage->garbage_weight }} Kg</td>
-                            <td>{{ $garbage->created_at }} WIB</td>
+                            <td>{{ $jelantah->users->name }}</td>
+                            <td>{{ $jelantah->berat_jelantah }} Liter</td>
+                            <td>{{ $jelantah->created_at }} WIB</td>
                             <td>
-                                @if ($garbage->status == 'Berhasil')
-                                    <small class="text-success fw-bold p-1 rounded" style="background-color: rgb(225, 248, 228)">{{ $garbage->status }}</small>        
-                                @elseif ($garbage->status == 'Dalam penjemputan')
-                                    <small class="text-secondary fw-bold p-1 rounded" style="background-color: rgb(240, 240, 240)">{{ $garbage->status }}</small>
+                                @if ($jelantah->status == 'Berhasil')
+                                    <small class="text-success fw-bold p-1 rounded" style="background-color: rgb(225, 248, 228)">{{ $jelantah->status }}</small>        
+                                @elseif ($jelantah->status == 'Dalam penjemputan')
+                                    <small class="text-secondary fw-bold p-1 rounded" style="background-color: rgb(240, 240, 240)">{{ $jelantah->status }}</small>
                                 @else
-                                    <small class="text-danger fw-bold p-1 rounded" style="background-color: rgb(249,242,244)">{{ $garbage->status }}</small>
+                                    <small class="text-danger fw-bold p-1 rounded" style="background-color: rgb(249,242,244)">{{ $jelantah->status }}</small>
                                 @endif
                             </td>
                             <td>
-                                <a class="btn btn-secondary btn-action" href="detail-sampah/{{ $garbage->id }}">Detail</a>
-                                <a class="btn btn-danger btn-action" href="delete-transaksi-sampah/{{ $garbage->id }}">Hapus</a>
+                                <a class="btn btn-secondary btn-action" href="detail-sampah/{{ $jelantah->id }}">Detail</a>
+                                <a class="btn btn-danger btn-action" href="delete-transaksi-sampah/{{ $jelantah->id }}">Hapus</a>
                             </td>
                         </tr>
                     @endforeach
@@ -53,7 +53,7 @@
                 </table>
             </div>
             <div class="pagination mt-3 text-center justify-content-end">
-                {{ $garbages->links() }}
+                {{ $Total_Jelantah->links() }}
             </div>
         @else
             <div class="text-center mb-4 mt-0">

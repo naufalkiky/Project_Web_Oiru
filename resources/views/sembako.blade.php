@@ -10,7 +10,7 @@
             <div class="d-flex flex-lg-column flex-row align-content-center mb-2"> 
             @auth
                 <div class="col-6 col-lg-12 card rounded-lg shadow p-2 mb-0 mb-lg-4 me-3 me-lg-0 w-50">
-                    <a class="text-decoration-none text-black" href="{{ Route('user') }}"> <img src="/assets/img/icon/coin.png" alt="" width="20"> : <span class="fw-bold barter-bage-color-text">{{ Auth::user()->bage_points }}</span></a>
+                    <a class="text-decoration-none text-black" href="{{ Route('user') }}"> <img src="/assets/img/icon/coin.png" alt="" width="20"> : <span class="fw-bold barter-bage-color-text">{{ Auth::user()->oiru_points }}</span></a>
                 </div>
             @endauth
                 <div class="col-6 col-lg-12">
@@ -38,7 +38,7 @@
                             <div class="card-footer">
                                 <div class="row align-items-center justify-content-between">
                                     <div class="col-12 col-lg-6 text-center text-md-right pb-2 pb-lg-0">
-                                        <div class=""><img src="/assets/img/icon/coin.png" alt="" width="20"> {{ $package->bage_points }}</div>
+                                        <div class=""><img src="/assets/img/icon/coin.png" alt="" width="20"> {{ $package->oiru_points }}</div>
                                     </div>
                                     <div class="col-12 col-lg-6">
                                         <a href="sembako/{{ $package->id }}" class="btn barter-bage-color text-white w-100"><small>Tukarkan</small></a>

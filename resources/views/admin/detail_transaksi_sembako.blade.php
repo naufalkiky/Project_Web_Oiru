@@ -52,7 +52,7 @@
                         <textarea class="form-control" name="address" id="address" cols="30" rows="4" readonly>{{ $transaction->users->address }}</textarea>
                     </div>
                     <div class="mb-3">
-                        <label for="garbage_weight" class="form-label fw-bold">Catatan</label>
+                        <label for="berat_jelantah" class="form-label fw-bold">Catatan</label>
                         <div class="input-group">
                             <input type="text" class="form-control" name="name" id="name" value="{{ $transaction->note }}" readonly>
                         </div>

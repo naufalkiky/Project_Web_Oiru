@@ -26,7 +26,7 @@
                 <div class="mb-4">
                     <h2 class="fw-bold mb-3 barter-bage-color-text">{{ $package->package_name }}</h2>
                     <p class="mb-0"><small>BagePoints:</small></p>
-                    <p class="fw-bold"><img src="/assets/img/icon/coin.png" alt="" width="20"> {{ $package->bage_points }}</p>
+                    <p class="fw-bold"><img src="/assets/img/icon/coin.png" alt="" width="20"> {{ $package->oiru_points }}</p>
                 </div>
                 <div class="mb-4">
                     <p class="fw-bold">{{ $package->description }}</p>
@@ -51,7 +51,7 @@
                     <h4 class="mt-4 pt-2 fw-bold">Persyaratan</h4>
                     <p>Persyaratan yang perlu anda penuhi untuk penukaran BagePoints dengan Sembako diantaranya yaitu:</p>
                     <ol>
-                        <li class="mb-2">Anda membutuhkan <strong>{{ $package->bage_points }} BagePoints</strong> untuk memesan paket sembako ini</li>
+                        <li class="mb-2">Anda membutuhkan <strong>{{ $package->oiru_points }} BagePoints</strong> untuk memesan paket sembako ini</li>
                         <li class="mb-2">Alamat yang terdaftar pada akun anda sudah sesuai</li>
                         <li class="mb-2">Nomor HP atau Telefon yang terdaftar pada akun sudah sesuai</li>
                         <li class="mb-2">Segala pertanyaan dan masukan dapat anda salurkan <a class="btn-link" href="https://linktr.ee/aniko2001" target="_blank">disini</a></li>

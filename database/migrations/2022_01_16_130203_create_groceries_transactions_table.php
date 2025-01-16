@@ -20,7 +20,7 @@ class CreateGroceriesTransactionsTable extends Migration
             $table->unsignedBigInteger('groceries_id');
             $table->foreign('groceries_id')->references('id')->on('groceries')->onDelete('cascade')->onUpdate('cascade');
             $table->integer('quantity');
-            $table->integer('total_bage_points');
+            $table->integer('total_oiru_points');
             $table->string('note')->default('');
             $table->string('status')->default('Belum diverifikasi');
             $table->integer('invoice_number')->default(0);

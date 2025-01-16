@@ -23,14 +23,14 @@ class User extends Authenticatable
         'no_hp',
         'address',
         'postal_code',
-        'bage_points',
+        'oiru_points',
         'password',
         'isAdmin'
     ];
 
-    public function garbages()
+    public function Total_Jelantah()
     {
-        return $this->hasMany(Garbage::class);
+        return $this->hasMany(Jelantah::class);
     }
 
     public function groceries_transaction()

@@ -30,7 +30,7 @@ class PenukaranSembakoController extends Controller
     {
         $package = Groceries::where('id', $id)->first();
 
-        if (Auth::user()->bage_points >= $request->quantity * $package->bage_points) {
+        if (Auth::user()->oiru_points >= $request->quantity * $package->oiru_points) {
             $request->validate([
                 'quantity' => ['required', 'min:1'],
                 'postal_code' => ['required'],
@@ -40,12 +40,12 @@ class PenukaranSembakoController extends Controller
                     'user_id' => Auth::user()->id,
                     'groceries_id' => $id,
                     'quantity' => $request->quantity,
-                    'total_bage_points' => $request->quantity * $package->bage_points,
+                    'total_oiru_points' => $request->quantity * $package->oiru_points,
                     'note' => $request->note,
                 ]);
 
                 $user = User::where('id', Auth::user()->id)->first();
-                $user->bage_points -= $request->quantity * $package->bage_points;
+                $user->oiru_points -= $request->quantity * $package->oiru_points;
                 $user->postal_code = $request->postal_code;
                 $user->update();
             } else {
@@ -53,11 +53,11 @@ class PenukaranSembakoController extends Controller
                     'user_id' => Auth()->user()->id,
                     'groceries_id' => $id,
                     'quantity' => $request->quantity,
-                    'total_bage_points' => $request->quantity * $package->bage_points,
+                    'total_oiru_points' => $request->quantity * $package->oiru_points,
                 ]);
                 
                 $user = User::where('id', Auth::user()->id)->first();
-                $user->bage_points -= $request->quantity * $package->bage_points;
+                $user->oiru_points -= $request->quantity * $package->oiru_points;
                 $user->postal_code = $request->postal_code;
                 $user->update();
             }

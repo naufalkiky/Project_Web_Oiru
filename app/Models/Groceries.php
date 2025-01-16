@@ -12,7 +12,7 @@ class Groceries extends Model
     protected $fillable = [
         'id',
         'package_name',
-        'bage_points',
+        'oiru_points',
         'image_groceries',
         'description'
     ];

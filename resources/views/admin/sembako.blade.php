@@ -38,7 +38,7 @@
                         <tr>
                             <th scope="row">{{ $number++ }}</th>
                             <td>{{ $package->package_name }}</td>
-                            <td>{{ $package->bage_points }}</td>
+                            <td>{{ $package->oiru_points }}</td>
                             <td>{{ $package->description }}</td>
                             <td>
                                 <a class="btn btn-secondary btn-action" href="update-sembako/{{ $package->id }}">Detail</a>

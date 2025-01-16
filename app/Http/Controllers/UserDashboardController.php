@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Garbage;
+use App\Models\Jelantah;
 use App\Models\GroceriesTransaction;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -15,11 +15,11 @@ class UserDashboardController extends Controller
     public function index()
     {
         $users = User::where('id', Auth::user()->id)->get();
-        $garbages = Garbage::where('user_id', Auth::user()->id)->orderBy('id', 'desc')->paginate(4);
+        $Total_Jelantah = Jelantah::where('user_id', Auth::user()->id)->orderBy('id', 'desc')->paginate(4);
         
         return view('users.dashboard', [
             'users' => $users,
-            'garbages' => $garbages
+            'Total_Jelantah' => $Total_Jelantah
         ]);
     }
 
@@ -54,12 +54,12 @@ class UserDashboardController extends Controller
 
     public function detail($id)
     {
-        $garbages = Garbage::where('id', $id)->get();
+        $Total_Jelantah = Jelantah::where('id', $id)->get();
 
-        foreach ($garbages as $garbage) {
-            if ($garbage->user_id === Auth::user()->id) {
+        foreach ($Total_Jelantah as $jelantah) {
+            if ($jelantah->user_id === Auth::user()->id) {
                 return view('users.detail_penukaran_sampah', [
-                    'garbages' => $garbages,
+                    'Total_Jelantah' => $Total_Jelantah,
                 ]);
             } else {
                 return abort(404);

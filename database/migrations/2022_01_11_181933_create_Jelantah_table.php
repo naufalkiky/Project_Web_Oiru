@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateGarbagesTable extends Migration
+class CreateJelantahTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class CreateGarbagesTable extends Migration
      */
     public function up()
     {
-        Schema::create('garbages', function (Blueprint $table) {
+        Schema::create('Total_Jelantah', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
-            $table->integer('garbage_weight');
-            $table->string('image_garbage');
+            $table->integer('berat_jelantah');
+            $table->string('gambar_jelantah');
             $table->string('note')->default('');
             $table->string('status')->default('Belum diverifikasi');
             $table->integer('pick_up_number')->default(0);
@@ -33,6 +33,6 @@ class CreateGarbagesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('garbages');
+        Schema::dropIfExists('Total_Jelantah');
     }
 }

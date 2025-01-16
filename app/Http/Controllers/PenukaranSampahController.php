@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Garbage;
+use App\Models\Jelantah;
 use Illuminate\Http\Request;
 
 class PenukaranSampahController extends Controller
@@ -16,25 +16,25 @@ class PenukaranSampahController extends Controller
     {
         // validasi form tambah penukaran sampah
         $request->validate([
-            'garbage_weight' => ['required', 'min:1'],
-            'image_garbage' => ['required', 'image', 'mimes:png,jpg,jpeg,gif,svg,PNG,JPG,JPEG', 'max:2048'],
+            'berat_jelantah' => ['required', 'min:1'],
+            'gambar_jelantah' => ['required', 'image', 'mimes:png,jpg,jpeg,gif,svg,PNG,JPG,JPEG', 'max:2048'],
         ]);
 
-        $image = time().'.'.$request->image_garbage->extension();
-        $request->image_garbage->move(public_path('assets/img/garbages'), $image);
+        $image = time().'.'.$request->gambar_jelantah->extension();
+        $request->gambar_jelantah->move(public_path('assets/img/jelantah'), $image);
 
         if ($request->note != null) {
-            Garbage::create([
+            Jelantah::create([
                 'user_id' => Auth()->user()->id,
-                'garbage_weight' => $request->garbage_weight,
-                'image_garbage' => $image,
+                'berat_jelantah' => $request->berat_jelantah,
+                'berat_jelantah' => $image,
                 'note' => $request->note,
             ]);
         } else {
-            Garbage::create([
+            Jelantah::create([
                 'user_id' => Auth()->user()->id,
-                'garbage_weight' => $request->garbage_weight,
-                'image_garbage' => $image,
+                'berat_jelantah' => $request->berat_jelantah,
+                'gambar_jelantah' => $image,
             ]);
         }
 
