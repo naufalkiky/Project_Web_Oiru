@@ -7,7 +7,7 @@
     <div class="card mx-auto auth-form mb-4">
         <div class="card-header text-center pt-4">
             <h3 class="fw-bold">Register</h3>
-            <p class="opacity-75">Silahkan mendaftar untuk menggunakan berbagai fitur yang ada di BarterBage</p>
+            <p class="opacity-75">Silahkan mendaftar untuk menggunakan berbagai fitur yang ada di Web Oiru</p>
         </div>
         <div class="card-body">
             <form action="{{ Route('register') }}" method="post">

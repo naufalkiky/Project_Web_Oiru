@@ -23,6 +23,7 @@
                         <th scope="col">Nama Pengguna</th>
                         <th scope="col">Paket</th>
                         <th scope="col">Jumlah</th>
+
                         <th scope="col">Total Oiru Points</th>
                         <th scope="col">Status</th>
                         <th scope="col">Aksi</th>

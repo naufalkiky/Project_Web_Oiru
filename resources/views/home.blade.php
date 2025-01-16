@@ -13,7 +13,8 @@
     <div class="row align-items-center justify-content-between mb-5">
         <div class="col-md-7">
             <h1 class="title-cta mb-3 mt-3 mt-md-0">Tukar Jelantah, Dapat <span>Cuan</span></h1>
-            <p class="lh-lg mb-4">Oiru merupakan sebuah platform digital inovatif yang dirancang untuk menjawab permasalahan lingkungan sekaligus memberikan manfaat ekonomi kepada masyarakat melalui pengelolaan limbah minyak jelantah.</p>
+
+            <p class="lh-lg mb-4">Dengan Oiru, minyak jelantahmu nggak lagi jadi limbah. Tukarkan sekarang dan dapatkan keuntungan sambil ikut menjaga lingkungan! Yuk, mulai langkah kecil untuk masa depan yang lebih bersih dan ramah lingkungan.</p>
             <a class="btn barter-bage-color text-white py-3 px-4 rounded-lg fw-bold" href="{{ Route('penukaran-sampah') }}">Tukar Jelantah Sekarang</a>
         </div>
         <div class="col-md-5">
@@ -34,21 +35,21 @@
                     <div class="gambarBg" style="background-image: url({{ asset('assets/img/logo/LogoOiru.png') }})"></div>
                     <div class="carousel-caption d-none d-md-block">
                         <h5 class="fw-bold">Kami Ada Untuk Anda</h5>
-                        <p class="">Solusi bagi menumpuknya sampah di lingkungan kita</p>
+                        <p class="">Solusi bagi menumpuknya limbah minyak jelantah di lingkungan kita</p>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="5000">
                     <div class="gambarBg" style="background-image: url(https://www.osteourgence.fr/templates/yootheme/cache/can-3489894_1920-5c44e6d5.jpeg)"></div>
                     <div class="carousel-caption d-none d-md-block">
-                        <h5 class="fw-bold">Mari Kita Bersatu</h5>
-                        <p class="">Wujudkan Indonesia Bersih, Indonesia Sejahtera</p>
+                        <h5 class="fw-bold">Minyak jelantah jadi berkah</h5>
+                        <p class="">Dapatkan keuntungan sambil menjaga lingkungan</p>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="5000">
                     <div class="gambarBg" style="background-image: url(https://disk.mediaindonesia.com/thumbs/1800x1200/news/2019/07/d8651ef32d625b3401f21b0db91598ad.jpg)"></div>
                     <div class="carousel-caption d-none d-md-block">
-                        <h5 class="fw-bold">Jangan Nyampah !</h5>
-                        <p class="">Demi masa depan yang cerah</p>
+                        <h5 class="fw-bold">Minyak Jelantah Bukan Sampah!</h5>
+                        <p class="">Lindungi lingkungan untuk masa depan yang lebih baik</p>
                     </div>
                 </div>
             </div>
@@ -94,25 +95,29 @@
         <div class="row">
             <div class="col-12 mb-5">
                 <h3 class="text-center fw-bold mb-3">Mengapa <span class="barter-bage-color-text">Oiru?</span>?</h3>
-                <div class="text-center">Oiru hadir sebagai solusi praktis dan berkelanjutan untuk mengatasi dampak negatif dari limbah minyak jelantah sekaligus mendorong kesadaran masyarakat akan pentingnya daur ulang.</div> 
-                {{-- <div class="text-center">Keunggulan Oiru</div> --}}
+
+                <div class="text-center">
+                Oiru menawarkan solusi digital yang mengubah limbah minyak jelantah menjadi keuntungan ekonomi. 
+                Masyarakat dapat menukarkan minyak jelantahnya menjadi poin, yang kemudian bisa ditukar dengan sembako untuk kebutuhan sehari-hari.</div> 
+                <div class="text-center"> </div>
             </div>
         </div>
         <div class="row justify-content-between">
             <div class="col-12 col-sm-4 text-center p-4">
                 <img class="mb-2" src="/assets/img/icon/sandclock.png" alt="" width="35">
                 <h5 class="fw-bold barter-bage-color-text">Tukar Cepat</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <p>Proses penukaran yang mudah dan cepat, tanpa ribet</p>
             </div>
             <div class="col-12 col-sm-4 text-center p-4">
                 <img class="mb-3" src="/assets/img/icon/coin.png" alt="" width="40">
                 <h5 class="fw-bold barter-bage-color-text">Points</h5>
-                <p>Poin-poin yang terkumpul ini nantinya dapat ditukar dengan berbagai kebutuhan pokok seperti sembako, sehingga memberikan nilai tambah langsung kepada pengguna. </p>
+
+                <p>Dapatkan poin dari setiap transaksi dan tukarkan dengan paket sembako</p>
             </div>
             <div class="col-12 col-sm-4 text-center p-4">
                 <img class="mb-4" src="/assets/img/icon/truck.png" alt="" width="95">
                 <h5 class="fw-bold barter-bage-color-text">Pick Up</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio aspernatur dignissimos.</p>
+                <p>Layanan penjemputan minyak jelantah langsung ke rumah Anda</p>
             </div>
         </div>
     </div>

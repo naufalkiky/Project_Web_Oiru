@@ -28,7 +28,7 @@
                     <tr>
                         <th scope="col">No</th>
                         <th scope="col">Nama Paket</th>
-                        <th scope="col">Bage Points</th>
+                        <th scope="col">Oiru Points</th>
                         <th scope="col" class="w-50">Deskripsi</th>
                         <th scope="col">Aksi</th>
                     </tr>
