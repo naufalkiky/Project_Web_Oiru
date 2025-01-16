@@ -39,7 +39,7 @@
                                             <small>{{ $jelantah->created_at }} WIB</small>
                                             <div class="mt-2">Berat Sampah: <span class="fw-bold">{{ $jelantah->berat_jelantah }}</span> Kg</div>
                                             @if ($jelantah->status == 'Berhasil')
-                                                <div>Jumlah BagePoint: <span class="fw-bold">{{ $jelantah->berat_jelantah*50 }}</span></div>
+                                                <div>Jumlah BagePoint: <span class="fw-bold">{{ $jelantah->berat_jelantah*5500 }}</span></div>
                                             @endif
                                         </div>
                                         @if ($jelantah->status == 'Berhasil')

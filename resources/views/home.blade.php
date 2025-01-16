@@ -13,7 +13,7 @@
     <div class="row align-items-center justify-content-between mb-5">
         <div class="col-md-7">
             <h1 class="title-cta mb-3 mt-3 mt-md-0">Tukar Jelantah, Dapat <span>Cuan</span></h1>
-            <p class="lh-lg mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aperiam nulla recusandae placeat doloribus magnam earum, dolorem quasi! Voluptas, nobis officia itaque nulla soluta assumenda id eaque? Soluta, nemo corrupti..</p>
+            <p class="lh-lg mb-4">Oiru merupakan sebuah platform digital inovatif yang dirancang untuk menjawab permasalahan lingkungan sekaligus memberikan manfaat ekonomi kepada masyarakat melalui pengelolaan limbah minyak jelantah.</p>
             <a class="btn barter-bage-color text-white py-3 px-4 rounded-lg fw-bold" href="{{ Route('penukaran-sampah') }}">Tukar Jelantah Sekarang</a>
         </div>
         <div class="col-md-5">
@@ -94,8 +94,8 @@
         <div class="row">
             <div class="col-12 mb-5">
                 <h3 class="text-center fw-bold mb-3">Mengapa <span class="barter-bage-color-text">Oiru?</span>?</h3>
-                <div class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, explicabo.</div> 
-                <div class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, amet.</div>
+                <div class="text-center">Oiru hadir sebagai solusi praktis dan berkelanjutan untuk mengatasi dampak negatif dari limbah minyak jelantah sekaligus mendorong kesadaran masyarakat akan pentingnya daur ulang.</div> 
+                {{-- <div class="text-center">Keunggulan Oiru</div> --}}
             </div>
         </div>
         <div class="row justify-content-between">
@@ -107,7 +107,7 @@
             <div class="col-12 col-sm-4 text-center p-4">
                 <img class="mb-3" src="/assets/img/icon/coin.png" alt="" width="40">
                 <h5 class="fw-bold barter-bage-color-text">Points</h5>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque ab tempora.</p>
+                <p>Poin-poin yang terkumpul ini nantinya dapat ditukar dengan berbagai kebutuhan pokok seperti sembako, sehingga memberikan nilai tambah langsung kepada pengguna. </p>
             </div>
             <div class="col-12 col-sm-4 text-center p-4">
                 <img class="mb-4" src="/assets/img/icon/truck.png" alt="" width="95">
