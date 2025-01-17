@@ -68,10 +68,10 @@
                             <div class="container border-top pt-3 mb-2 mt-3">
                                 <div class="d-md-flex d-block justify-content-between align-self-center">
                                     <div class="text-left">
-                                        <p class="opacity-75 mb-auto mb-md-0">Berat Sampah</p>
+                                        <p class="opacity-75 mb-auto mb-md-0">Jumlah Jelantah</p>
                                     </div>
                                     <div class="text-right">
-                                        <p class="text-right">{{ $jelantah->berat_jelantah }} Kg</p>
+                                        <p class="text-right">{{ $jelantah->berat_jelantah }} Liter</p>
                                     </div>
                                 </div>
                                 <div class="d-md-flex d-block justify-content-between align-self-center">
@@ -85,7 +85,7 @@
                                 @if ($jelantah->status == 'Berhasil')
                                     <div class="d-md-flex d-block justify-content-between align-self-center">
                                         <div class="text-left">
-                                            <p class="opacity-75 mb-auto mb-md-0">Total BagePoints</p>
+                                            <p class="opacity-75 mb-auto mb-md-0">Total Oiru Points</p>
                                         </div>
                                         <div class="text-right">
                                             <p class="text-right">{{ $jelantah->berat_jelantah * 1 }}</p>
@@ -99,7 +99,7 @@
             </div>
             <div class="row justify-content-center mb-5 me-auto ms-auto">
                 @if ($jelantah->status == 'Berhasil')
-                    <a class="btn barter-bage-color text-white detail-btn py-2" href="{{ Route('penukaran-sampah') }}">Tukar Sampah lagi</a>
+                    <a class="btn barter-bage-color text-white detail-btn py-2" href="{{ Route('penukaran-sampah') }}">Tukar Jelantah lagi</a>
                 @else
                     <a class="btn btn-secondary detail-btn py-2" href="https://linktr.ee/aniko2001">Hubungi Admin</a>
                 @endif

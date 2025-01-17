@@ -17,8 +17,8 @@
             <p class="lh-lg mb-4">Dengan Oiru, minyak jelantahmu nggak lagi jadi limbah. Tukarkan sekarang dan dapatkan keuntungan sambil ikut menjaga lingkungan! Yuk, mulai langkah kecil untuk masa depan yang lebih bersih dan ramah lingkungan.</p>
             <a class="btn barter-bage-color text-white py-3 px-4 rounded-lg fw-bold" href="{{ Route('penukaran-sampah') }}">Tukar Jelantah Sekarang</a>
         </div>
-        <div class="col-md-5">
-            <img src="{{ asset('assets/img/logo/home-illustrator.svg') }}" alt="home-illustration" class="home-img">
+        <div class="col-md-5 d-flex align-items-start">
+            <img src="{{ asset('assets/img/logo/cooking-oil-home.png') }}" alt="home-illustration" class="home-img img-fluid" style="margin-top: 30px">
         </div>
     </div>
 
@@ -80,7 +80,7 @@
                 <p>Pengguna aktif</p>
             </div>
             <div class="col-12 col-md-3 text-center">
-                <h1 class="fw-bold barter-bage-color-text"> <img class="mb-2" src="/assets/img/icon/trash.png" alt="" width="30"> {{ $total_weight }}+</h1>
+                <h1 class="fw-bold barter-bage-color-text"> <img class="mb-2" src="/assets/img/icon/jerigen.svg" alt="" width="30"> {{ $total_weight }}+</h1>
                 <p>Liter Minyak ditukarkan</p>
             </div>
             <div class="col-12 col-md-3 text-center">

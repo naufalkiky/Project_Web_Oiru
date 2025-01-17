@@ -20,7 +20,7 @@
                         <th scope="col">Jumlah</th>
                         <th scope="col">Waktu Penukaran</th>
                         <th scope="col">Resi Pengiriman</th>
-                        <th scope="col">Total BagePoints</th>
+                        <th scope="col">Total Oiru Points</th>
                         <th scope="col">Status</th>
                     </tr>
                     </thead>

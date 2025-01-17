@@ -15,6 +15,10 @@
         <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
                 <button style="background-color: #kodewarna" class="nav-link btn-active-tabs active" id="pills-tukar-sampah-tab" data-bs-toggle="pill" data-bs-target="#pills-tukar-sampah" type="button" role="tab" aria-controls="pills-tukar-sampah" aria-selected="true">Penukaran Jelantah</button>
+
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link btn-active-tabs" id="pills-tukar-sembako-tab" data-bs-toggle="pill" data-bs-target="#pills-tukar-sembako" type="button" role="tab" aria-controls="pills-tukar-sembako" aria-selected="false">Penukaran Points</button>
             </li>
         </ul>
         <div class="card mx-auto p-4">
@@ -30,23 +34,23 @@
                             <img src="{{ asset('assets/img/steps/2.png') }}" class="steps-image" alt="tukar-sampah-step">
                         </div>
                         <div class="mb-5">
-                            <div class="mb-4"><em class="fw-bold">Step 3</em> - Masuk ke halaman penukaran dan masukkan data yang dibutuhkan.</div>
+                            <div class="mb-4"><em class="fw-bold">Step 3</em> - Masuk ke halaman penukaran jelantah dan masukkan data yang dibutuhkan.</div>
                             <img src="{{ asset('assets/img/steps/3.png') }}" class="steps-image" alt="tukar-sampah-step">
                         </div>
                         <div class="mb-5">
-                            <div class="mb-4"><em class="fw-bold">Step 4</em> - Setelah data sampah dikirim, cek status penukaran anda pada dashboard.</div>
+                            <div class="mb-4"><em class="fw-bold">Step 4</em> - Setelah data minyak jelantah dikirim, cek status penukaran anda pada dashboard.</div>
                             <img src="{{ asset('assets/img/steps/4.png') }}" class="steps-image" alt="tukar-sampah-step">
                         </div>
                         <div class="mb-5">
-                            <div class="mb-4"><em class="fw-bold">Step 4</em> - Setelah data sampah dikirim, cek status penukaran anda pada dashboard.</div>
+                            <div class="mb-4"><em class="fw-bold">Step 4</em> - Apabila jelantah yang ditukarkan telah diverifikasi oleh admin kami, anda mendapatkan nomor penjemputan dan status penukaran akan berubah yang dapat dilihat pada detail penukaran jelantah</div>
                             <img src="{{ asset('assets/img/steps/4.png') }}" class="steps-image" alt="tukar-sampah-step">
                         </div>
                         <div class="mb-5">
-                            <div class="mb-4"><em class="fw-bold">Step 4</em> - Setelah data sampah dikirim, cek status penukaran anda pada dashboard.</div>
+                            <div class="mb-4"><em class="fw-bold">Step 4</em> - Setelah sampah anda dijemput oleh petugas kami, status penukaran anda berhasil, dan pastikan OiruPoint sudah ditambahkan pada akun anda.</div>
                             <img src="{{ asset('assets/img/steps/4.png') }}" class="steps-image" alt="tukar-sampah-step">
                         </div>
                         <div class="mb-5">
-                            <div class="mb-4"><em class="fw-bold">Step 4</em> - Setelah data sampah dikirim, cek status penukaran anda pada dashboard.</div>
+                            <div class="mb-4"><em class="fw-bold">Step 4</em> - Jumlah Oiru Point yang didapatkan dapat dilihat dihalaman Dashboard</div>
                             <img src="{{ asset('assets/img/steps/4.png') }}" class="steps-image" alt="tukar-sampah-step">
                         </div>
                     </div>
@@ -54,19 +58,19 @@
                 <div class="tab-pane fade" id="pills-tukar-sembako" role="tabpanel" aria-labelledby="pills-tukar-sembako-tab">
                     <div class="container px-0 pt-3 px-md-5 text-center">
                         <div class="mb-5">
-                            <div class="mb-4"><em class="fw-bold">Step 1</em> - Masuk ke halaman penukaran sembako dan pilih paket yang anda inginkan</div>
+                            <div class="mb-4"><em class="fw-bold">Step 1</em> - Masuk ke halaman penukaran points dan pilih paket yang anda inginkan</div>
                             <img src="{{ asset('assets/img/steps/tukar-sembako-1.png') }}" class="steps-image" alt="tukar-sampah-step">
                         </div>
                         <div class="mb-5">
-                            <div class="mb-4"><em class="fw-bold">Step 2</em> - Setelah memilih paket, jangan lupa baca persyaratan dan pastikan BagePoints yang anda miliki mencukupi yaa</div>
+                            <div class="mb-4"><em class="fw-bold">Step 2</em> - Setelah memilih paket, jangan lupa baca persyaratan dan pastikan OiruPoints yang anda miliki mencukupi yaa</div>
                             <img src="{{ asset('assets/img/steps/tukar-sembako-2.png') }}" class="steps-image" alt="tukar-sampah-step">
                         </div>
                         <div class="mb-5">
-                            <div class="mb-4"><em class="fw-bold">Step 3</em> - Pilih tab penukaran dan lengkapi data yang dibutuhkan untuk kesuksesan proses pengiriman</div>
+                            <div class="mb-4"><em class="fw-bold">Step 3</em> - Pilih tab penukaran dan lengkapi data yang dibutuhkan agar proses pengiriman proses pengiriman berjalan lancar</div>
                             <img src="{{ asset('assets/img/steps/tukar-sembako-3.png') }}" class="steps-image" alt="tukar-sampah-step">
                         </div>
                         <div class="mb-5">
-                            <div class="mb-4"><em class="fw-bold">Step 4</em> - Setelah memesan paket sembako, cek status pada dashboard di "Status Penukaran Sembako" dan tunggu sampai admin kami memprosesnya</div>
+                            <div class="mb-4"><em class="fw-bold">Step 4</em> - Setelah memesan paket yang diinginkan, cek status pada dashboard di "Status Penukaran Points" dan tunggu sampai admin kami memprosesnya</div>
                             <img src="{{ asset('assets/img/steps/tukar-sembako-4.png') }}" class="steps-image" alt="tukar-sampah-step">
                         </div>
                         <div class="mb-5">

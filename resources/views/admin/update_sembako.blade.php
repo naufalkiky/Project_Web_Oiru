@@ -25,7 +25,7 @@
                     <div class="mb-3">
                         <label for="oiru_points" class="form-label fw-bold">Jumlah Point</label>
                         <div class="input-group">
-                            <input type="number" class="form-control" name="oiru_points" id="oiru_points" placeholder="Ex: 200" value="{{ $item->oiru_points }}" min="1">
+                            <input type="number" class="form-control" name="oiru_points" id="oiru_points" placeholder="Ex: 20" value="{{ $item->oiru_points }}" min="1">
                         </div>
                         @error('oiru_points')
                             <div class="text-danger mt-2">
