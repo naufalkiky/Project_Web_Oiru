@@ -9,10 +9,10 @@
             <p class="mb-4  text-white">Semangat bekerja, semoga semuanya berjalan dengan baik.</p>
             <div class="card rounded-lg p-2">
                 <div class="card-body">
-                    <p class="card-text fw-bold">Data Penukaran Sampah Pengguna ♻️</p>
+                    <p class="card-text fw-bold">Data Penukaran Jelantah Pengguna ♻️</p>
                     <div class="container border rounded p-2">
                         <div class="d-md-flex d-block justify-content-between align-items-center ">
-                            <p class="mb-2 mb-md-0">👉 Penukaran sampah pengguna dengan OiruPoints</p>
+                            <p class="mb-2 mb-md-0">👉 Penukaran jelantah pengguna dengan Oiru Points</p>
                             <a href="{{ Route('admin.transaksi-sampah') }}" class="btn barter-bage-color-darker text-white">Lihat Data</a>
                         </div>
                     </div>
@@ -50,7 +50,7 @@
             <div class="col-lg-6 ps-auto ps-lg-4">
                 <div class="card mb-4">
                     <div class="card-body">
-                        <p class="fw-bold">👨🏻‍🦱 Lihat Data Pengguna BarterBage</p>
+                        <p class="fw-bold">👨🏻‍🦱 Lihat Data Pengguna Oiru</p>
                         <div class="container border-top pt-3 mb-2">
                             <div class="d-md-flex d-block justify-content-between align-items-center ">
                                 <div class="mb-2 mb-md-0">
@@ -68,9 +68,9 @@
                         <div class="container border-top pt-3 mb-2">
                             <div class="d-md-flex d-block justify-content-between align-items-center ">
                                 <div>
-                                    <p class="mb-1">Total berat sampah      =<span class="fw-bold"> {{ $total_weight }}</span> Kg</p>
-                                    <p class="mb-1">Jumlah paket sembako    =<span class="fw-bold"> {{ $total_groceries }}</span> Paket</p>
-                                    <p class="mb-1">Jumlah pengguna aktif   =<span class="fw-bold"> {{ $total_users }}</span> User</p>
+                                    <p class="mb-1">Total Berat Jelantah      =<span class="fw-bold"> {{ $total_weight }}</span> Kg</p>
+                                    <p class="mb-1">Jumlah Paket Sembako    =<span class="fw-bold"> {{ $total_groceries }}</span> Paket</p>
+                                    <p class="mb-1">Jumlah Pengguna Aktif   =<span class="fw-bold"> {{ $total_users }}</span> User</p>
                                 </div>
                             </div>
                         </div>

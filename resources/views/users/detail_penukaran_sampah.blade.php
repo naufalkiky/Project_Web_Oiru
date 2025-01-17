@@ -88,7 +88,7 @@
                                             <p class="opacity-75 mb-auto mb-md-0">Total BagePoints</p>
                                         </div>
                                         <div class="text-right">
-                                            <p class="text-right">{{ $jelantah->berat_jelantah * 5500 }}</p>
+                                            <p class="text-right">{{ $jelantah->berat_jelantah * 1 }}</p>
                                         </div>
                                     </div>
                                 @endif

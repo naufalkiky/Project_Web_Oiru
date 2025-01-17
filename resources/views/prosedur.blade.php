@@ -8,13 +8,13 @@
     </style>
     <div class="row mt-3">
         <div class="col-12 mb-5 mb-md-4">
-            <h2 class="text-center fw-bold mb-3">Langkah mudah menggunakan <span class="barter-bage-color-text">BarterBage</span></h2>
+            <h2 class="text-center fw-bold mb-3">Langkah mudah menggunakan <span class="barter-bage-color-text">Oiru</span></h2>
             <div class="text-center">Untuk pengalaman terbaik anda, kami memberikan cara mudah</div> 
-            <div class="text-center">untuk menggunakan fitur andalan dari BarterBage.</div>
+            <div class="text-center">untuk menggunakan fitur andalan dari Oiru.</div>
         </div>
         <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
-                <button style="background-color: #kodewarna" class="nav-link btn-active-tabs active" id="pills-tukar-sampah-tab" data-bs-toggle="pill" data-bs-target="#pills-tukar-sampah" type="button" role="tab" aria-controls="pills-tukar-sampah" aria-selected="true">Penukaran Sampah</button>
+                <button style="background-color: #kodewarna" class="nav-link btn-active-tabs active" id="pills-tukar-sampah-tab" data-bs-toggle="pill" data-bs-target="#pills-tukar-sampah" type="button" role="tab" aria-controls="pills-tukar-sampah" aria-selected="true">Penukaran Jelantah</button>
             </li>
         </ul>
         <div class="card mx-auto p-4">
@@ -22,20 +22,32 @@
                 <div class="tab-pane fade show active" id="pills-tukar-sampah" role="tabpanel" aria-labelledby="pills-tukar-sampah-tab">
                     <div class="container px-0 pt-3 px-md-5 text-center">
                         <div class="mb-5">
-                            <div class="mb-4"><em class="fw-bold">Step 1</em> - Masuk ke halaman penukaran dan masukkan data yang dibutuhkan</div>
-                            {{-- <img src="{{ asset('assets/img/steps/tukar-sampah-1.png') }}" class="steps-image" alt="tukar-sampah-step"> --}}
+                            <div class="mb-4"><em class="fw-bold">Step 1</em> - Registrasi Akun Oiru</div>
+                            <img src="{{ asset('assets/img/steps/1.png') }}" class="steps-image" alt="tukar-sampah-step">
                         </div>
                         <div class="mb-5">
-                            <div class="mb-4"><em class="fw-bold">Step 2</em> - Setelah data sampah dikirim, cek status penukaran anda pada dashboard</div>
-                            <img src="{{ asset('assets/img/steps/tukar-sampah-2.png') }}" class="steps-image" alt="tukar-sampah-step">
+                            <div class="mb-4"><em class="fw-bold">Step 2</em> - Setelah Registrasi Akun, Silahkan Login Menggunakan Akun Tersebut</div>
+                            <img src="{{ asset('assets/img/steps/2.png') }}" class="steps-image" alt="tukar-sampah-step">
                         </div>
                         <div class="mb-5">
-                            <div class="mb-4"><em class="fw-bold">Step 3</em> - Lorem ipsum dolor sit.</div>
-                            {{-- <img src="{{ asset('assets/img/steps/tukar-sampah-3.png') }}" class="steps-image" alt="tukar-sampah-step"> --}}
+                            <div class="mb-4"><em class="fw-bold">Step 3</em> - Masuk ke halaman penukaran dan masukkan data yang dibutuhkan.</div>
+                            <img src="{{ asset('assets/img/steps/3.png') }}" class="steps-image" alt="tukar-sampah-step">
                         </div>
                         <div class="mb-5">
-                            <div class="mb-4"><em class="fw-bold">Step 4</em> - Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
-                            {{-- <img src="{{ asset('assets/img/steps/tukar-sampah-4.png') }}" class="steps-image" alt="tukar-sampah-step"> --}}
+                            <div class="mb-4"><em class="fw-bold">Step 4</em> - Setelah data sampah dikirim, cek status penukaran anda pada dashboard.</div>
+                            <img src="{{ asset('assets/img/steps/4.png') }}" class="steps-image" alt="tukar-sampah-step">
+                        </div>
+                        <div class="mb-5">
+                            <div class="mb-4"><em class="fw-bold">Step 4</em> - Setelah data sampah dikirim, cek status penukaran anda pada dashboard.</div>
+                            <img src="{{ asset('assets/img/steps/4.png') }}" class="steps-image" alt="tukar-sampah-step">
+                        </div>
+                        <div class="mb-5">
+                            <div class="mb-4"><em class="fw-bold">Step 4</em> - Setelah data sampah dikirim, cek status penukaran anda pada dashboard.</div>
+                            <img src="{{ asset('assets/img/steps/4.png') }}" class="steps-image" alt="tukar-sampah-step">
+                        </div>
+                        <div class="mb-5">
+                            <div class="mb-4"><em class="fw-bold">Step 4</em> - Setelah data sampah dikirim, cek status penukaran anda pada dashboard.</div>
+                            <img src="{{ asset('assets/img/steps/4.png') }}" class="steps-image" alt="tukar-sampah-step">
                         </div>
                     </div>
                 </div>

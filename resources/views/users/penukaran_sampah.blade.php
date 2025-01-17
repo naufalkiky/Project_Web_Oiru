@@ -48,12 +48,6 @@
                     @enderror
                 </div>
                 <div class="mb-4">
-                    <label for="note" class="form-label fw-bold">Catatan Tambahan</label>
-                    <div class="input-group">
-                        <input type="text" class="form-control" name="note" id="note" value="{{ old('note') }}" autocomplete="off" placeholder="Catatan tambahan, boleh diisi atau ngga..">
-                    </div>
-                </div>
-                <div class="mb-4">
                     <button type="submit" class="btn barter-bage-color text-white fw-bold" style="padding-top: 8px; padding-bottom: 8px;">Input Data Jelantah</button>
                 </div>
             </form>

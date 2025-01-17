@@ -33,7 +33,7 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('prosedur', [HomeController::class, 'procedure']);
 Route::get('about', [HomeController::class, 'about']);
 Route::get('visi-misi', [HomeController::class, 'visimisi']);
-Route::get('our-team', [HomeController::class, 'ourteam']);
+Route::get('our_team', [HomeController::class, 'ourteam']);
 
 Route::get('sembako', [PenukaranSembakoController::class, 'index'])->name('sembako');
 Route::get('sembako/search', [PenukaranSembakoController::class, 'search'])->name('sembako.search');

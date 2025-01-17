@@ -43,7 +43,7 @@ class TransaksiSampahController extends Controller
                 ]);
 
                 $user = User::where('id', $jelantah->user_id)->first();
-                $user->oiru_points += $request->berat_jelantah * 5500;
+                $user->oiru_points += $request->berat_jelantah * 1;
                 $user->update();
 
                 return back()->with('admin_success', 'Status penukaran sampah berhasil diubah!');
