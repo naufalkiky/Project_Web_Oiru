@@ -20,7 +20,7 @@
             <h1 class="fw-bold text-center mb-4">Our Solutions</h1>
             <div class="col-sm-20 mb-2">
                 <div class="card shadow rounded-lg card-sembako">
-                    <img src="{{ asset('assets/img/images/oiru-platform.jpg') }}" class="card-img-top" alt="illustration-image">
+                    <img src="{{ asset('assets/img/images/oiru_banner.png') }}" class="card-img-top" alt="illustration-image">
                     <p class="text-justify ms-0 ms-md-5 me-0 me-md-5">
                         <br>
                         Oiru merupakan platform digital inovatif yang dirancang untuk menjawab permasalahan lingkungan sekaligus memberikan manfaat ekonomi kepada masyarakat melalui pengelolaan limbah minyak jelantah. Dengan menggunakan website Oiru, masyarakat dapat mengumpulkan minyak jelantah yang telah digunakan di rumah atau tempat usaha dan menukarkannya dengan poin. Poin-poin yang terkumpul dapat ditukar dengan berbagai kebutuhan pokok seperti sembako, memberikan nilai tambah langsung kepada pengguna.
@@ -33,7 +33,7 @@
                 <h1 class="fw-bold text-center mb-4">The Impact We Made</h1>
                 <div class="col-sm-20 mb-2">
                     <div class="card shadow rounded-lg card-sembako">
-                        <img src="{{ asset('assets/img/images/environment-impact.jpg') }}" class="card-img-top" alt="illustration-image">
+                        <img src="https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/p1/359/2024/06/25/jelantah-2311793416.png" class="card-img-top" alt="illustration-image">
                         <p class="text-justify ms-0 ms-md-5 me-0 me-md-5">
                             <br>
                             Oiru tidak hanya berfokus pada pengelolaan limbah, tetapi juga memberikan dampak positif terhadap lingkungan dan ekonomi. Melalui sistem pengumpulan minyak jelantah, Oiru membantu mengurangi pencemaran air, kerusakan ekosistem, dan penyumbatan saluran drainase yang sering terjadi akibat pembuangan minyak jelantah secara sembarangan.

@@ -2,7 +2,7 @@
     <div class="row border-bottom border-top pb-3 pt-5 top-footer">
         <div class="col-12 col-md-4">
             <p class="d-block mb-3 text-muted"><em>"Tukarkan Jelantahmu, Sejahterakan Hidupmu."</em></p>
-            <a href="https://linktr.ee/aniko2001" target="_blank" class="btn barter-bage-color text-white">Kontak Kami</a>
+            <a href="#" target="_blank" class="btn barter-bage-color text-white">Kontak Kami</a>
         </div>
         <div class="col-12 col-md-2"></div>
         <div class="col-6 col-md-2">

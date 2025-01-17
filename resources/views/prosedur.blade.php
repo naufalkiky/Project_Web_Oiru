@@ -42,15 +42,15 @@
                             <img src="{{ asset('assets/img/steps/4.png') }}" class="steps-image" alt="tukar-sampah-step">
                         </div>
                         <div class="mb-5">
-                            <div class="mb-4"><em class="fw-bold">Step 4</em> - Apabila jelantah yang ditukarkan telah diverifikasi oleh admin kami, anda mendapatkan nomor penjemputan dan status penukaran akan berubah yang dapat dilihat pada detail penukaran jelantah</div>
+                            <div class="mb-4"><em class="fw-bold">Step 5</em> - Apabila jelantah yang ditukarkan telah diverifikasi oleh admin kami, anda mendapatkan nomor penjemputan dan status penukaran akan berubah yang dapat dilihat pada detail penukaran jelantah</div>
                             <img src="{{ asset('assets/img/steps/4.png') }}" class="steps-image" alt="tukar-sampah-step">
                         </div>
                         <div class="mb-5">
-                            <div class="mb-4"><em class="fw-bold">Step 4</em> - Setelah sampah anda dijemput oleh petugas kami, status penukaran anda berhasil, dan pastikan OiruPoint sudah ditambahkan pada akun anda.</div>
+                            <div class="mb-4"><em class="fw-bold">Step 6</em> - Setelah sampah anda dijemput oleh petugas kami, status penukaran anda berhasil, dan pastikan OiruPoint sudah ditambahkan pada akun anda.</div>
                             <img src="{{ asset('assets/img/steps/4.png') }}" class="steps-image" alt="tukar-sampah-step">
                         </div>
                         <div class="mb-5">
-                            <div class="mb-4"><em class="fw-bold">Step 4</em> - Jumlah Oiru Point yang didapatkan dapat dilihat dihalaman Dashboard</div>
+                            <div class="mb-4"><em class="fw-bold">Step 7</em> - Jumlah Oiru Point yang didapatkan dapat dilihat dihalaman Dashboard</div>
                             <img src="{{ asset('assets/img/steps/4.png') }}" class="steps-image" alt="tukar-sampah-step">
                         </div>
                     </div>

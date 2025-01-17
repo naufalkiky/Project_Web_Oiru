@@ -24,29 +24,32 @@
 
     {{-- carousel --}}
     <div class="pt-5 mb-2 border-top">
-        <div id="carouselBarterBage" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div id="carouselOiru" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselBarterBage" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselBarterBage" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselBarterBage" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselOiru" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselOiru" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselOiru" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner" data-bs-interval="5000">
                 <div class="carousel-item active">
-                    <div class="gambarBg" style="background-image: url({{ asset('assets/img/logo/LogoOiru.png') }})"></div>
+                    <div class="gambarBg" style="background-image: url({{ asset('assets/img/images/oiru_banner.png') }})"></div>
                     <div class="carousel-caption d-none d-md-block">
                         <h5 class="fw-bold">Kami Ada Untuk Anda</h5>
                         <p class="">Solusi bagi menumpuknya limbah minyak jelantah di lingkungan kita</p>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="5000">
-                    <div class="gambarBg" style="background-image: url(https://www.osteourgence.fr/templates/yootheme/cache/can-3489894_1920-5c44e6d5.jpeg)"></div>
+                    <div class="gambarBg" style="background-image: url(https://recycleitresource.com/wp-content/uploads/2021/06/Cooking-Oil-Recycling.jpg)"></div>
                     <div class="carousel-caption d-none d-md-block">
                         <h5 class="fw-bold">Minyak jelantah jadi berkah</h5>
                         <p class="">Dapatkan keuntungan sambil menjaga lingkungan</p>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="5000">
-                    <div class="gambarBg" style="background-image: url(https://disk.mediaindonesia.com/thumbs/1800x1200/news/2019/07/d8651ef32d625b3401f21b0db91598ad.jpg)"></div>
+                    <div class="gambarBg" style="background-image: url('https://www.orlando.gov/files/sharedassets/public/v/2/departments/public-works/water-rec/recycle-your-cooking-oil_1.png'); 
+                                                background-size: contain; 
+                                                background-repeat: no-repeat; 
+                                                background-position: center;">></div> */
                     <div class="carousel-caption d-none d-md-block">
                         <h5 class="fw-bold">Minyak Jelantah Bukan Sampah!</h5>
                         <p class="">Lindungi lingkungan untuk masa depan yang lebih baik</p>
