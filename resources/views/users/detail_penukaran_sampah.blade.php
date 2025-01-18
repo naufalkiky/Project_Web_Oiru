@@ -1,13 +1,13 @@
 @extends('layouts.dashboard')
 
-@section('title', 'Detail Penukaran Sampah')
+@section('title', 'Detail Penukaran Jelantah')
 
 @section('content')
     <div class="container mt-3 mx-auto py-3 mb-5">
         <div class="row justify-content-center align-items-start mb-2">
             <div class="col-lg-10">
                 <div class="card mb-4 pt-4 pb-3 mx-auto" style="background-color: #36572A">
-                    <h4 class="fw-bold text-center text-white">Detail Penukaran Sampah</h4>
+                    <h4 class="fw-bold text-center text-white">Detail Penukaran Jelantah</h4>
                 </div>
             </div>
         </div>
@@ -101,7 +101,7 @@
                 @if ($jelantah->status == 'Berhasil')
                     <a class="btn barter-bage-color text-white detail-btn py-2" href="{{ Route('penukaran-sampah') }}">Tukar Jelantah lagi</a>
                 @else
-                    <a class="btn btn-secondary detail-btn py-2" href="https://linktr.ee/aniko2001">Hubungi Admin</a>
+                    <a class="btn btn-secondary detail-btn py-2" href="#">Hubungi Admin</a>
                 @endif
             </div>
         @endforeach

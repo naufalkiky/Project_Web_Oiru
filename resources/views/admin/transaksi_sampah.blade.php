@@ -1,6 +1,6 @@
 @extends('layouts.dashboard')
 
-@section('title', 'Data Transaksi Sampah')
+@section('title', 'Data Transaksi Jelantah')
 
 @section('content')
     <nav class="mb-2 bg-light pt-3" aria-label="breadcrumb">

@@ -29,7 +29,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="address" class="form-label fw-bold">Alamat</label>
-                    <textarea class="form-control mb-2" name="address" id="address" cols="30" rows="4" placeholder="Ex: Jl. Puma Raya No.21, RT 01/RW 09, Kel. Jayamukti, Kec. Cikarang Pusat, Kabupaten Bekasi, Jawa Barat" readonly>{{ Auth::user()->address }}</textarea>
+                    <textarea class="form-control mb-2" name="address" id="address" cols="30" rows="4" placeholder="Ex: Jl. Puma Raya No.21, RT 01/RW 09, Kel. Cokro, Kec. Siman, Kabupaten Ponorogo, Jawa Timur" readonly>{{ Auth::user()->address }}</textarea>
                     @if (Auth::user()->isAdmin == 1)
                         <em><small>Ubah alamat pada halaman <a class="btn-link text-black" href="{{ Route('admin') }}">dashboard</a> jika belum sesuai.</small></em>
                     @else

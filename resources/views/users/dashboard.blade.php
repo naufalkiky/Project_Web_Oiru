@@ -37,9 +37,9 @@
                                     <div class="d-md-flex d-block justify-content-between align-items-center mb-2">
                                         <div class="mb-2 mb-md-0">
                                             <small>{{ $jelantah->created_at }} WIB</small>
-                                            <div class="mt-2">Berat Sampah: <span class="fw-bold">{{ $jelantah->berat_jelantah }}</span> Kg</div>
+                                            <div class="mt-2">Berat Jelantah: <span class="fw-bold">{{ $jelantah->berat_jelantah }}</span> Liter</div>
                                             @if ($jelantah->status == 'Berhasil')
-                                                <div>Jumlah BagePoint: <span class="fw-bold">{{ $jelantah->berat_jelantah*1 }}</span></div>
+                                                <div>Jumlah OiruPoint: <span class="fw-bold">{{ $jelantah->berat_jelantah*1 }}</span></div>
                                             @endif
                                         </div>
                                         @if ($jelantah->status == 'Berhasil')
@@ -54,7 +54,7 @@
                                 </div>
                             @endforeach 
                         @else
-                            <small class="py-3"><em>Belum ada riwayat penukaran sampah</em></small>
+                            <small class="py-3"><em>Belum ada riwayat penukaran jelantah</em></small>
                         @endif
                     </div>
                 </div>
