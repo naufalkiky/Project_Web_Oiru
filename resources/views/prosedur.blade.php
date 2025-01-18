@@ -43,15 +43,15 @@
                         </div>
                         <div class="mb-5">
                             <div class="mb-4"><em class="fw-bold">Step 5</em> - Apabila jelantah yang ditukarkan telah diverifikasi oleh admin kami, anda mendapatkan nomor penjemputan dan status penukaran akan berubah yang dapat dilihat pada detail penukaran jelantah</div>
-                            <img src="{{ asset('assets/img/steps/4.png') }}" class="steps-image" alt="tukar-sampah-step">
+                            <img src="{{ asset('assets/img/steps/5.png') }}" class="steps-image" alt="tukar-sampah-step">
                         </div>
                         <div class="mb-5">
                             <div class="mb-4"><em class="fw-bold">Step 6</em> - Setelah sampah anda dijemput oleh petugas kami, status penukaran anda berhasil, dan pastikan OiruPoint sudah ditambahkan pada akun anda.</div>
-                            <img src="{{ asset('assets/img/steps/4.png') }}" class="steps-image" alt="tukar-sampah-step">
+                            <img src="{{ asset('assets/img/steps/6.png') }}" class="steps-image" alt="tukar-sampah-step">
                         </div>
                         <div class="mb-5">
                             <div class="mb-4"><em class="fw-bold">Step 7</em> - Jumlah Oiru Point yang didapatkan dapat dilihat dihalaman Dashboard</div>
-                            <img src="{{ asset('assets/img/steps/4.png') }}" class="steps-image" alt="tukar-sampah-step">
+                            <img src="{{ asset('assets/img/steps/6.png') }}" class="steps-image" alt="tukar-sampah-step">
                         </div>
                     </div>
                 </div>
@@ -59,27 +59,27 @@
                     <div class="container px-0 pt-3 px-md-5 text-center">
                         <div class="mb-5">
                             <div class="mb-4"><em class="fw-bold">Step 1</em> - Masuk ke halaman penukaran points dan pilih paket yang anda inginkan</div>
-                            <img src="{{ asset('assets/img/steps/tukar-sembako-1.png') }}" class="steps-image" alt="tukar-sampah-step">
+                            <img src="{{ asset('assets/img/steps/8.png') }}" class="steps-image" alt="tukar-sampah-step">
                         </div>
                         <div class="mb-5">
                             <div class="mb-4"><em class="fw-bold">Step 2</em> - Setelah memilih paket, jangan lupa baca persyaratan dan pastikan OiruPoints yang anda miliki mencukupi yaa</div>
-                            <img src="{{ asset('assets/img/steps/tukar-sembako-2.png') }}" class="steps-image" alt="tukar-sampah-step">
+                            <img src="{{ asset('assets/img/steps/9.png') }}" class="steps-image" alt="tukar-sampah-step">
                         </div>
                         <div class="mb-5">
                             <div class="mb-4"><em class="fw-bold">Step 3</em> - Pilih tab penukaran dan lengkapi data yang dibutuhkan agar proses pengiriman proses pengiriman berjalan lancar</div>
-                            <img src="{{ asset('assets/img/steps/tukar-sembako-3.png') }}" class="steps-image" alt="tukar-sampah-step">
+                            <img src="{{ asset('assets/img/steps/10.png') }}" class="steps-image" alt="tukar-sampah-step">
                         </div>
                         <div class="mb-5">
                             <div class="mb-4"><em class="fw-bold">Step 4</em> - Setelah memesan paket yang diinginkan, cek status pada dashboard di "Status Penukaran Points" dan tunggu sampai admin kami memprosesnya</div>
-                            <img src="{{ asset('assets/img/steps/tukar-sembako-4.png') }}" class="steps-image" alt="tukar-sampah-step">
+                            <img src="{{ asset('assets/img/steps/11.png') }}" class="steps-image" alt="tukar-sampah-step">
                         </div>
                         <div class="mb-5">
                             <div class="mb-4"><em class="fw-bold">Step 5</em> - Jika status penukaran sembako anda sudah dalam penjemputan, kami akan memberikan nomor resi pengiriman</div>
-                            <img src="{{ asset('assets/img/steps/tukar-sembako-5.png') }}" class="steps-image" alt="tukar-sampah-step">
+                            <img src="{{ asset('assets/img/steps/12.png') }}" class="steps-image" alt="tukar-sampah-step">
                         </div>
                         <div class="mb-5">
                             <div class="mb-4"><em class="fw-bold">Step 6</em> - Apabila paket sembako sudah anda terima, anda bisa klik tombol "Diterima" untuk menyelesaikan proses penukaran sembako</div>
-                            <img src="{{ asset('assets/img/steps/tukar-sembako-6.png') }}" class="steps-image" alt="tukar-sampah-step">
+                            <img src="{{ asset('assets/img/steps/13.png') }}" class="steps-image" alt="tukar-sampah-step">
                         </div>
                     </div>
                 </div>
