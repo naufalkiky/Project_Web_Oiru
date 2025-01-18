@@ -17,7 +17,7 @@ class RegisterController extends Controller
 
     public function store(Request $request)
     {
-        // validasi form registrasi
+        // validasi data form registrasi
         $request->validate([
             'name' => ['required', 'min:3'],
             'email' => ['required', 'unique:users', 'email'],
@@ -37,6 +37,6 @@ class RegisterController extends Controller
 
         Auth::login($user);
 
-        return redirect(RouteServiceProvider::HOME)->with('success', 'Selamat datang di BarterBage, Anda sudah terdaftar!');
+        return redirect(RouteServiceProvider::HOME)->with('success', 'Selamat datang di Oiru, Anda sudah terdaftar!');
     }
 }
