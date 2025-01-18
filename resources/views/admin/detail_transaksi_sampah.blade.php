@@ -1,6 +1,6 @@
 @extends('layouts.dashboard')
 
-@section('title', 'Update Status Penukaran Sampah')
+@section('title', 'Update Status Penukaran Jelantah')
 
 @section('content')
     <div class="container mt-3 mx-auto py-3 mb-5">
@@ -16,7 +16,7 @@
         </div>
     @endif
         <div class="card card-detail mb-4 pt-4 pb-3 mx-auto">
-            <h4 class="fw-bold text-center">Detail Penukaran Sampah</h4>
+            <h4 class="fw-bold text-center">Detail Penukaran Jelantah</h4>
         </div>
         <div class="card card-body card-detail mx-auto pt-4">
             @foreach ($Total_Jelantah as $jelantah)
@@ -40,7 +40,7 @@
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="berat_jelantah" class="form-label fw-bold">Berat Sampah</label>
+                        <label for="berat_jelantah" class="form-label fw-bold">Berat Jelantah</label>
                         <div class="input-group">
                             <input type="number" class="form-control" name="berat_jelantah" id="garbage_weight" value="{{ $jelantah->berat_jelantah }}" readonly>
                             <div class="input-group-text">Liter</div>
