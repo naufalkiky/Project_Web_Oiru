@@ -101,7 +101,7 @@
                 @if ($jelantah->status == 'Berhasil')
                     <a class="btn barter-bage-color text-white detail-btn py-2" href="{{ Route('penukaran-sampah') }}">Tukar Jelantah lagi</a>
                 @else
-                    <a class="btn btn-secondary detail-btn py-2" href="https://linktr.ee/aniko2001">Hubungi Admin</a>
+                    <a class="btn btn-secondary detail-btn py-2" href="#">Hubungi Admin</a>
                 @endif
             </div>
         @endforeach
